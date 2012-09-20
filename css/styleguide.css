@@ -1,0 +1,197 @@
+
+body {
+  margin: 0;
+  padding: 80px 20px;
+  font: 16px/28px Menlo, monospace;
+  color: #555;
+  letter-spacing: -1px
+}
+
+a {
+  color: #08c;
+  text-decoration: none;
+}
+a:hover {
+  color: #005580;
+  text-decoration: underline;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 .5rem;
+  line-height: 1;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  color: #222;
+}
+h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+h2 {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+}
+h3 {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+p {
+  margin: .5rem 0;
+}
+.lead {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #777;
+}
+
+blockquote {
+  margin: 14px 0;
+  padding: 10px 15px;
+  background-color: #f5f5f5;
+  border-left: 5px solid #e5e5e5;
+}
+blockquote p {
+  font-size: 1.25rem;
+}
+
+/* Lists
+------------------------- */
+
+ul, ol {
+  padding: 0;
+  margin: 0 0 14px 30px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+
+
+
+
+/* Code
+-------------------------------------------------------- */
+
+/* Inline and block code styles */
+code,
+pre {
+  padding: 0 3px 2px;
+  font-family: "Menlo", monospace;
+  color: #333;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  letter-spacing: 0;
+}
+
+/* Inline code */
+code {
+  padding: 2px 4px;
+  font-size: 14px;
+  color: #d14;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+/* Blocks of code */
+pre {
+  display: block;
+  padding: 14px;
+  margin: 14px 0;
+  font-size: 14px;
+  line-height: 22px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre;
+  white-space: pre-wrap;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc; /* fallback for IE7-8 */
+  border: 1px solid rgba(0,0,0,.15);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/* Account for some code outputs that place code tags in pre tags */
+pre code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+}
+
+
+hr {
+  margin: 6rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.jumbotron {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 4rem;
+}
+
+.contents {
+  list-style-type: upper-roman;
+  color: #999;
+}
+
+.footer {
+  text-align: center;
+  color: #777;
+}
+
+
+/* permalink anchors */
+h1, h2 {
+  position: relative;
+}
+.docs-permalink {
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: -50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ddd;
+  padding: 3px 8px 5px;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+.docs-permalink:hover {
+  color: #005580;
+  text-decoration: none;
+  background-color: #f5f5f5;
+}
+h2 .docs-permalink {
+  font-size: 24px;
+  left: -47px;
+}
