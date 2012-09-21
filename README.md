@@ -13,7 +13,7 @@ Standards for developing flexible, durable, and sustainable HTML and CSS.
 
 
 
-## I. Golden rule
+## Golden rule
 
 > All code in any code base should look like a single person typed it, no matter how many people contributed.
 
@@ -21,15 +21,48 @@ This means strictly enforcing these agreed upon guidelines at all times. For add
 
 
 
-## II. HTML
+## HTML
+
+### HTML syntax
+
+* Use soft-tabs with two spaces
+* Nested elements should be indented once (2 spaces)
+* Always use double quotes, never single quotes
+* Don't include a trailing slash in self-closing elements
+
+**Incorrect example:**
+
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+  &lt;title&gt;Page title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+  &lt;img src='images/company-logo.png' alt='Company' /&gt;
+  &lt;h1 class='hello-world'&gt;Hello, world!&lt;/h1&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+
+**Correct example:**
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;img src="images/company-logo.png" alt="Company"&gt;
+    &lt;h1 class="hello-world"&gt;Hello, world!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
 
 
 
-## III. CSS
+## CSS
 
 
 
-## IV. Copy
+## Copy
 
 
 
