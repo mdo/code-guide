@@ -1,4 +1,4 @@
-# Code Guide
+# HTML and CSS code guide
 Standards for developing flexible, durable, and sustainable HTML and CSS.
 
 
@@ -45,7 +45,7 @@ This means strictly enforcing these agreed upon guidelines at all times. For add
 
 **Incorrect example:**
 
-````
+````html
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,7 +60,7 @@ This means strictly enforcing these agreed upon guidelines at all times. For add
 
 **Correct example:**
 
-````
+````html
 <!DOCTYPE html>
 <html>
   <head>
@@ -78,7 +78,7 @@ This means strictly enforcing these agreed upon guidelines at all times. For add
 
 Enforce standards mode in every browser possible with this simple doctype at the beginning of every HTML page.
 
-````
+````html
 <!DOCTYPE html>
 ````
 
@@ -99,7 +99,7 @@ HTML attributes should come in this particular order for easier reading of code.
 
 Such that your markup looks like:
 
-````
+````html
 <a class="" id="" data-modal="" href="">Example link</a>
 ````
 
@@ -133,7 +133,7 @@ Writing markup in a javascript file makes the content harder to find, harder to 
 
 **Incorrect example:**
 
-````
+````css
 .selector, .selector-secondary, .selector[type=text] {
   padding:15px;
   margin:0px 0px 15px;
@@ -144,7 +144,7 @@ Writing markup in a javascript file makes the content harder to find, harder to 
 
 **Correct example:**
 
-````
+````css
 .selector,
 .selector-secondary,
 .selector[type="text"] {
@@ -162,7 +162,7 @@ Questions on the terms used here? See the [syntax section of the Cascading Style
 
 Related declarations should be grouped together, placing positioning and box-model properties closest to the top, followed by typographic and visual properties.
 
-````
+````css
 .declaration-order {
   /* Positioning */
   position: absolute;
@@ -205,7 +205,7 @@ In some cases, it makes sense to deviate slightly from the default [syntax](#css
 
 When using vendor prefixed properties, indent each property such that the value lines up vertically for easy multi-line editing.
 
-````
+````css
 .selector {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
@@ -219,7 +219,7 @@ In Textmate, use **Text &rarr; Edit Each Line in Selection** (&#8963;&#8984;A). 
 
 In instances where several rules are present with only one declaration each, consider removing new line breaks for readability and faster editing.
 
-````
+````css
 .span1 { width: 60px; }
 .span2 { width: 140px; }
 .span3 { width: 220px; }
@@ -246,7 +246,7 @@ Great code comments convey context or purpose and should not just reiterate a co
 
 **Bad example:**
 
-````
+````css
 /* Modal header */
 .modal-header {
   ...
@@ -255,7 +255,7 @@ Great code comments convey context or purpose and should not just reiterate a co
 
 **Good example:**
 
-````
+````css
 /* Wrapping element for .modal-title and .modal-close */
 .modal-header {
   ...
@@ -272,7 +272,7 @@ Great code comments convey context or purpose and should not just reiterate a co
 
 **Bad example:**
 
-````
+````css
 .t { ... }
 .red { ... }
 .header { ... }
@@ -280,7 +280,7 @@ Great code comments convey context or purpose and should not just reiterate a co
 
 **Good example:**
 
-````
+````css
 .tweet { ... }
 .important { ... }
 .tweet-header { ... }
@@ -294,7 +294,7 @@ Great code comments convey context or purpose and should not just reiterate a co
 
 **Bad example:**
 
-````
+````css
 span { ... }
 .page-container #stream .stream-item .tweet .tweet-header .username { ... }
 .avatar { ... }
@@ -302,7 +302,7 @@ span { ... }
 
 **Good example:**
 
-````
+````css
 .avatar { ... }
 .tweet-header .username { ... }
 .tweet .avatar { ... }
