@@ -5,11 +5,11 @@ Standards for developing flexible, durable, and sustainable HTML and CSS.
 
 ## Table of contents
 
-* [#golden-rule](Golden rule)
-* [#html](HTML)
-  * [#html-syntax](Syntax)
-* [#css](CSS)
-* [#copy](Writing copy)
+* [Golden rule](#golden-rule)
+* [HTML](#html)
+  * [Syntax](#html-syntax)
+* [CSS](#css)
+* [Writing copy](#copy)
 
 
 
