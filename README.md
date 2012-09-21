@@ -32,19 +32,22 @@ This means strictly enforcing these agreed upon guidelines at all times. For add
 
 **Incorrect example:**
 
-  &lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-  &lt;head&gt;
-  &lt;title&gt;Page title&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-  &lt;img src='images/company-logo.png' alt='Company' /&gt;
-  &lt;h1 class='hello-world'&gt;Hello, world!&lt;/h1&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
+````
+<!DOCTYPE html>
+<html>
+<head>
+<title&gt;Page title&lt;/title>
+</head>
+<body>
+<img src='images/company-logo.png' alt='Company' />
+<h1 class='hello-world'&gt;Hello, world!&lt;/h1>
+</body>
+</html>
+````
 
 **Correct example:**
 
+````
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -55,6 +58,7 @@ This means strictly enforcing these agreed upon guidelines at all times. For add
     &lt;h1 class="hello-world"&gt;Hello, world!&lt;/h1&gt;
   &lt;/body&gt;
 &lt;/html&gt;
+````
 
 
 
