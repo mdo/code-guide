@@ -12,8 +12,23 @@ Standards for developing flexible, durable, and sustainable HTML and CSS.
 * [Golden rule](#golden-rule)
 * [HTML](#html)
   * [Syntax](#html-syntax)
+  * [HTML5 doctype](#html5-doctype)
+  * [Pragmatism over semantics](#pragmatism-over-semantics)
+  * [Attribute order](#attribute-order)
+  * [JavaScript generated markup](#javascript-generated markup)
 * [CSS](#css)
+  * [CSS syntax](#css-syntax)
+  * [Declaration order](#declaration-order)
+  * [Formatting exceptions](#formatting-exceptions)
+    * [Prefixed properties](#prefixed-properties)
+    * [Rules with single declarations](#rules-with-single-declarations)
+  * [Human readable](#human-readable)
+    * [Comments](#comments)
+    * [Classes](#classes)
+    * [Selectors](#selectors)
+  * [Organization](#organization)
 * [Writing copy](#copy)
+  * [Sentence case](#sentence-case)
 
 
 
