@@ -339,7 +339,7 @@ span { ... }
 
 ### Sentence case
 
-Always write copy, including headings and code comments, in [sentence case](http://en.wikipedia.org/wiki/Letter_case#Usage_. In other words, aside from titles and proper nouns, only the first word should be capitalized.
+Always write copy, including headings and code comments, in [sentence case](http://en.wikipedia.org/wiki/Letter_case#Usage). In other words, aside from titles and proper nouns, only the first word should be capitalized.
 
 
 
