@@ -135,7 +135,7 @@ Writing markup in a javascript file makes the content harder to find, harder to 
 * Use soft-tabs with two spaces
 * When grouping selectors, keep individual selectors to a single line
 * Include one space before the opening brace of declaration blocks
-* Place closing praces of declaration blocks on a new line
+* Place closing braces of declaration blocks on a new line
 * Include one space after <code>:</code> in each property
 * Each declaration should appear on its own line
 * End all declarations with a semi-colon
