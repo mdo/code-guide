@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1">
+    <link href="/public/ico/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+
+    <title>
+      
+      Title &middot;
+      
+      Code Guide
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/public/css/code-guide.css" type="text/css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      <header class="masthead">
+  <h1>Code Guide</h1>
+  <p>Standards for developing flexible, durable, and sustainable HTML and CSS.</p>
+</header>
+
+
+      <div class="post">
+  <h1>Title</h1>
+  <span class="post-date">25 Nov 2012</span>
+  <div class="tweet-button">
+  <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="horizontal" data-via="mdo" data-url="http://mdo.github.com/code-guide" data-text="Code Guide:">Tweet</a>
+</div>
+
+  <h2>Table of contents</h2>
+
+<ul>
+<li><a href="#golden-rule">Golden rule</a></li>
+<li><a href="#html">HTML</a>
+
+<ul>
+<li><a href="#html-syntax">Syntax</a></li>
+<li><a href="#html5-doctype">HTML5 doctype</a></li>
+<li><a href="#pragmatism-over-semantics">Pragmatism over semantics</a></li>
+<li><a href="#attribute-order">Attribute order</a></li>
+<li><a href="#javascript-generated%20markup">JavaScript generated markup</a></li>
+</ul>
+</li>
+<li><a href="#css">CSS</a>
+
+<ul>
+<li><a href="#css-syntax">CSS syntax</a></li>
+<li><a href="#declaration-order">Declaration order</a></li>
+<li><a href="#formatting-exceptions">Formatting exceptions</a>
+
+<ul>
+<li><a href="#prefixed-properties">Prefixed properties</a></li>
+<li><a href="#rules-with-single-declarations">Rules with single declarations</a></li>
+</ul>
+</li>
+<li><a href="#human-readable">Human readable</a>
+
+<ul>
+<li><a href="#comments">Comments</a></li>
+<li><a href="#classes">Classes</a></li>
+<li><a href="#selectors">Selectors</a></li>
+</ul>
+</li>
+<li><a href="#organization">Organization</a></li>
+</ul>
+</li>
+<li><a href="#copy">Writing copy</a>
+
+<ul>
+<li><a href="#sentence-case">Sentence case</a></li>
+</ul>
+</li>
+</ul>
+
+
+<hr />
+
+<h2>Golden rule</h2>
+
+<blockquote><p>All code in any code base should look like a single person typed it, no matter how many people contributed.</p></blockquote>
+
+<p>This means strictly enforcing these agreed upon guidelines at all times. For additions or contributions, please <a href="https://github.com/markdotto/code-guide">file an issue on GitHub</a>.</p>
+
+<hr />
+
+<h2>HTML</h2>
+
+<h3>HTML syntax</h3>
+
+<ul>
+<li>Use soft-tabs with two spaces</li>
+<li>Nested elements should be indented once (2 spaces)</li>
+<li>Always use double quotes, never single quotes</li>
+<li>Don't include a trailing slash in self-closing elements</li>
+</ul>
+
+
+<p><strong>Incorrect example:</strong></p>
+
+<p>````html
+&lt;!DOCTYPE html>
+<html>
+<head>
+<title>Page title</title>
+</head>
+<body>
+<img src='images/company-logo.png' alt='Company' /></p>
+
+<h1 class='hello-world'>Hello, world!</h1>
+
+
+<p></body>
+</html>
+````</p>
+
+<p><strong>Correct example:</strong></p>
+
+<p>````html
+&lt;!DOCTYPE html>
+<html>
+  <head></p>
+
+<pre><code>&lt;title&gt;Page title&lt;/title&gt;
+</code></pre>
+
+<p>  </head>
+  <body></p>
+
+<pre><code>&lt;img src="images/company-logo.png" alt="Company"&gt;
+&lt;h1 class="hello-world"&gt;Hello, world!&lt;/h1&gt;
+</code></pre>
+
+<p>  </body>
+</html>
+````</p>
+
+<h3>HTML5 doctype</h3>
+
+<p>Enforce standards mode in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+
+<p><code>html
+&lt;!DOCTYPE html&gt;
+</code></p>
+
+<h3>Pragmatism over semantics</h3>
+
+<p>Strive to maintain HTML standards and semantics, but don't sacrifice pragmatism. Use the least amount of markup with the fewest intricies whenever possible.</p>
+
+<h3>Attribute order</h3>
+
+<p>HTML attributes should come in this particular order for easier reading of code.</p>
+
+<ul>
+<li>class</li>
+<li>id</li>
+<li>data-*</li>
+<li>for|type|href</li>
+</ul>
+
+
+<p>Such that your markup looks like:</p>
+
+<p><code>html
+&lt;a class="" id="" data-modal="" href=""&gt;Example link&lt;/a&gt;
+</code></p>
+
+<h3>JavaScript generated markup</h3>
+
+<p>Writing markup in a javascript file makes the content harder to find, harder to edit, and less performant. Don't do it.</p>
+
+<hr />
+
+<h2>CSS</h2>
+
+<h3>CSS syntax</h3>
+
+<ul>
+<li>Use soft-tabs with two spaces</li>
+<li>When grouping selectors, keep individual selectors to a single line</li>
+<li>Include one space before the opening brace of declaration blocks</li>
+<li>Place closing braces of declaration blocks on a new line</li>
+<li>Include one space after <code>:</code> in each property</li>
+<li>Each declaration should appear on its own line</li>
+<li>End all declarations with a semi-colon</li>
+<li>Comma-separated values should include a space after each comma</li>
+<li>Don't include spaces after commas in RGB or RGBa colors, and don't preface values with a leading zero</li>
+<li>Lowercase all hex values, e.g., <code>#fff</code> instead of <code>#FFF</code></li>
+<li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code></li>
+<li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code></li>
+<li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code></li>
+</ul>
+
+
+<p><strong>Incorrect example:</strong></p>
+
+<p><code>css
+.selector, .selector-secondary, .selector[type=text] {
+  padding:15px;
+  margin:0px 0px 15px;
+  background-color:rgba(0, 0, 0, 0.5);
+  box-shadow:0 1px 2px #CCC,inset 0 1px 0 #FFFFFF
+}
+</code></p>
+
+<p><strong>Correct example:</strong></p>
+
+<p><code>css
+.selector,
+.selector-secondary,
+.selector[type="text"] {
+  padding: 15px;
+  margin: 0 0 15px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
+}
+</code></p>
+
+<p>Questions on the terms used here? See the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p>
+
+<h3>Declaration order</h3>
+
+<p>Related declarations should be grouped together, placing positioning and box-model properties closest to the top, followed by typographic and visual properties.</p>
+
+<p>````css
+.declaration-order {
+  /<em> Positioning </em>/
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;</p>
+
+<p>  /<em> Box-model </em>/
+  display: block;
+  float: right;
+  width: 100px;
+  height: 100px;</p>
+
+<p>  /<em> Typography </em>/
+  font: normal 13px "Helvetica Neue", sans-serif;
+  line-height: 1.5
+  color: #333;
+  text-align: center;</p>
+
+<p>  /<em> Visual </em>/
+  background-color: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;</p>
+
+<p>  /<em> Misc </em>/
+  opacity: 1;
+}
+````</p>
+
+<p>For a complete list of properties and their order, please see <a href="http://twitter.github.com/recess">Recess</a>.</p>
+
+<h3>Formatting exceptions</h3>
+
+<p>In some cases, it makes sense to deviate slightly from the default <a href="#css-syntax">syntax</a>.</p>
+
+<h4>Prefixed properties</h4>
+
+<p>When using vendor prefixed properties, indent each property such that the value lines up vertically for easy multi-line editing.</p>
+
+<p>````css
+.selector {
+  -webkit-border-radius: 3px;</p>
+
+<pre><code> -moz-border-radius: 3px;
+      border-radius: 3px;
+</code></pre>
+
+<p>}
+````</p>
+
+<p>In Textmate, use <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A). In Sublime Text 2, use <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) and <strong>Selection &rarr;  Add Next Line</strong> (&#8963;&#8679;&darr;).</p>
+
+<h4>Rules with single declarations</h4>
+
+<p>In instances where several rules are present with only one declaration each, consider removing new line breaks for readability and faster editing.</p>
+
+<p>````css
+.span1 { width: 60px; }
+.span2 { width: 140px; }
+.span3 { width: 220px; }</p>
+
+<p>.sprite {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-image: url(../img/sprite.png);
+}
+.icon           { background-position: 0 0; }
+.icon-home      { background-position: 0 -20px; }
+.icon-account   { background-position: 0 -40px; }
+````</p>
+
+<h3>Human readable</h3>
+
+<p>Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others.</p>
+
+<h4>Comments</h4>
+
+<p>Great code comments convey context or purpose and should not just reiterate a component or class name.</p>
+
+<p><strong>Bad example:</strong></p>
+
+<p><code>css
+/* Modal header */
+.modal-header {
+  ...
+}
+</code></p>
+
+<p><strong>Good example:</strong></p>
+
+<p><code>css
+/* Wrapping element for .modal-title and .modal-close */
+.modal-header {
+  ...
+}
+</code></p>
+
+<h4>Class names</h4>
+
+<ul>
+<li>Keep classes lowercase and use dashes (not underscores or camelCase)</li>
+<li>Avoid arbitrary shorthand notation</li>
+<li>Keep classes as short and succinct as possible</li>
+<li>Use meaningful names; use structural or purposeful names over presentational</li>
+<li>Prefix classes based on the closest parent component's base class</li>
+</ul>
+
+
+<p><strong>Bad example:</strong></p>
+
+<p><code>css
+.t { ... }
+.red { ... }
+.header { ... }
+</code></p>
+
+<p><strong>Good example:</strong></p>
+
+<p><code>css
+.tweet { ... }
+.important { ... }
+.tweet-header { ... }
+</code></p>
+
+<h4>Selectors</h4>
+
+<ul>
+<li>Use classes over generic element tags</li>
+<li>Keep them short and limit the number of elements in each selector to three</li>
+<li>Scope classes to the closest parent when necessary (e.g., when not using prefixed classes)</li>
+</ul>
+
+
+<p><strong>Bad example:</strong></p>
+
+<p><code>css
+span { ... }
+.page-container #stream .stream-item .tweet .tweet-header .username { ... }
+.avatar { ... }
+</code></p>
+
+<p><strong>Good example:</strong></p>
+
+<p><code>css
+.avatar { ... }
+.tweet-header .username { ... }
+.tweet .avatar { ... }
+</code></p>
+
+<h3>Organization</h3>
+
+<ul>
+<li>Organize sections of code by component</li>
+<li>Develop a consistent commenting hierarchy</li>
+<li>If using multiple CSS files, break them down by component</li>
+</ul>
+
+
+<hr />
+
+<h2>Copy</h2>
+
+<h3>Sentence case</h3>
+
+<p>Always write copy, including headings and code comments, in <a href="http://en.wikipedia.org/wiki/Letter_case#Usage">sentence case</a>. In other words, aside from titles and proper nouns, only the first word should be capitalized.</p>
+
+<hr />
+
+<h3>Thanks</h3>
+
+<p>Heavily inspired by <a href="https://github.com/necolas/idiomatic-css">Idiomatic CSS</a> and the <a href="http://github.com/styleguide">GitHub Styleguide</a>. Made with all the love in the world by <a href="http://twitter.com/mdo">@mdo</a>.</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    
+  </ul>
+</div>
+
+
+      <footer class="colophon">
+  <ul class="quick-links">
+    <li><a href="http://getbootstrap.com">View the docs</a></li>
+    <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Submit issues</a></li>
+    <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
+  </ul>
+  <ul class="quick-links">
+    <li>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="112px" height="20px"></iframe>
+    </li>
+    <li>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+    </li>
+  </ul>
+  <ul class="quick-links">
+    <li class="follow-btn">
+      <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
+    </li>
+    <li class="tweet-btn">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+    </li>
+  </ul>
+
+  <p>&copy; 2012. All rights reserved.</p>
+</footer>
+
+
+    </div> <!-- /close container -->
+
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+<script type="text/javascript">
+  var _gauges = _gauges || [];
+  (function() {
+    var t   = document.createElement('script');
+    t.type  = 'text/javascript';
+    t.async = true;
+    t.id    = 'gauges-tracker';
+    t.setAttribute('data-site-id', '4f6ac530613f5d32c2000037');
+    t.src = '//secure.gaug.es/track.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  })();
+</script>
+
+
+  </body>
+</html>

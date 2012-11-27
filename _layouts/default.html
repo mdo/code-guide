@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0, maximum-scale=1">
+    <link href="/public/ico/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+
+    <title>
+      {% if page.title %}
+      {{ page.title }} &middot;
+      {% endif %}
+      {{ site.name }}
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/public/css/code-guide.css" type="text/css">
+  </head>
+  <body>
+
+    <div class="container">
+
+      {% include header.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+
+    </div> <!-- /close container -->
+
+    {% include js.html %}
+
+  </body>
+</html>
