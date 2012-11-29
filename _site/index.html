@@ -13,6 +13,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/public/css/code-guide.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/pygments-monokai.css" type="text/css">
   </head>
   <body>
 
@@ -99,50 +100,44 @@
 
 <p><strong>Incorrect example:</strong></p>
 
-<p>````html
-&lt;!DOCTYPE html>
-<html>
-<head>
-<title>Page title</title>
-</head>
-<body>
-<img src='images/company-logo.png' alt='Company' /></p>
+<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;title&gt;</span>Page title<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&#39;images/company-logo.png&#39;</span> <span class="na">alt=</span><span class="s">&#39;Company&#39;</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&#39;hello-world&#39;</span><span class="nt">&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+</div>
 
-<h1 class='hello-world'>Hello, world!</h1>
-
-
-<p></body>
-</html>
-````</p>
 
 <p><strong>Correct example:</strong></p>
 
-<p>````html
-&lt;!DOCTYPE html>
-<html>
-  <head></p>
-
-<pre><code>&lt;title&gt;Page title&lt;/title&gt;
+<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Page title<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">&quot;images/company-logo.png&quot;</span> <span class="na">alt=</span><span class="s">&quot;Company&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">&quot;hello-world&quot;</span><span class="nt">&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
 </code></pre>
+</div>
 
-<p>  </head>
-  <body></p>
-
-<pre><code>&lt;img src="images/company-logo.png" alt="Company"&gt;
-&lt;h1 class="hello-world"&gt;Hello, world!&lt;/h1&gt;
-</code></pre>
-
-<p>  </body>
-</html>
-````</p>
 
 <h3>HTML5 doctype</h3>
 
 <p>Enforce standards mode in every browser possible with this simple doctype at the beginning of every HTML page.</p>
 
-<p><code>html
-&lt;!DOCTYPE html&gt;
-</code></p>
+<div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</code></pre>
+</div>
+
 
 <h3>Pragmatism over semantics</h3>
 
@@ -162,9 +157,10 @@
 
 <p>Such that your markup looks like:</p>
 
-<p><code>html
-&lt;a class="" id="" data-modal="" href=""&gt;Example link&lt;/a&gt;
-</code></p>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">&quot;&quot;</span> <span class="na">id=</span><span class="s">&quot;&quot;</span> <span class="na">data-modal=</span><span class="s">&quot;&quot;</span> <span class="na">href=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>Example link<span class="nt">&lt;/a&gt;</span>
+</code></pre>
+</div>
+
 
 <h3>JavaScript generated markup</h3>
 
@@ -195,27 +191,29 @@
 
 <p><strong>Incorrect example:</strong></p>
 
-<p><code>css
-.selector, .selector-secondary, .selector[type=text] {
-  padding:15px;
-  margin:0px 0px 15px;
-  background-color:rgba(0, 0, 0, 0.5);
-  box-shadow:0 1px 2px #CCC,inset 0 1px 0 #FFFFFF
-}
-</code></p>
+<div class="highlight"><pre><code class="css"><span class="nc">.selector</span><span class="o">,</span> <span class="nc">.selector-secondary</span><span class="o">,</span> <span class="nc">.selector</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">text</span><span class="o">]</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span><span class="m">0px</span> <span class="m">0px</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span><span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">,</span> <span class="m">0</span><span class="o">.</span><span class="m">5</span><span class="p">);</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span><span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="m">#CCC</span><span class="o">,</span><span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">#FFFFFF</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
 
 <p><strong>Correct example:</strong></p>
 
-<p><code>css
-.selector,
-.selector-secondary,
-.selector[type="text"] {
-  padding: 15px;
-  margin: 0 0 15px;
-  background-color: rgba(0,0,0,.5);
-  box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
-}
-</code></p>
+<div class="highlight"><pre><code class="css"><span class="nc">.selector</span><span class="o">,</span>
+<span class="nc">.selector-secondary</span><span class="o">,</span>
+<span class="nc">.selector</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span><span class="o">]</span> <span class="p">{</span>
+  <span class="k">padding</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">margin</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,</span><span class="m">0</span><span class="o">,.</span><span class="m">5</span><span class="p">);</span>
+  <span class="n">box</span><span class="o">-</span><span class="n">shadow</span><span class="o">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="m">#ccc</span><span class="o">,</span> <span class="k">inset</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
 
 <p>Questions on the terms used here? See the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p>
 
@@ -223,37 +221,38 @@
 
 <p>Related declarations should be grouped together, placing positioning and box-model properties closest to the top, followed by typographic and visual properties.</p>
 
-<p>````css
-.declaration-order {
-  /<em> Positioning </em>/
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 100;</p>
+<div class="highlight"><pre><code class="css"><span class="nc">.declaration-order</span> <span class="p">{</span>
+  <span class="c">/* Positioning */</span>
+  <span class="k">position</span><span class="o">:</span> <span class="k">absolute</span><span class="p">;</span>
+  <span class="k">top</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">right</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">bottom</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">left</span><span class="o">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="k">z-index</span><span class="o">:</span> <span class="m">100</span><span class="p">;</span>
 
-<p>  /<em> Box-model </em>/
-  display: block;
-  float: right;
-  width: 100px;
-  height: 100px;</p>
+  <span class="c">/* Box-model */</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">block</span><span class="p">;</span>
+  <span class="k">float</span><span class="o">:</span> <span class="k">right</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">100px</span><span class="p">;</span>
 
-<p>  /<em> Typography </em>/
-  font: normal 13px "Helvetica Neue", sans-serif;
-  line-height: 1.5
-  color: #333;
-  text-align: center;</p>
+  <span class="c">/* Typography */</span>
+  <span class="k">font</span><span class="o">:</span> <span class="k">normal</span> <span class="m">13px</span> <span class="s2">&quot;Helvetica Neue&quot;</span><span class="o">,</span> <span class="k">sans-serif</span><span class="p">;</span>
+  <span class="k">line-height</span><span class="o">:</span> <span class="m">1</span><span class="o">.</span><span class="m">5</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#333</span><span class="p">;</span>
+  <span class="k">text-align</span><span class="o">:</span> <span class="k">center</span><span class="p">;</span>
 
-<p>  /<em> Visual </em>/
-  background-color: #f5f5f5;
-  border: 1px solid #e5e5e5;
-  border-radius: 3px;</p>
+  <span class="c">/* Visual */</span>
+  <span class="k">background-color</span><span class="o">:</span> <span class="m">#f5f5f5</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">:</span> <span class="m">1px</span> <span class="k">solid</span> <span class="m">#e5e5e5</span><span class="p">;</span>
+  <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
 
-<p>  /<em> Misc </em>/
-  opacity: 1;
-}
-````</p>
+  <span class="c">/* Misc */</span>
+  <span class="k">opacity</span><span class="o">:</span> <span class="m">1</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
 
 <p>For a complete list of properties and their order, please see <a href="http://twitter.github.com/recess">Recess</a>.</p>
 
@@ -265,16 +264,14 @@
 
 <p>When using vendor prefixed properties, indent each property such that the value lines up vertically for easy multi-line editing.</p>
 
-<p>````css
-.selector {
-  -webkit-border-radius: 3px;</p>
-
-<pre><code> -moz-border-radius: 3px;
-      border-radius: 3px;
+<div class="highlight"><pre><code class="css"><span class="nc">.selector</span> <span class="p">{</span>
+  <span class="o">-</span><span class="n">webkit</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+     <span class="o">-</span><span class="n">moz</span><span class="o">-</span><span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+          <span class="k">border</span><span class="o">-</span><span class="n">radius</span><span class="o">:</span> <span class="m">3px</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre>
+</div>
 
-<p>}
-````</p>
 
 <p>In Textmate, use <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A). In Sublime Text 2, use <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) and <strong>Selection &rarr;  Add Next Line</strong> (&#8963;&#8679;&darr;).</p>
 
@@ -282,21 +279,22 @@
 
 <p>In instances where several rules are present with only one declaration each, consider removing new line breaks for readability and faster editing.</p>
 
-<p>````css
-.span1 { width: 60px; }
-.span2 { width: 140px; }
-.span3 { width: 220px; }</p>
+<div class="highlight"><pre><code class="css"><span class="nc">.span1</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">60px</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.span2</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">140px</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.span3</span> <span class="p">{</span> <span class="k">width</span><span class="o">:</span> <span class="m">220px</span><span class="p">;</span> <span class="p">}</span>
 
-<p>.sprite {
-  display: inline-block;
-  width: 16px;
-  height: 15px;
-  background-image: url(../img/sprite.png);
-}
-.icon           { background-position: 0 0; }
-.icon-home      { background-position: 0 -20px; }
-.icon-account   { background-position: 0 -40px; }
-````</p>
+<span class="nc">.sprite</span> <span class="p">{</span>
+  <span class="k">display</span><span class="o">:</span> <span class="k">inline</span><span class="o">-</span><span class="k">block</span><span class="p">;</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">16px</span><span class="p">;</span>
+  <span class="k">height</span><span class="o">:</span> <span class="m">15px</span><span class="p">;</span>
+  <span class="k">background-image</span><span class="o">:</span> <span class="sx">url(../img/sprite.png)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.icon</span>           <span class="p">{</span> <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.icon-home</span>      <span class="p">{</span> <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">-20px</span><span class="p">;</span> <span class="p">}</span>
+<span class="nc">.icon-account</span>   <span class="p">{</span> <span class="k">background-position</span><span class="o">:</span> <span class="m">0</span> <span class="m">-40px</span><span class="p">;</span> <span class="p">}</span>
+</code></pre>
+</div>
+
 
 <h3>Human readable</h3>
 
@@ -308,21 +306,23 @@
 
 <p><strong>Bad example:</strong></p>
 
-<p><code>css
-/* Modal header */
-.modal-header {
-  ...
-}
-</code></p>
+<div class="highlight"><pre><code class="css"><span class="c">/* Modal header */</span>
+<span class="nc">.modal-header</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
 
 <p><strong>Good example:</strong></p>
 
-<p><code>css
-/* Wrapping element for .modal-title and .modal-close */
-.modal-header {
-  ...
-}
-</code></p>
+<div class="highlight"><pre><code class="css"><span class="c">/* Wrapping element for .modal-title and .modal-close */</span>
+<span class="nc">.modal-header</span> <span class="p">{</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
 
 <h4>Class names</h4>
 
@@ -337,19 +337,21 @@
 
 <p><strong>Bad example:</strong></p>
 
-<p><code>css
-.t { ... }
-.red { ... }
-.header { ... }
-</code></p>
+<div class="highlight"><pre><code class="css"><span class="nc">.t</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.red</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</code></pre>
+</div>
+
 
 <p><strong>Good example:</strong></p>
 
-<p><code>css
-.tweet { ... }
-.important { ... }
-.tweet-header { ... }
-</code></p>
+<div class="highlight"><pre><code class="css"><span class="nc">.tweet</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.important</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.tweet-header</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</code></pre>
+</div>
+
 
 <h4>Selectors</h4>
 
@@ -362,19 +364,21 @@
 
 <p><strong>Bad example:</strong></p>
 
-<p><code>css
-span { ... }
-.page-container #stream .stream-item .tweet .tweet-header .username { ... }
-.avatar { ... }
-</code></p>
+<div class="highlight"><pre><code class="css"><span class="nt">span</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.page-container</span> <span class="nf">#stream</span> <span class="nc">.stream-item</span> <span class="nc">.tweet</span> <span class="nc">.tweet-header</span> <span class="nc">.username</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</code></pre>
+</div>
+
 
 <p><strong>Good example:</strong></p>
 
-<p><code>css
-.avatar { ... }
-.tweet-header .username { ... }
-.tweet .avatar { ... }
-</code></p>
+<div class="highlight"><pre><code class="css"><span class="nc">.avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.tweet-header</span> <span class="nc">.username</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+<span class="nc">.tweet</span> <span class="nc">.avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
+</code></pre>
+</div>
+
 
 <h3>Organization</h3>
 

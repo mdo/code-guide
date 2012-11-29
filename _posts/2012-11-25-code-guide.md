@@ -57,7 +57,7 @@ This means strictly enforcing these agreed upon guidelines at all times. For add
 
 **Incorrect example:**
 
-````html
+{% highlight html %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,11 +68,11 @@ This means strictly enforcing these agreed upon guidelines at all times. For add
 <h1 class='hello-world'>Hello, world!</h1>
 </body>
 </html>
-````
+{% endhighlight %}
 
 **Correct example:**
 
-````html
+{% highlight html %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -83,16 +83,16 @@ This means strictly enforcing these agreed upon guidelines at all times. For add
     <h1 class="hello-world">Hello, world!</h1>
   </body>
 </html>
-````
+{% endhighlight %}
 
 
 ### HTML5 doctype
 
 Enforce standards mode in every browser possible with this simple doctype at the beginning of every HTML page.
 
-````html
+{% highlight html %}
 <!DOCTYPE html>
-````
+{% endhighlight %}
 
 
 ### Pragmatism over semantics
@@ -111,9 +111,9 @@ HTML attributes should come in this particular order for easier reading of code.
 
 Such that your markup looks like:
 
-````html
+{% highlight html %}
 <a class="" id="" data-modal="" href="">Example link</a>
-````
+{% endhighlight %}
 
 ### JavaScript generated markup
 
@@ -145,18 +145,18 @@ Writing markup in a javascript file makes the content harder to find, harder to 
 
 **Incorrect example:**
 
-````css
+{% highlight css %}
 .selector, .selector-secondary, .selector[type=text] {
   padding:15px;
   margin:0px 0px 15px;
   background-color:rgba(0, 0, 0, 0.5);
   box-shadow:0 1px 2px #CCC,inset 0 1px 0 #FFFFFF
 }
-````
+{% endhighlight %}
 
 **Correct example:**
 
-````css
+{% highlight css %}
 .selector,
 .selector-secondary,
 .selector[type="text"] {
@@ -165,7 +165,7 @@ Writing markup in a javascript file makes the content harder to find, harder to 
   background-color: rgba(0,0,0,.5);
   box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
 }
-````
+{% endhighlight %}
 
 Questions on the terms used here? See the [syntax section of the Cascading Style Sheets article](http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax) on Wikipedia.
 
@@ -174,7 +174,7 @@ Questions on the terms used here? See the [syntax section of the Cascading Style
 
 Related declarations should be grouped together, placing positioning and box-model properties closest to the top, followed by typographic and visual properties.
 
-````css
+{% highlight css %}
 .declaration-order {
   /* Positioning */
   position: absolute;
@@ -204,7 +204,7 @@ Related declarations should be grouped together, placing positioning and box-mod
   /* Misc */
   opacity: 1;
 }
-````
+{% endhighlight %}
 
 For a complete list of properties and their order, please see [Recess](http://twitter.github.com/recess).
 
@@ -217,13 +217,13 @@ In some cases, it makes sense to deviate slightly from the default [syntax](#css
 
 When using vendor prefixed properties, indent each property such that the value lines up vertically for easy multi-line editing.
 
-````css
+{% highlight css %}
 .selector {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
 }
-````
+{% endhighlight %}
 
 In Textmate, use **Text &rarr; Edit Each Line in Selection** (&#8963;&#8984;A). In Sublime Text 2, use **Selection &rarr; Add Previous Line** (&#8963;&#8679;&uarr;) and **Selection &rarr;  Add Next Line** (&#8963;&#8679;&darr;).
 
@@ -231,7 +231,7 @@ In Textmate, use **Text &rarr; Edit Each Line in Selection** (&#8963;&#8984;A). 
 
 In instances where several rules are present with only one declaration each, consider removing new line breaks for readability and faster editing.
 
-````css
+{% highlight css %}
 .span1 { width: 60px; }
 .span2 { width: 140px; }
 .span3 { width: 220px; }
@@ -245,7 +245,7 @@ In instances where several rules are present with only one declaration each, con
 .icon           { background-position: 0 0; }
 .icon-home      { background-position: 0 -20px; }
 .icon-account   { background-position: 0 -40px; }
-````
+{% endhighlight %}
 
 
 ### Human readable
@@ -258,21 +258,21 @@ Great code comments convey context or purpose and should not just reiterate a co
 
 **Bad example:**
 
-````css
+{% highlight css %}
 /* Modal header */
 .modal-header {
   ...
 }
-````
+{% endhighlight %}
 
 **Good example:**
 
-````css
+{% highlight css %}
 /* Wrapping element for .modal-title and .modal-close */
 .modal-header {
   ...
 }
-````
+{% endhighlight %}
 
 #### Class names
 
@@ -284,19 +284,19 @@ Great code comments convey context or purpose and should not just reiterate a co
 
 **Bad example:**
 
-````css
+{% highlight css %}
 .t { ... }
 .red { ... }
 .header { ... }
-````
+{% endhighlight %}
 
 **Good example:**
 
-````css
+{% highlight css %}
 .tweet { ... }
 .important { ... }
 .tweet-header { ... }
-````
+{% endhighlight %}
 
 #### Selectors
 
@@ -306,19 +306,19 @@ Great code comments convey context or purpose and should not just reiterate a co
 
 **Bad example:**
 
-````css
+{% highlight css %}
 span { ... }
 .page-container #stream .stream-item .tweet .tweet-header .username { ... }
 .avatar { ... }
-````
+{% endhighlight %}
 
 **Good example:**
 
-````css
+{% highlight css %}
 .avatar { ... }
 .tweet-header .username { ... }
 .tweet .avatar { ... }
-````
+{% endhighlight %}
 
 ### Organization
 
