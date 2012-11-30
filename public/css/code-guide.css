@@ -1,18 +1,50 @@
 body {
   margin: 0;
-  padding: 30px;
-  font: 14px/1.5 "Menlo", monospace;
+  padding: 3rem;
+  font: 16px/1.5 "Droid Sans", sans-serif;
   color: #5a5a5a;
 }
 
+a {
+  color: #08c;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: normal;
+  color: #3a3a3a;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  margin-top: 2rem;
+  font-size: 2.25rem;
+}
+h3 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+.lead {
+  font-size: 1.5rem;
+}
+
+strong {
   font-weight: normal;
 }
+
 
 code, pre {
   padding: 0 3px 2px;
   font-family: Menlo, Monaco, "Courier New", monospace;
-  font-size: 15px;
   border-radius: 3px;
 }
 code {
@@ -24,9 +56,8 @@ code {
 
 pre {
   display: block;
-  margin: 0 0 14px;
-  font-size: 14px;
-  line-height: 28px;
+  margin: 0 0 1rem;
+  line-height: 2rem;
   white-space: pre;
   white-space: pre-wrap;
   word-break: break-all;
@@ -39,15 +70,58 @@ pre code {
   border: 0;
 }
 .highlight {
-  margin-bottom: 14px;
-  padding: 14px;
+  margin: 0 -1rem 1rem;
+  padding: 1rem;
   border-radius: 5px;
 }
 .highlight pre {
   margin-bottom: 0;
 }
 
+
+hr {
+  position: relative;
+  margin: 4rem 0;
+  border: 0;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #fff;
+}
+hr:after {
+  position: absolute;
+  top: -1rem;
+  left: 50%;
+  display: block;
+  width: 6rem;
+  padding: 0 1rem;
+  margin-left: -4rem;
+  content: "# # #";
+  font-size: 1.5rem;
+  color: #ccc;
+  text-align: center;
+  background-color: #fff;
+}
+
+
 .container {
-  max-width: 760px;
+  max-width: 700px;
   margin: 0 auto;
+}
+
+.masthead {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.footer {
+  font-size: .75rem;
+  text-align: center;
+}
+
+.quick-links {
+  list-style: none;
+  margin-left: 0;
+}
+.quick-links li {
+  display: inline;
 }

@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Title
+layout: default
 ---
 
 
@@ -55,7 +54,7 @@ This means strictly enforcing these agreed upon guidelines at all times. For add
 * Always use double quotes, never single quotes
 * Don't include a trailing slash in self-closing elements
 
-**Incorrect example:**
+#### Incorrect example
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -70,7 +69,7 @@ This means strictly enforcing these agreed upon guidelines at all times. For add
 </html>
 {% endhighlight %}
 
-**Correct example:**
+#### Correct example
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -143,7 +142,7 @@ Writing markup in a javascript file makes the content harder to find, harder to 
 * Quote attribute values in selectors, e.g., <code>input[type="text"]</code>
 * Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>
 
-**Incorrect example:**
+#### Incorrect example
 
 {% highlight css %}
 .selector, .selector-secondary, .selector[type=text] {
@@ -154,7 +153,7 @@ Writing markup in a javascript file makes the content harder to find, harder to 
 }
 {% endhighlight %}
 
-**Correct example:**
+#### Correct example
 
 {% highlight css %}
 .selector,
@@ -256,7 +255,7 @@ Code is written and maintained by people. Ensure your code is descriptive, well 
 
 Great code comments convey context or purpose and should not just reiterate a component or class name.
 
-**Bad example:**
+#### Bad example
 
 {% highlight css %}
 /* Modal header */
@@ -265,7 +264,7 @@ Great code comments convey context or purpose and should not just reiterate a co
 }
 {% endhighlight %}
 
-**Good example:**
+#### Good example
 
 {% highlight css %}
 /* Wrapping element for .modal-title and .modal-close */
@@ -282,7 +281,7 @@ Great code comments convey context or purpose and should not just reiterate a co
 * Use meaningful names; use structural or purposeful names over presentational
 * Prefix classes based on the closest parent component's base class
 
-**Bad example:**
+#### Bad example
 
 {% highlight css %}
 .t { ... }
@@ -290,7 +289,7 @@ Great code comments convey context or purpose and should not just reiterate a co
 .header { ... }
 {% endhighlight %}
 
-**Good example:**
+#### Good example
 
 {% highlight css %}
 .tweet { ... }
@@ -304,7 +303,7 @@ Great code comments convey context or purpose and should not just reiterate a co
 * Keep them short and limit the number of elements in each selector to three
 * Scope classes to the closest parent when necessary (e.g., when not using prefixed classes)
 
-**Bad example:**
+#### Bad example
 
 {% highlight css %}
 span { ... }
@@ -312,7 +311,7 @@ span { ... }
 .avatar { ... }
 {% endhighlight %}
 
-**Good example:**
+#### Good example
 
 {% highlight css %}
 .avatar { ... }
@@ -346,4 +345,5 @@ Always write copy, including headings and code comments, in [sentence case](http
 
 ### Thanks
 
-Heavily inspired by [Idiomatic CSS](https://github.com/necolas/idiomatic-css) and the [GitHub Styleguide](http://github.com/styleguide). Made with all the love in the world by [@mdo](http://twitter.com/mdo).
+Inspired by [Idiomatic CSS](https://github.com/necolas/idiomatic-css) and the [GitHub Styleguide](http://github.com/styleguide). Made with all the love in the world by [@mdo](http://twitter.com/mdo).
+

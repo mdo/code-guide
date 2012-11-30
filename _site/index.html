@@ -14,6 +14,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/public/css/code-guide.css" type="text/css">
     <link rel="stylesheet" href="/public/css/pygments-monokai.css" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
@@ -21,16 +22,12 @@
 
       <header class="masthead">
   <h1>Code Guide</h1>
-  <p>Standards for developing flexible, durable, and sustainable HTML and CSS.</p>
+  <p class="lead">Standards for developing flexible, durable, and sustainable HTML and CSS.</p>
 </header>
 
+<hr>
 
-      
-  <div class="tweet-button">
-  <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-count="horizontal" data-via="mdo" data-url="http://mdo.github.com/code-guide" data-text="Code Guide:">Tweet</a>
-</div>
-
-  <h2>Table of contents</h2>
+      <h2>Table of contents</h2>
 
 <ul>
 <li><a href="#golden-rule">Golden rule</a></li>
@@ -98,7 +95,7 @@
 </ul>
 
 
-<p><strong>Incorrect example:</strong></p>
+<h4>Incorrect example</h4>
 
 <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
@@ -114,7 +111,7 @@
 </div>
 
 
-<p><strong>Correct example:</strong></p>
+<h4>Correct example</h4>
 
 <div class="highlight"><pre><code class="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
@@ -189,7 +186,7 @@
 </ul>
 
 
-<p><strong>Incorrect example:</strong></p>
+<h4>Incorrect example</h4>
 
 <div class="highlight"><pre><code class="css"><span class="nc">.selector</span><span class="o">,</span> <span class="nc">.selector-secondary</span><span class="o">,</span> <span class="nc">.selector</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">text</span><span class="o">]</span> <span class="p">{</span>
   <span class="k">padding</span><span class="o">:</span><span class="m">15px</span><span class="p">;</span>
@@ -201,7 +198,7 @@
 </div>
 
 
-<p><strong>Correct example:</strong></p>
+<h4>Correct example</h4>
 
 <div class="highlight"><pre><code class="css"><span class="nc">.selector</span><span class="o">,</span>
 <span class="nc">.selector-secondary</span><span class="o">,</span>
@@ -304,7 +301,7 @@
 
 <p>Great code comments convey context or purpose and should not just reiterate a component or class name.</p>
 
-<p><strong>Bad example:</strong></p>
+<h4>Bad example</h4>
 
 <div class="highlight"><pre><code class="css"><span class="c">/* Modal header */</span>
 <span class="nc">.modal-header</span> <span class="p">{</span>
@@ -314,7 +311,7 @@
 </div>
 
 
-<p><strong>Good example:</strong></p>
+<h4>Good example</h4>
 
 <div class="highlight"><pre><code class="css"><span class="c">/* Wrapping element for .modal-title and .modal-close */</span>
 <span class="nc">.modal-header</span> <span class="p">{</span>
@@ -335,7 +332,7 @@
 </ul>
 
 
-<p><strong>Bad example:</strong></p>
+<h4>Bad example</h4>
 
 <div class="highlight"><pre><code class="css"><span class="nc">.t</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nc">.red</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
@@ -344,7 +341,7 @@
 </div>
 
 
-<p><strong>Good example:</strong></p>
+<h4>Good example</h4>
 
 <div class="highlight"><pre><code class="css"><span class="nc">.tweet</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nc">.important</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
@@ -362,7 +359,7 @@
 </ul>
 
 
-<p><strong>Bad example:</strong></p>
+<h4>Bad example</h4>
 
 <div class="highlight"><pre><code class="css"><span class="nt">span</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nc">.page-container</span> <span class="nf">#stream</span> <span class="nc">.stream-item</span> <span class="nc">.tweet</span> <span class="nc">.tweet-header</span> <span class="nc">.username</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
@@ -371,7 +368,7 @@
 </div>
 
 
-<p><strong>Good example:</strong></p>
+<h4>Good example</h4>
 
 <div class="highlight"><pre><code class="css"><span class="nc">.avatar</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
 <span class="nc">.tweet-header</span> <span class="nc">.username</span> <span class="p">{</span> <span class="o">...</span> <span class="p">}</span>
@@ -401,31 +398,26 @@
 
 <h3>Thanks</h3>
 
-<p>Heavily inspired by <a href="https://github.com/necolas/idiomatic-css">Idiomatic CSS</a> and the <a href="http://github.com/styleguide">GitHub Styleguide</a>. Made with all the love in the world by <a href="http://twitter.com/mdo">@mdo</a>.</p>
+<p>Inspired by <a href="https://github.com/necolas/idiomatic-css">Idiomatic CSS</a> and the <a href="http://github.com/styleguide">GitHub Styleguide</a>. Made with all the love in the world by <a href="http://twitter.com/mdo">@mdo</a>.</p>
 
 
+      <hr>
 
-
-      <footer class="colophon">
-  <ul class="quick-links">
-    <li><a href="http://getbootstrap.com">View the docs</a></li>
-    <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Submit issues</a></li>
-    <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
-  </ul>
+<footer class="footer">
   <ul class="quick-links">
     <li>
-      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="112px" height="20px"></iframe>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=mdo&repo=code-guide&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="112px" height="20px"></iframe>
     </li>
     <li>
-      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=mdo&repo=code-guide&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="98px" height="20px"></iframe>
     </li>
   </ul>
   <ul class="quick-links">
     <li class="follow-btn">
-      <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
+      <a href="https://twitter.com/mdo" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @mdo</a>
     </li>
     <li class="tweet-btn">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://mdo.github.com/code-guide" data-count="horizontal" data-via="mdo">Tweet</a>
     </li>
   </ul>
 
