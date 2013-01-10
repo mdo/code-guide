@@ -40,7 +40,7 @@ Standards for developing flexible, durable, and sustainable HTML and CSS.
 
 > All code in any code base should look like a single person typed it, no matter how many people contributed.
 
-This means strictly enforcing these agreed upon guidelines at all times. For additions or contributions, please [file an issue on GitHub](https://github.com/markdotto/code-guide).
+This means strictly enforcing these agreed upon guidelines at all times. For additions or contributions, please [file an issue on GitHub](https://github.com/mdo/code-guide).
 
 
 
