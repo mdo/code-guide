@@ -15,7 +15,7 @@ Standards for developing flexible, durable, and sustainable HTML and CSS.
   * [HTML5 doctype](#html5-doctype)
   * [Pragmatism over semantics](#pragmatism-over-semantics)
   * [Attribute order](#attribute-order)
-  * [JavaScript generated markup](#avascript-generated-markup)
+  * [JavaScript generated markup](#javascript-generated-markup)
 * [CSS](#css)
   * [CSS syntax](#css-syntax)
   * [Declaration order](#declaration-order)

@@ -9,25 +9,25 @@ Padrões para o desenvolvimento de um HTML e CSS flexível, durável e sustentá
 
 ## Índice
 
-* [Regra de Ouro](#regra-de-oruo)
+* [Regra de Ouro](#regra-de-ouro)
 * [HTML](#html)
   * [Sintaxe](#sintaxe-do-html)
   * [Doctype HTML5](#doctype-html5)
-  * [Pragmatismo sobre semântica](#pragmatismo-sobre-semantica)
+  * [Pragmatismo acima de semântica](#pragmatismo-acima-da-semntica)
   * [Ordem dos atributos](#ordem-dos-atributos)
-  * [Marcação gerada via JavaScript](#marcacao-gerada-via-javascript)
+  * [Marcação gerada via JavaScript](#marcao-gerada-via-javascript)
 * [CSS](#css)
   * [Sintaxe do CSS](#sintaxe-do-css)
-  * [Ordem de declaração](#ordem-de-declaracao)
-  * [Excessões de formatação](#excessoes-de-formatacao)
+  * [Ordem de declaração](#ordem-de-declarao)
+  * [Exceções de formatação](#excesses-de-formatao)
     * [Propriedades com prefixo](#propriedades-com-prefixo)
-    * [Regras com declarações únicas](#regras-com-declaracoes-unicas)
+    * [Regras com declarações únicas](#regras-com-decalaraes-nicas)
   * [Legibilidade](#legibilidade)
-    * [Comentários](#comentarios)
+    * [Comentários](#comentrios)
     * [Classes](#classes)
     * [Seletores](#seletores)
-  * [Organização](#organizacao)
-* [Writing copy](#copy)
+  * [Organização](#organizao)
+* [Writing copy](#copia)
   * [Sentence case](#sentence-case)
 
 
@@ -99,7 +99,7 @@ Obriga o modelo padrão em todos navegadores possíveis com esse simples doctype
 ````
 
 
-### Pragmatismo acima da semântica
+### Pragmatismo acima de semântica
 
 Empenhe-se para manter os padrões HTML e a semântica, mas não sacrifique o pragmatismo. Use a quantidade mínima de marcação com a menor complexidade quando possível.
 
@@ -174,7 +174,7 @@ Escrever marcação em um arquivo javascript faz com que o conteúdo seja mais d
 Dúvidas sobre os termos usados aqui? Consulte a [seção sobre sintaxe no artigo de Cascading Style Sheets](http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax) na Wikipedia.
 
 
-### Ordem de Declaração
+### Ordem de declaração
 
 Declarações relacionadas devem ser agrupadas juntas, colocando as propriedades de posicionamento e box-model próximas do topo, seguidas por tipografia e propriedades visuais.
 
@@ -213,11 +213,11 @@ Declarações relacionadas devem ser agrupadas juntas, colocando as propriedades
 Para uma completa lista de propriedades e sua ordem, por favor veja [Recess](http://twitter.github.com/recess).
 
 
-### Excessões de dormatação
+### Exceções de formatação
 
 Em alguns casos, faz sentido desviar-se ligeiramente da [sintaxe](#sintaxe-do-css) padrão.
 
-#### Propriedades com Prefixo
+#### Propriedades com prefixo
 
 Ao usar propriedades com prefixos, indente cada propriedade de tal forma que o valor se alinhe verticalmente para uma fácil edição multi-linha.
 
