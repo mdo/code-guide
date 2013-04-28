@@ -195,7 +195,7 @@ Related declarations should be grouped together, placing positioning and box-mod
 
   /* Typography */
   font: normal 13px "Helvetica Neue", sans-serif;
-  line-height: 1.5
+  line-height: 1.5;
   color: #333;
   text-align: center;
 
