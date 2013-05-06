@@ -245,9 +245,9 @@ In instances where several rules are present with only one declaration each, con
   height: 15px;
   background-image: url(../img/sprite.png);
 }
-.icon           { background-position: 0 0; }
-.icon-home      { background-position: 0 -20px; }
-.icon-account   { background-position: 0 -40px; }
+.icon         { background-position: 0 0; }
+.icon-home    { background-position: 0 -20px; }
+.icon-account { background-position: 0 -40px; }
 ````
 
 
