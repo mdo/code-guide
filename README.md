@@ -132,7 +132,7 @@ A boolean attribute is one that needs no declared value. XHTML required you to d
 <input type="checkbox" value="1" checked>
 
 <select>
-	<option value="1" selected"></option>
+	<option value="1" selected></option>
 </select>
 ```
 
