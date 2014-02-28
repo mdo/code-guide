@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2014 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="github-circled" unicode="&#xe800;" d="m857 350q0-140-82-252t-211-155q-15-3-22 4t-7 17v118q0 54-29 79q32 3 57 10t53 22t45 37t30 58t11 84q0 68-44 115q21 51-5 114q-15 5-45-6t-51-25l-21-13q-52 15-107 15t-108-15q-8 6-23 15t-47 22t-48 7q-24-63-4-114q-44-47-44-115q0-47 12-83t29-59t45-37t52-22t57-10q-22-20-27-58q-12-5-25-8t-32-3t-36 12t-31 35q-11 18-27 29t-28 14l-11 1q-12 0-16-2t-3-7t5-8t7-6l4-3q12-6 24-21t18-29l5-13q8-21 25-34t37-17t39-4t31 2l13 3q0-22 0-50t1-30q0-10-8-17t-22-4q-129 43-211 155t-82 252q0 117 58 215t155 156t216 58t215-58t156-156t57-215z" horiz-adv-x="857.1" />
+<glyph glyph-name="twitter" unicode="&#xe801;" d="m904 622q-37-54-90-93q0-8 0-23q0-73-21-145t-64-139t-103-117t-144-82t-181-30q-151 0-276 81q19-3 43-3q126 0 224 77q-59 2-105 36t-64 89q19-2 34-2q24 0 48 6q-63 13-104 62t-41 115v2q38-21 82-23q-37 25-59 64t-22 86q0 49 25 91q68-83 164-133t208-55q-5 21-5 41q0 75 53 127t127 53q79 0 132-57q61 12 114 44q-20-64-79-100q52 6 104 28z" horiz-adv-x="928.6" />
+</font>
+</defs>
+</svg>

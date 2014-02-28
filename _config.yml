@@ -1,7 +1,7 @@
-name: "Code Guide"
-description: "Standards for developing flexible, durable, and sustainable HTML and CSS."
-url: http://mdo.github.com/code-guide
+name:          Code Guide by @mdo
+description:   Standards for developing flexible, durable, and sustainable HTML and CSS.
+url:           http://mdo.github.com/code-guide
 
-markdown:  rdiscount
-permalink: pretty
-pygments:  true
+markdown:      rdiscount
+permalink:     pretty
+pygments:      true
