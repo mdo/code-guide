@@ -55,7 +55,7 @@ layout: default
 <div class="section">
   <div class="col">
     <h2>Golden rule</h2>
-    <p>Enforce these, or your own, agreed upon guidelines at all times. Small or large, call out what's incorrect. For additions or contributions to this Code Guide, please <a href="https://github.com/markdotto/code-guide/issues/new">open an issue on GitHub</a>.</p>
+    <p>Enforce these, or your own, agreed upon guidelines at all times. Small or large, call out what's incorrect. For additions or contributions to this Code Guide, please <a href="https://github.com/mdo/code-guide/issues/new">open an issue on GitHub</a>.</p>
   </div>
   <div class="col">
     <blockquote>
@@ -130,7 +130,7 @@ layout: default
     <blockquote>
       <p>If the attribute is present, its value must either be the empty string or [...] the attribute's canonical name, with no leading or trailing whitespace.</p>
     </blockquote>
-    <p>In short, don't add a value.</p>
+    <p><strong>In short, don't add a value.</strong></p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/boolean-attributes.html %}{% endhighlight %}
@@ -189,7 +189,13 @@ layout: default
 <div class="section" id="css-declaration-order">
   <div class="col">
     <h3>Declaration order</h3>
-    <p>Related declarations should be grouped together, placing positioning and box-model properties closest to the top, followed by typographic and visual properties.</p>
+    <p>Related property declarations should be grouped together following the order:</p>
+    <ol>
+      <li>Positioning</li>
+      <li>Box-model</li>
+      <li>Typographic</li>
+      <li>Visual</li>
+    </ol>
     <p>For a complete list of properties and their order, please see <a href="http://twitter.github.com/recess">Recess</a>.</p>
   </div>
   <div class="col">
