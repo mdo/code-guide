@@ -3,6 +3,55 @@ layout: default
 ---
 
 
+<div class="heading" id="toc">
+  <h2>Table of contents</h2>
+</div>
+<div class="section toc">
+  <div class="col">
+    <ul>
+      <li><a href="#golden-rule">Golden rule</a></li>
+      <li><a href="#html">HTML</a>
+        <ul>
+          <li><a href="#html-syntax">Syntax</a></li>
+          <li><a href="#html-doctype">HTML5 doctype</a></li>
+          <li><a href="#html-practicality-over-purity">Practicality over purity</a></li>
+          <li><a href="#html-attribute-order">Attribute order</a></li>
+          <li><a href="#html-boolean-attributes">Boolean attributes</a></li>
+          <li><a href="#html-reducing-markup">Reducing markup</a></li>
+          <li><a href="#html-javascript">JavaScript generated markup</a></li>
+        </ul>
+      </li>
+      <li><a href="#css">CSS</a>
+        <ul>
+          <li><a href="#css-syntax">CSS syntax</a></li>
+          <li><a href="#css-declaration-order">Declaration order</a></li>
+          <li><a href="#css-media-queries">Media query placement</a></li>
+          <li><a href="#css-prefixed-properties">Prefixed properties</a></li>
+          <li><a href="#css-single-declarations">Rules with single declarations</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="col">
+    <ul>
+      <li><a href="#human-readable">Human readable</a>
+        <ul>
+          <li><a href="#comments">Comments</a></li>
+          <li><a href="#classes">Classes</a></li>
+          <li><a href="#selectors">Selectors</a></li>
+        </ul>
+      </li>
+      <li><a href="#organization">Organization</a></li>
+      <li><a href="#copy">Copy</a>
+        <ul>
+          <li><a href="#copy-sentence-case">Sentence case</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
 <div class="section">
   <div class="col">
     <h2>Golden rule</h2>
@@ -148,7 +197,7 @@ layout: default
   </div>
 </div>
 
-<div class="section" id="css-mediaa-queries">
+<div class="section" id="css-media-queries">
   <div class="col">
     <h3>Media query placement</h3>
     <p>Place media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. Doing so only makes it easier for folks to miss them in the future. Here's a typical setup.</p>
@@ -269,9 +318,9 @@ layout: default
   <h2 id="copy">Copy</h2>
 </div>
 
-<div class="section">
+<div class="section" id="copy-sentence-case">
   <div class="col">
-    <h3 id="sentencecase">Sentence case</h3>
+    <h3>Sentence case</h3>
     <p>Always write copy, including headings and code comments, in <a href="http://en.wikipedia.org/wiki/Letter_case#Usage">sentence case</a>. In other words, aside from titles and proper nouns, only the first word should be capitalized.</p>
   </div>
 </div>

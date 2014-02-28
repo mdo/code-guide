@@ -2,6 +2,11 @@
 layout: nil
 ---
 
+
+/*
+ * Fonts
+ */
+
 @font-face {
   font-family: 'fontello';
   src: url('font/fontello.eot');
@@ -31,6 +36,9 @@ layout: nil
 .icon-twitter:before { content: '\e801'; } /* '' */
 
 
+/*
+ * Scaffolding and type
+ */
 
 html {
   font-size: 16px;
@@ -78,7 +86,9 @@ p:last-child {
 }
 
 blockquote {
+  position: relative;
   font-style: italic;
+  color: #7a7a7a;
 }
 blockquote p {
   margin-bottom: 0;
@@ -141,6 +151,7 @@ pre code {
 .col + .col {
   background-color: #f7f7f9;
 }
+
 @media (min-width: 48rem) {
   .section {
     display: table;
@@ -195,6 +206,7 @@ pre code {
   padding: 2rem 1rem 1.5rem;
   background-color: #dfe1e8;
 }
+
 @media (min-width: 38rem) {
   .heading {
     padding: 3rem 3rem 2.5rem;
