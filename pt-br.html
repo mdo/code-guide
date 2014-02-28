@@ -1,0 +1,277 @@
+---
+layout: default
+---
+
+
+<div class="section">
+  <div class="col">
+    <h2>Regra de ouro</h2>
+    <p>Reforce isso, concordando com estas guidelines todas as vezes. Pequenos ou grandes, mostre o que está incorreto. Para adições ou contribuições para este Guia de Código, por favor <a href="https://github.com/mdo/code-guide">abra uma Issue no Github</a>.</p>
+  </div>
+  <div class="col">
+    <blockquote>
+      <p>Toda linha de código deve parecer que foi escrita por uma única pessoal, não importa a quantidade de contribuidores.</p>
+    </blockquote>
+  </div>
+</div>
+
+
+
+<div class="heading" id="html">
+  <h2>HTML</h2>
+</div>
+
+<div class="section" id="html-syntax">
+  <div class="col">
+    <h3>Sintaxe do HTML</h3>
+    <ul>
+      <li>Use soft-tabs com dois espaços.</li>
+      <li>Elementos aninhados devem estar identados uma vez (2 espaços).</li>
+      <li>Sempre use aspas duplas, nunca aspas simples.</li>
+      <li>Nunca inclua uma barra invertida nos elementos viúvos (exemplo: <code>&lt;img&gt;</code> ou <code>&lt;hr&gt;</code>).</li>
+    </ul>
+  </div>
+  <div class="col">
+    {% highlight html %}{% include html/syntax.html %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="html-doctype">
+  <div class="col">
+    <h3>Doctype do HTML5</h3>
+    <p>Reforce os padrões com este simples doctype no início de todas as páginas HTML.</p>
+  </div>
+  <div class="col">
+    {% highlight html %}{% include html/doctype.html %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="html-practicality">
+  <div class="col">
+    <h3>Praticando a pureza</h3>
+    <p>Esforce-se para manter o padrão e a semântica do HTML, mas não Strive to maintain HTML standards and semantics, mas não às custas da praticidade. Use o mínimo de código com o menor número de complexidade possível.</p>
+  </div>
+</div>
+
+<div class="section" id="html-attribute-order">
+  <div class="col">
+    <h3>Ordem dos atributos</h3>
+    <p>Atributos HTML deem vir com esta ordem particular para facilitar a leitura do código.</p>
+    <ul>
+      <li><code>class</code></li>
+      <li><code>id</code></li>
+      <li><code>data-*</code></li>
+      <li><code>for</code>, <code>type</code>, or <code>href</code></li>
+    </ul>
+  </div>
+  <div class="col">
+    {% highlight html %}{% include html/attribute-order.html %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="html-boolean-attributes">
+  <div class="col">
+    <h3>Atributos booleanos</h3>
+    <p>Um atributo boleano é o único que não precisa ter valores declarados. XHTML precisa que você declare um valor, mas no HTML5 isso não é necessário.</p>
+    <p>Para uma leitura adicional, consulte a <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">seção do WhatWG sobre atributos booleanos.</a>:</p>
+    <blockquote>
+      <p>A presença de um atributo boleano representa um valor verdadeiro e a ausência do atributo representa um valor falso.</p>
+    </blockquote>
+    <p>Se você <em>precisa</em> incluir valores nos atributos, <strong>você não precisa</strong> seguir esta regra do WhatWG:</p>
+    <blockquote>
+      <p>Se o atributo está presente, seu valor deve ser uma string vazia ou [...] o nome canônico do atributo, sem espaços em branco.</p>
+    </blockquote>
+    <p>Resumindo, não adicione nenhum valor.</p>
+  </div>
+  <div class="col">
+    {% highlight html %}{% include html/boolean-attributes.html %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="html-reducing-markup">
+  <div class="col">
+    <h3>Reduzindo o markup</h3>
+    <p>Sempre que possível, evite elementos pais supérfluos quando escrever HTML. Muitas vezes isto significa de ter uma interação maior ou refatoração, mas isso produz pouco HTML. Veja o seguinte exemplo:</p>
+  </div>
+  <div class="col">
+    {% highlight html %}{% include html/reducing-markup.html %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="html-javascript">
+  <div class="col">
+    <h3>Markup gerado por Javascript</h3>
+    <p>Escrever código em um arquivos Javascript faz com que o conteúdo seja difícil de ser encontrado, difícil de ser editado e o tornam menos performático. Evite o máximo possível.</p>
+  </div>
+</div>
+
+
+
+
+<div class="heading" id="css">
+  <h2>CSS</h2>
+</div>
+
+<div class="section" id="css-syntax">
+  <div class="col">
+    <h3>Sintaxe do CSS</h3>
+    <ul>
+      <li>Use soft-tabs com dois espaços.</li>
+      <li>Quando agrupar seletores, deixe seletores individuais em uma linha.</li>
+      <li>Inclua on espaço antes de abrir um colchete.</li>
+      <li>Coloque o fechamento do colchete em uma nova linha</li>
+      <li>Inclua um espaço depois dos dois pontos <code>:</code> em cada declaração de propriedade.</li>
+      <li>Cada declaração deve estar em sua própria linha para encontrarmos melhor os erros.</li>
+      <li>Feche todas as declarações com ponto-vírgula <code>;</code>.</li>
+      <li>Valores separados por vírgula devem incluir um spaço logo depois da vírgula.</li>
+      <li>Não inclua espaços depois das vírgulas <em>como em</em> cores <code>rgb()</code> ou <code>rgba()</code>, e não comece valores iniciando com zero.</li>
+      <li>Deixe todos os valores hexadecimais em caixa baixa, exe., <code>#fff</code>.</li>
+      <li>Use cores em hexadecimal abrevidas quando puder, ex., <code>#fff</code> em vez de <code>#ffffff</code>.</li>
+      <li>Coloque aspas nos valores em seletores com atributos, ex., <code>input[type="text"]</code>.</li>
+      <li>Evite especificar unidades quando os valores forem 0, ex., <code>margin: 0;</code> em vez de  <code>margin: 0px;</code>.</li>
+    </ul>
+    <p>Tem perguntas sobre os termos usados aqui? Veja a <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">seção de sintaxe dos CSS</a> no Wikipedia.</p>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/syntax.css %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="css-declaration-order">
+  <div class="col">
+    <h3>Ordem de declaração</h3>
+    <p>Declarações relacionadas devem ser agrupadas, colocando posicionamento e as propriedades de box-model perto do topo, seguido das propriedades de tipografia e depois propriedades visuais.</p>
+    <p>Para uma lista completa das propriedades e suas ordens, por favor veja <a href="http://twitter.github.com/recess">Recess</a>.</p>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/declaration-order.css %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="css-mediaa-queries">
+  <div class="col">
+    <h3>Onde colocar as Media Queries</h3>
+    <p>Coloque as Media Queries o mais perto possível de suas regras originais. Não coloque todas as media queries separadas em outros arquigos ou no final do documento. Fazendo assim, fica fácil para os outros se perderem no futuro. Veja um exemplo típico:</p>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/media-queries.css %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="css-prefixed-properties">
+  <div class="col">
+    <h3>Propriedades com prefixo</h3>
+    <p>Quando usar prefixos de browsers, idente cada propriedade alinhada verticalmente para facilitar a edição multi-linha.</p>
+    <p>No Textmate, use <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A). No Sublime Text 2, use <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) e <strong>Selection &rarr; Add Next Line</strong> (&#8963;&#8679;&darr;).</p>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/prefixed-properties.css %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="css-single-declarations">
+  <div class="col">
+    <h3>Declarações únicas</h3>
+    <p>Em lugares onde são definidas apenas uma linha de propriedade, considere remover as quebras de linha para melhorar a leitura e edição. Considere este exemplo:</p>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/single-declarations.css %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="css-nesting">
+  <div class="col">
+    <h3>Aninhamento (nesting) no LESS e SASS</h3>
+    <p>Evite aninhar seletores. Não é só por que você pode aninhar (nesting) seletores, significa que você deve fazê-lo sempre. Considere aninhar se você tem um escopo de estilos para um pai e se há múltiplos elementos para serem aninhados.</p>
+  </div>
+  <div class="col">
+    {% highlight scss %}{% include css/nesting.scss %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="heading" id="css-human-readable">
+  <h2>Legível para humanos</h3>
+</div>
+
+<div class="section" id="css-comments">
+  <div class="col">
+    <h3>Comentários</h3>
+    <p>Código é escrito e mantido por pessoas. Certifique-se de que o código é descritivo, bem comentado e amigável para outros.</p>
+    <p>Grandes pedaços de comentários devem ter contexto e não devem apenas reinterar um nome de classe ou componente.</p>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/comments.css %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="css-class-names">
+  <div class="col">
+    <h3>Nomes de classes</h3>
+    <ul>
+      <li>Mantenha as classes em caixa baixa e use traços (não underscores ou camelCase).</li>
+      <li>Evite user arbitrariamente notações abreviadas</li>
+      <li>Mantenha as pequenas e sucintas ao máximo possível</li>
+      <li>Use nomes com significado; use nomes ligados a estrutura em vez do visual.</li>
+      <li>Prefixe nomes de classes baseadas nos componentes pais mais próximos.</li>
+    </ul>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/class-names.css %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="css-selectors">
+  <div class="col">
+    <h3>Seletores</h3>
+    <ul>
+      <li>Use classes em vez de nomes de tags.</li>
+      <li>Mantenha os seletores pequenos e limite o número de elementos em no máximo três.</li>
+      <li>Use nomes de classes do elemento pais <strong>apenas</strong> quando necessário (ex: quando não usar classes prefixadas). </li>
+    </ul>
+    <p>Leitura adicional:</p>
+    <ul>
+      <li><a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/">Scope CSS classes with prefixes</a></li>
+      <li><a href="http://markdotto.com/2012/03/02/stop-the-cascade/">Stop the cascade</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/selectors.css %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="css-organization">
+  <div class="col">
+    <h3>Organização</h3>
+    <ul>
+      <li>Organize seções do código por componentes.</li>
+      <li>Desenvolva uma hierarquia de comentários consistente.</li>
+      <li>Se usar múltiplos arquivos CSS, quebre-os em componentes.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="section" id="css-editor-prefs">
+  <div class="col">
+    <h3>Preferências de editor</h3>
+    <p>Defina seu editor com as seguintes configurações para evitar inconsistências comuns no código e diffs sujos:</p>
+    <ul>
+      <li>Use soft-tabs com 2 espaços</li>
+      <li>Apague os espaços em brancos ao salvar</li>
+      <li>Defina UTF-8 como encode</li>
+      <li>Coloque uma nova linha no final dos arquivos</li>
+    </ul>
+    <p>Considere aplicar estas preferencias ao seu projeto com usando o arquivo <code>.editorconfig</code>, como o <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">Bootstrap's</a>.</p>
+  </div>
+</div>
+
+
+<div class="heading" id="copy">
+  <h2 id="copy">Cópia</h2>
+</div>
+
+<div class="section">
+  <div class="col">
+    <h3 id="sentencecase">Sentenças</h3>
+    <p>Sempre escreva a cópia, incluindo títulos e comentários de código, com a mesma <a href="http://en.wikipedia.org/wiki/Letter_case#Usage">capitalização</a>. Em outras palavras, tirando títulos e nomes próprios, apenas a primeira palavra deve ser capitalizada.</p>
+  </div>
+</div>
