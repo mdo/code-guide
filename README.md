@@ -12,4 +12,8 @@ Released under MIT by, and copyright 2014, @mdo.
 
 Heavily inspired by [Idiomatic CSS](https://github.com/necolas/idiomatic-css) and the [GitHub Styleguide](http://github.com/styleguide).
 
+### Translates
+
+[pt-br](http://diegoeis.github.io/code-guide/pt-br/) - Translated by [Diego Eis](http://tableless.com.br/)
+
 <3
