@@ -151,7 +151,7 @@ layout: default
 <div class="section" id="css-mediaa-queries">
   <div class="col">
     <h3>Onde colocar as Media Queries</h3>
-    <p>Place media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. Doing so only makes it easier for folks to miss them in the future. Here's a typical setup.</p>
+    <p>Coloque as Media Queries o mais perto possível de suas regras originais. Não coloque todas as media queries separadas em outros arquigos ou no final do documento. Fazendo assim, fica fácil para os outros se perderem no futuro. Veja um exemplo típico:</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/media-queries.css %}{% endhighlight %}
@@ -160,9 +160,9 @@ layout: default
 
 <div class="section" id="css-prefixed-properties">
   <div class="col">
-    <h3>Prefixed properties</h3>
-    <p>When using vendor prefixed properties, indent each property such that the declaration's value lines up vertically for easy multi-line editing.</p>
-    <p>In Textmate, use <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A). In Sublime Text 2, use <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) and <strong>Selection &rarr;  Add Next Line</strong> (&#8963;&#8679;&darr;).</p>
+    <h3>Propriedades com prefixo</h3>
+    <p>Quando usar prefixos de browsers, idente cada propriedade alinhada verticalmente para facilitar a edição multi-linha.</p>
+    <p>No Textmate, use <strong>Text &rarr; Edit Each Line in Selection</strong> (&#8963;&#8984;A). No Sublime Text 2, use <strong>Selection &rarr; Add Previous Line</strong> (&#8963;&#8679;&uarr;) e <strong>Selection &rarr; Add Next Line</strong> (&#8963;&#8679;&darr;).</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/prefixed-properties.css %}{% endhighlight %}
@@ -171,8 +171,8 @@ layout: default
 
 <div class="section" id="css-single-declarations">
   <div class="col">
-    <h3>Single declarations</h3>
-    <p>In instances where a rule set includes only one declaration, consider removing line breaks for readability and faster editing. Consider this mixed example:</p>
+    <h3>Declarações únicas</h3>
+    <p>Em lugares onde são definidas apenas uma linha de propriedade, considere remover as quebras de linha para melhorar a leitura e edição. Considere este exemplo:</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/single-declarations.css %}{% endhighlight %}
@@ -181,8 +181,8 @@ layout: default
 
 <div class="section" id="css-nesting">
   <div class="col">
-    <h3>Nesting in LESS and SASS</h3>
-    <p>Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting if you must scope styles to a parent and if there are multiple elements to be nested.</p>
+    <h3>Aninhamento (nesting) no LESS e SASS</h3>
+    <p>Evite aninhar seletores. Não é só por que você pode aninhar (nesting) seletores, significa que você deve fazê-lo sempre. Considere aninhar se você tem um escopo de estilos para um pai e se há múltiplos elementos para serem aninhados.</p>
   </div>
   <div class="col">
     {% highlight scss %}{% include css/nesting.scss %}{% endhighlight %}
@@ -190,14 +190,14 @@ layout: default
 </div>
 
 <div class="heading" id="css-human-readable">
-  <h2>Human readable</h3>
+  <h2>Legível para humanos</h3>
 </div>
 
 <div class="section" id="css-comments">
   <div class="col">
-    <h3>Comments</h3>
-    <p>Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others.</p>
-    <p>Great code comments convey context or purpose and should not just reiterate a component or class name.</p>
+    <h3>Comentários</h3>
+    <p>Código é escrito e mantido por pessoas. Certifique-se de que o código é descritivo, bem comentado e amigável para outros.</p>
+    <p>Grandes pedaços de comentários devem ter contexto e não devem apenas reinterar um nome de classe ou componente.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/comments.css %}{% endhighlight %}
@@ -206,13 +206,13 @@ layout: default
 
 <div class="section" id="css-class-names">
   <div class="col">
-    <h3>Class names</h3>
+    <h3>Nomes de classes</h3>
     <ul>
-      <li>Keep classes lowercase and use dashes (not underscores or camelCase).</li>
-      <li>Avoid arbitrary shorthand notation.</li>
-      <li>Keep classes as short and succinct as possible.</li>
-      <li>Use meaningful names; use structural or purposeful names over presentational.</li>
-      <li>Prefix classes based on the closest parent component's base class.</li>
+      <li>Mantenha as classes em caixa baixa e use traços (não underscores ou camelCase).</li>
+      <li>Evite user arbitrariamente notações abreviadas</li>
+      <li>Mantenha as pequenas e sucintas ao máximo possível</li>
+      <li>Use nomes com significado; use nomes ligados a estrutura em vez do visual.</li>
+      <li>Prefixe nomes de classes baseadas nos componentes pais mais próximos.</li>
     </ul>
   </div>
   <div class="col">
@@ -222,13 +222,13 @@ layout: default
 
 <div class="section" id="css-selectors">
   <div class="col">
-    <h3>Selectors</h3>
+    <h3>Seletores</h3>
     <ul>
-      <li>Use classes over generic element tags.</li>
-      <li>Keep them short and limit the number of elements in each selector to three.</li>
-      <li>Scope classes to the closest <strong>only</strong> parent when necessary (e.g., when not using prefixed classes).</li>
+      <li>Use classes em vez de nomes de tags.</li>
+      <li>Mantenha os seletores pequenos e limite o número de elementos em no máximo três.</li>
+      <li>Use nomes de classes do elemento pais <strong>apenas</strong> quando necessário (ex: quando não usar classes prefixadas). </li>
     </ul>
-    <p>Additional reading:</p>
+    <p>Leitura adicional:</p>
     <ul>
       <li><a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/">Scope CSS classes with prefixes</a></li>
       <li><a href="http://markdotto.com/2012/03/02/stop-the-cascade/">Stop the cascade</a></li>
@@ -241,37 +241,37 @@ layout: default
 
 <div class="section" id="css-organization">
   <div class="col">
-    <h3>Organization</h3>
+    <h3>Organização</h3>
     <ul>
-      <li>Organize sections of code by component.</li>
-      <li>Develop a consistent commenting hierarchy.</li>
-      <li>If using multiple CSS files, break them down by component.</li>
+      <li>Organize seções do código por componentes.</li>
+      <li>Desenvolva uma hierarquia de comentários consistente.</li>
+      <li>Se usar múltiplos arquivos CSS, quebre-os em componentes.</li>
     </ul>
   </div>
 </div>
 
 <div class="section" id="css-editor-prefs">
   <div class="col">
-    <h3>Editor preferences</h3>
-    <p>Set your editor to the following settings to avoid common code inconsistencies and dirty diffs:</p>
+    <h3>Preferências de editor</h3>
+    <p>Defina seu editor com as seguintes configurações para evitar inconsistências comuns no código e diffs sujos:</p>
     <ul>
-      <li>Use soft-tabs set to 2 spaces</li>
-      <li>Trim trailing white space on save</li>
-      <li>Set encoding to UTF-8</li>
-      <li>Add new line at end of files</li>
+      <li>Use soft-tabs com 2 espaços</li>
+      <li>Apague os espaços em brancos ao salvar</li>
+      <li>Defina UTF-8 como encode</li>
+      <li>Coloque uma nova linha no final dos arquivos</li>
     </ul>
-    <p>Consider applying these preferences to your project's <code>.editorconfig</code> file, a la <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">Bootstrap's own</a>.</p>
+    <p>Considere aplicar estas preferencias ao seu projeto com usando o arquivo <code>.editorconfig</code>, como o <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">Bootstrap's</a>.</p>
   </div>
 </div>
 
 
 <div class="heading" id="copy">
-  <h2 id="copy">Copy</h2>
+  <h2 id="copy">Cópia</h2>
 </div>
 
 <div class="section">
   <div class="col">
-    <h3 id="sentencecase">Sentence case</h3>
-    <p>Always write copy, including headings and code comments, in <a href="http://en.wikipedia.org/wiki/Letter_case#Usage">sentence case</a>. In other words, aside from titles and proper nouns, only the first word should be capitalized.</p>
+    <h3 id="sentencecase">Sentenças</h3>
+    <p>Sempre escreva a cópia, incluindo títulos e comentários de código, com a mesma <a href="http://en.wikipedia.org/wiki/Letter_case#Usage">capitalização</a>. Em outras palavras, tirando títulos e nomes próprios, apenas a primeira palavra deve ser capitalizada.</p>
   </div>
 </div>
