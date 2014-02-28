@@ -151,7 +151,11 @@ pre code {
 .col + .col {
   background-color: #f7f7f9;
 }
-
+@media (min-width: 38rem) {
+  .col {
+    padding: 2rem;
+  }
+}
 @media (min-width: 48rem) {
   .section {
     display: table;
