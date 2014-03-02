@@ -94,6 +94,10 @@ blockquote p {
   margin-bottom: 0;
 }
 
+ul li {
+  margin-bottom: .25rem;
+}
+
 
 /*
  * Code
@@ -115,11 +119,9 @@ code {
 pre {
   display: block;
   margin: 0 0 1rem;
-  line-height: 1.5;
+  line-height: 1.4;
   white-space: pre;
   white-space: pre-wrap;
-  word-break: break-all;
-  word-wrap: break-word;
 }
 pre code {
   padding: 0;
@@ -227,7 +229,7 @@ pre code {
  */
 
 .footer {
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   font-size: 90%;
   text-align: center;
 }

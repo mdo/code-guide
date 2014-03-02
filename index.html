@@ -74,10 +74,10 @@ layout: default
   <div class="col">
     <h3>Syntax</h3>
     <ul>
-      <li>Use soft-tabs with two spaces</li>
-      <li>Nested elements should be indented once (2 spaces)</li>
-      <li>Always use double quotes, never single quotes</li>
-      <li>Don't include a trailing slash in self-closing elements</li>
+      <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
+      <li>Nested elements should be indented once (two spaces).</li>
+      <li>Always use double quotes, never single quotes, on attributes.</li>
+      <li>Don't include a trailing slash in self-closing elements—the <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 spec</a> says they're optional.</li>
     </ul>
   </div>
   <div class="col">
@@ -88,7 +88,7 @@ layout: default
 <div class="section" id="html-doctype">
   <div class="col">
     <h3>HTML5 doctype</h3>
-    <p>Enforce standards mode in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+    <p>Enforce standards mode and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/doctype.html %}{% endhighlight %}
@@ -112,6 +112,7 @@ layout: default
       <li><code>data-*</code></li>
       <li><code>src</code>, <code>for</code>, <code>type</code>, <code>href</code></li>
     </ul>
+    <p>Classes make for great reusable components, so they come first. Ids are more specific and should be used sparingly (e.g., for in-page bookmarks), so they come second.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/attribute-order.html %}{% endhighlight %}
@@ -156,7 +157,6 @@ layout: default
 
 
 
-
 <div class="heading" id="css">
   <h2>CSS</h2>
 </div>
@@ -165,18 +165,18 @@ layout: default
   <div class="col">
     <h3>Syntax</h3>
     <ul>
-      <li>Use soft-tabs with two spaces.</li>
+      <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
       <li>When grouping selectors, keep individual selectors to a single line.</li>
-      <li>Include one space before the opening brace of declaration blocks.</li>
+      <li>Include one space before the opening brace of declaration blocks for legibility.</li>
       <li>Place closing braces of declaration blocks on a new line.</li>
       <li>Include one space after <code>:</code> for each declaration.</li>
       <li>Each declaration should appear on its own line for more accurate error reporting.</li>
-      <li>End all declarations with a semi-colon.</li>
+      <li>End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.</li>
       <li>Comma-separated values should include a space after each comma.</li>
       <li>Don't include spaces after commas <em>within</em> <code>rgb()</code> or <code>rgba()</code> colors, and don't preface values with a leading zero.</li>
-      <li>Lowercase all hex values, e.g., <code>#fff</code>.</li>
+      <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li>
       <li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li>
-      <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>.</li>
+      <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. The <a href="http://www.w3.org/TR/CSS2/selector.html#matching-attrs">CSS 2.1 spec</a> shows them as optional, but it's a good practice for consistency.</li>
       <li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>.</li>
     </ul>
     <p>Questions on the terms used here? See the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p>
@@ -192,10 +192,11 @@ layout: default
     <p>Related property declarations should be grouped together following the order:</p>
     <ol>
       <li>Positioning</li>
-      <li>Box-model</li>
+      <li>Box model</li>
       <li>Typographic</li>
       <li>Visual</li>
     </ol>
+    <p>Positioning comes first because it can remove an element from the normal flow of the page and override box model related styles. The box model comes next as it dictates a component's dimensions and placement. Everything else takes place *inside* the component or without impacting the previous two sections, and thus they come last.</p>
     <p>For a complete list of properties and their order, please see <a href="http://twitter.github.com/recess">Recess</a>.</p>
   </div>
   <div class="col">
@@ -227,7 +228,8 @@ layout: default
 <div class="section" id="css-single-declarations">
   <div class="col">
     <h3>Single declarations</h3>
-    <p>In instances where a rule set includes only one declaration, consider removing line breaks for readability and faster editing. Consider this mixed example:</p>
+    <p>In instances where a rule set includes <storng>only one declaration</strong>, consider removing line breaks for readability and faster editing. Any rule set with multiple delcarations should be split to separate lines.</p>
+    <p>The key factor here is error detection—e.g., a CSS validator stating you have a syntax error on Line 183. With a single declaration, there's no missing it. With multiple declarations, separate lines is a must for your sanity.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/single-declarations.css %}{% endhighlight %}
@@ -237,7 +239,7 @@ layout: default
 <div class="section" id="css-nesting">
   <div class="col">
     <h3>Nesting in LESS and SASS</h3>
-    <p>Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting if you must scope styles to a parent and if there are multiple elements to be nested.</p>
+    <p>Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested.</p>
   </div>
   <div class="col">
     {% highlight scss %}{% include css/nesting.scss %}{% endhighlight %}
@@ -251,8 +253,7 @@ layout: default
 <div class="section" id="css-comments">
   <div class="col">
     <h3>Comments</h3>
-    <p>Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others.</p>
-    <p>Great code comments convey context or purpose and should not just reiterate a component or class name.</p>
+    <p>Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others. Great code comments convey context or purpose. Do not simply reiterate a component or class name.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/comments.css %}{% endhighlight %}
@@ -263,11 +264,11 @@ layout: default
   <div class="col">
     <h3>Class names</h3>
     <ul>
-      <li>Keep classes lowercase and use dashes (not underscores or camelCase).</li>
-      <li>Avoid arbitrary shorthand notation.</li>
+      <li>Keep classes lowercase and use dashes (not underscores or camelCase). Dashes serve as natural breaks in related class (e.g., <code>.btn</code> and <code>.btn-danger</code>).</li>
+      <li>Avoid excessive and arbitrary shorthand notation. <code>.btn</code> is useful for <em>button</em>, but <code>.s</code> doesn't mean anything.</li>
       <li>Keep classes as short and succinct as possible.</li>
       <li>Use meaningful names; use structural or purposeful names over presentational.</li>
-      <li>Prefix classes based on the closest parent component's base class.</li>
+      <li>Prefix classes based on the closest parent or base class.</li>
     </ul>
   </div>
   <div class="col">
@@ -279,9 +280,10 @@ layout: default
   <div class="col">
     <h3>Selectors</h3>
     <ul>
-      <li>Use classes over generic element tags.</li>
-      <li>Keep them short and limit the number of elements in each selector to three.</li>
-      <li>Scope classes to the closest <strong>only</strong> parent when necessary (e.g., when not using prefixed classes).</li>
+      <li>Use classes over generic element tag for optimum rendering performance.</li>
+      <li>Avoid using several attribute selectors (e.g., <code>[class^="..."]</code>) on commonly occuring components. Browser performance is known to be impacted by these.</li>
+      <li>Keep selectors short and strive to limit the number of elements in each selector to three.</li>
+      <li>Scope classes to the closest parent <strong>only</strong> when necessary (e.g., when not using prefixed classes).</li>
     </ul>
     <p>Additional reading:</p>
     <ul>
@@ -300,8 +302,12 @@ layout: default
     <ul>
       <li>Organize sections of code by component.</li>
       <li>Develop a consistent commenting hierarchy.</li>
-      <li>If using multiple CSS files, break them down by component.</li>
+      <li>Use consistent white space to your advantage when separating sections of code for scanning larger documents.</li>
+      <li>When using multiple CSS files, break them down by component instead of page. Pages can be rearranged and components moved.</li>
     </ul>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/organization-comments.css %}{% endhighlight %}
   </div>
 </div>
 
@@ -310,12 +316,12 @@ layout: default
     <h3>Editor preferences</h3>
     <p>Set your editor to the following settings to avoid common code inconsistencies and dirty diffs:</p>
     <ul>
-      <li>Use soft-tabs set to 2 spaces</li>
-      <li>Trim trailing white space on save</li>
-      <li>Set encoding to UTF-8</li>
-      <li>Add new line at end of files</li>
+      <li>Use soft-tabs set to two spaces.</li>
+      <li>Trim trailing white space on save.</li>
+      <li>Set encoding to UTF-8.</li>
+      <li>Add new line at end of files.</li>
     </ul>
-    <p>Consider applying these preferences to your project's <code>.editorconfig</code> file, a la <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">Bootstrap's own</a>.</p>
+    <p>Consider documenting and applying these preferences to your project's <code>.editorconfig</code> file. For an example, see <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">the one in Bootstrap</a>. Learn more <a href="http://editorconfig.org">about EditorConfig</a>.</p>
   </div>
 </div>
 
@@ -328,5 +334,8 @@ layout: default
   <div class="col">
     <h3>Sentence case</h3>
     <p>Always write copy, including headings and code comments, in <a href="http://en.wikipedia.org/wiki/Letter_case#Usage">sentence case</a>. In other words, aside from titles and proper nouns, only the first word should be capitalized.</p>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include copy/sentence-case.html %}{% endhighlight %}
   </div>
 </div>
