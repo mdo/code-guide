@@ -1,8 +1,9 @@
-/* Single declarations */
+/* Single declarations on one line */
 .span1 { width: 60px; }
 .span2 { width: 140px; }
 .span3 { width: 220px; }
 
+/* Multiple declarations, one per line */
 .sprite {
   display: inline-block;
   width: 16px;
