@@ -203,6 +203,13 @@ pre code {
   color: #fff;
 }
 
+@media (min-width: 38rem) {
+  .masthead {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
 
 /*
  * Sections

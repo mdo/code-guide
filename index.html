@@ -8,45 +8,32 @@ layout: default
 </div>
 <div class="section toc">
   <div class="col">
+    <h4><a href="#html">HTML</a></h4>
     <ul>
-      <li><a href="#golden-rule">Golden rule</a></li>
-      <li><a href="#html">HTML</a>
-        <ul>
-          <li><a href="#html-syntax">Syntax</a></li>
-          <li><a href="#html-doctype">HTML5 doctype</a></li>
-          <li><a href="#html-practicality-over-purity">Practicality over purity</a></li>
-          <li><a href="#html-attribute-order">Attribute order</a></li>
-          <li><a href="#html-boolean-attributes">Boolean attributes</a></li>
-          <li><a href="#html-reducing-markup">Reducing markup</a></li>
-          <li><a href="#html-javascript">JavaScript generated markup</a></li>
-        </ul>
-      </li>
-      <li><a href="#css">CSS</a>
-        <ul>
-          <li><a href="#css-syntax">CSS syntax</a></li>
-          <li><a href="#css-declaration-order">Declaration order</a></li>
-          <li><a href="#css-media-queries">Media query placement</a></li>
-          <li><a href="#css-prefixed-properties">Prefixed properties</a></li>
-          <li><a href="#css-single-declarations">Rules with single declarations</a></li>
-        </ul>
-      </li>
+      <li><a href="#html-syntax">Syntax</a></li>
+      <li><a href="#html-doctype">HTML5 doctype</a></li>
+      <li><a href="#html-encoding">Character encoding</a></li>
+      <li><a href="#html-style-script">CSS and JavaScript includes</a></li>
+      <li><a href="#html-practicality-over-purity">Practicality over purity</a></li>
+      <li><a href="#html-attribute-order">Attribute order</a></li>
+      <li><a href="#html-boolean-attributes">Boolean attributes</a></li>
+      <li><a href="#html-reducing-markup">Reducing markup</a></li>
+      <li><a href="#html-javascript">JavaScript generated markup</a></li>
     </ul>
   </div>
   <div class="col">
+    <h4><a href="#css">CSS</a></h4>
     <ul>
-      <li><a href="#human-readable">Human readable</a>
-        <ul>
-          <li><a href="#css-comments">Comments</a></li>
-          <li><a href="#css-classes">Classes</a></li>
-          <li><a href="#css-selectors">Selectors</a></li>
-        </ul>
-      </li>
-      <li><a href="#organization">Organization</a></li>
-      <li><a href="#copy">Copy</a>
-        <ul>
-          <li><a href="#copy-sentence-case">Sentence case</a></li>
-        </ul>
-      </li>
+      <li><a href="#css-syntax">CSS syntax</a></li>
+      <li><a href="#css-declaration-order">Declaration order</a></li>
+      <li><a href="#css-media-queries">Media query placement</a></li>
+      <li><a href="#css-prefixed-properties">Prefixed properties</a></li>
+      <li><a href="#css-single-declarations">Rules with single declarations</a></li>
+      <li><a href="#css-shorthand">Shorthand notation</a></li>
+      <li><a href="#css-comments">Comments</a></li>
+      <li><a href="#css-classes">Classes</a></li>
+      <li><a href="#css-selectors">Selectors</a></li>
+      <li><a href="#css-organization">Organization</a></li>
     </ul>
   </div>
 </div>
@@ -95,6 +82,32 @@ layout: default
   </div>
 </div>
 
+<div class="section" id="html-encoding">
+  <div class="col">
+    <h3>Character encoding</h3>
+    <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding.</p>
+  </div>
+  <div class="col">
+    {% highlight html %}{% include html/encoding.html %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="html-style-script">
+  <div class="col">
+    <h3>CSS and JavaScript includes</h3>
+    <p>Per HTML5 spec, typically there is no need to specify a <code>type</code> when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code> are their respective defaults.</p>
+    <h4>HTML5 spec links</h4>
+    <ul>
+      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Using link</a></li>
+      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element">Using style</a></li>
+      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element">Using script</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    {% highlight html %}{% include html/style-script.html %}{% endhighlight %}
+  </div>
+</div>
+
 <div class="section" id="html-practicality">
   <div class="col">
     <h3>Practicality over purity</h3>
@@ -108,7 +121,7 @@ layout: default
     <p>HTML attributes should come in this particular order for easier reading of code.</p>
     <ul>
       <li><code>class</code></li>
-      <li><code>id</code></li>
+      <li><code>id</code>, <code>name</code></li>
       <li><code>data-*</code></li>
       <li><code>src</code>, <code>for</code>, <code>type</code>, <code>href</code></li>
     </ul>
@@ -196,7 +209,8 @@ layout: default
       <li>Typographic</li>
       <li>Visual</li>
     </ol>
-    <p>Positioning comes first because it can remove an element from the normal flow of the page and override box model related styles. The box model comes next as it dictates a component's dimensions and placement. Everything else takes place *inside* the component or without impacting the previous two sections, and thus they come last.</p>
+    <p>Positioning comes first because it can remove an element from the normal flow of the document and override box model related styles. The box model comes next as it dictates a component's dimensions and placement.</p>
+    <p>Everything else takes place <em>inside</em> the component or without impacting the previous two sections, and thus they come last.</p>
     <p>For a complete list of properties and their order, please see <a href="http://twitter.github.com/recess">Recess</a>.</p>
   </div>
   <div class="col">
@@ -236,6 +250,26 @@ layout: default
   </div>
 </div>
 
+<div class="section" id="css-shorthand">
+  <div class="col">
+    <h3>Shorthand notation</h3>
+    <p>Strive to limit use of shorthand declarations to instances where you must explicitly set all the avaialble values. Common overused shorthand properties include:</p>
+    <ul>
+      <li><code>padding</code></li>
+      <li><code>margin</code></li>
+      <li><code>font</code></li>
+      <li><code>background</code></li>
+      <li><code>border</code></li>
+      <li><code>border-radius</code></li>
+    </ul>
+    <p>Often times we don't need to set all the values a shorthand property represents. For example, HTML headings only set top and bottom margin, so when necessary, only override those two values. Excessive use of shorthand properties often leads to sloppier code with unnecessary overrides and unintented side effects.</p>
+    <p>The Mozilla Developer Network has a great article on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">shorthand properties</a> for those unfamiliar with notation and behavior.</p>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/shorthand.css %}{% endhighlight %}
+  </div>
+</div>
+
 <div class="section" id="css-nesting">
   <div class="col">
     <h3>Nesting in LESS and SASS</h3>
@@ -246,14 +280,11 @@ layout: default
   </div>
 </div>
 
-<div class="heading" id="css-human-readable">
-  <h2>Human readable</h3>
-</div>
-
 <div class="section" id="css-comments">
   <div class="col">
     <h3>Comments</h3>
     <p>Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others. Great code comments convey context or purpose. Do not simply reiterate a component or class name.</p>
+    <p>Be sure to write in complete sentences or larger comments and succinct phrases for general notes.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/comments.css %}{% endhighlight %}
@@ -269,6 +300,7 @@ layout: default
       <li>Keep classes as short and succinct as possible.</li>
       <li>Use meaningful names; use structural or purposeful names over presentational.</li>
       <li>Prefix classes based on the closest parent or base class.</li>
+      <li>Use <code>.js-*</code> classes to denote behavior (as opposed to style), but keep these classes out of your CSS.</li>
     </ul>
   </div>
   <div class="col">
@@ -322,20 +354,5 @@ layout: default
       <li>Add new line at end of files.</li>
     </ul>
     <p>Consider documenting and applying these preferences to your project's <code>.editorconfig</code> file. For an example, see <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">the one in Bootstrap</a>. Learn more <a href="http://editorconfig.org">about EditorConfig</a>.</p>
-  </div>
-</div>
-
-
-<div class="heading" id="copy">
-  <h2 id="copy">Copy</h2>
-</div>
-
-<div class="section" id="copy-sentence-case">
-  <div class="col">
-    <h3>Sentence case</h3>
-    <p>Always write copy, including headings and code comments, in <a href="http://en.wikipedia.org/wiki/Letter_case#Usage">sentence case</a>. In other words, aside from titles and proper nouns, only the first word should be capitalized.</p>
-  </div>
-  <div class="col">
-    {% highlight css %}{% include copy/sentence-case.html %}{% endhighlight %}
   </div>
 </div>
