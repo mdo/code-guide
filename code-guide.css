@@ -78,15 +78,13 @@ h4 { font-size: 1.25rem }
 p {
   margin: 0 0 1rem;
 }
-p:last-child {
-  margin-bottom: 0;
-}
 .lead {
   font-size: 1.3rem;
 }
 
 blockquote {
   position: relative;
+  margin: 0 1rem 1rem;
   font-style: italic;
   color: #7a7a7a;
 }
@@ -97,6 +95,14 @@ blockquote p {
 ul li {
   margin-bottom: .25rem;
 }
+
+/* Tighten up margin on last items */
+p:last-child,
+ul:last-child,
+blockquote:last-child{
+  margin-bottom: 0;
+}
+
 
 
 /*
@@ -145,12 +151,13 @@ pre code {
  */
 
 .col {
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 .col p {
   max-width: 40rem;
 }
 .col + .col {
+  border-top: 1px solid #dfe1e8;
   background-color: #f7f7f9;
 }
 @media (min-width: 38rem) {
@@ -168,6 +175,9 @@ pre code {
     display: table-cell;
     padding: 3rem;
     vertical-align: top;
+  }
+  .col + .col {
+    border-top: 0;
   }
 }
 
