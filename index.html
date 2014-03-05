@@ -24,7 +24,8 @@ layout: default
   <div class="col">
     <h4><a href="#css">CSS</a></h4>
     <ul>
-      <li><a href="#css-syntax">CSS syntax</a></li>
+      <li><a href="#css-nomenclature">Nomenclature</a></li>
+      <li><a href="#css-syntax">syntax</a></li>
       <li><a href="#css-declaration-order">Declaration order</a></li>
       <li><a href="#css-media-queries">Media query placement</a></li>
       <li><a href="#css-prefixed-properties">Prefixed properties</a></li>
@@ -175,6 +176,46 @@ layout: default
   <h2>CSS</h2>
 </div>
 
+<div class="section" id="css-nomenclature">
+  <div class="col">
+    <h3>Nomenclature</h3>
+    <p>There's a lot of jargon in code languages, so let's define some key terms with clear examples. Here's what we'll cover:</p>
+    <ol>
+      <li>Comment</li>
+      <li>At rules
+        <ol>
+          <li>Media query</li>
+          <li>Import</li>
+        </ol>
+      </li>
+      <li>Rule set</li>
+      <li>Selector
+        <ol>
+          <li>Element type selector</li>
+          <li>Class selector</li>
+          <li>Universal selector</li>
+          <li>Pseudo-class</li>
+          <li>Pseudo-element</li>
+        </ol>
+      </li>
+      <li>Declaration block</li>
+      <li>Declaration</li>
+      <li>Propery</li>
+      <li>Value</li>
+      <li>Keyword</li>
+      <li>Unit(s)</li>
+      <li>Arguments</li>
+      <li>URI</li>
+      <li>Initial value</li>
+      <li>Shorthand property</li>
+    </ol>
+    <p>This list isn't complete, but it covers almost everything you'll need to know. For more information, consult <a href="http://reference.sitepoint.com/css/">SitePoint's CSS reference guide</a>.</p>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/nomenclature.css %}{% endhighlight %}
+  </div>
+</div>
+
 <div class="section" id="css-syntax">
   <div class="col">
     <h3>Syntax</h3>
@@ -186,8 +227,8 @@ layout: default
       <li>Include one space after <code>:</code> for each declaration.</li>
       <li>Each declaration should appear on its own line for more accurate error reporting.</li>
       <li>End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.</li>
-      <li>Comma-separated values should include a space after each comma.</li>
-      <li>Don't include spaces after commas <em>within</em> <code>rgb()</code> or <code>rgba()</code> colors to differentiate color values from CSS properties that allow multiple values that are already separated by a comma and space. Also, don't prefix values with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code>).</li>
+      <li>Comma-separated property values should include a space after each comma (e.g., <code>box-shadow</code>).</li>
+      <li>Don't include spaces after commas <em>within</em> <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, or <code>rect()</code> values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space). Also, don't prefix values with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code>).</li>
       <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li>
       <li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li>
       <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li>

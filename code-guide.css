@@ -95,6 +95,9 @@ blockquote p {
 ul li {
   margin-bottom: .25rem;
 }
+ol ol {
+  list-style: lower-alpha;
+}
 
 /* Tighten up margin on last items */
 p:last-child,
