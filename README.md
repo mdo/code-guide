@@ -4,6 +4,8 @@ Code Guide is a project for documenting standards for developing flexible, durab
 
 **[Start reading ☞](http://mdo.github.io/code-guide)**
 
+---
+
 ### License
 
 Released under MIT by, and copyright 2014, @mdo.
