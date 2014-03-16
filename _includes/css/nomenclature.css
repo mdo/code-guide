@@ -1,0 +1,54 @@
+/*
+ * 1. Comment
+ */
+
+/* This is a comment. Content in comments do not impact rendering. */
+
+
+/*
+ * 2. At rule
+ */
+
+/* 2a. At imports, for importing from another .css file. */
+@import: url("component.css");
+
+/* 2b. Media queries, for scoping CSS to a particular media type or feature. */
+@media print {
+  .element { display: none; }
+}
+@media (min-width: 38rem) {
+  html {
+    font-size: 20px;
+  }
+}
+
+
+/*
+ * 3. Rule set
+ * Rule sets, or rules, the pairing of a selector and a declaration block. It applies all the declarations within the declaration block to HTML elements matching the selector.
+ */
+
+.example {
+  color: #fff;
+  background-color: #777;
+}
+
+/*
+ * 4. Selector
+ * The part of the rule set that comes before the opening {. Determines what HTML elements the following CSS should apply to.
+ */
+
+/* 4a. Element type selector */
+small { }
+
+/* 4b. Class selector */
+.simple-selector { }
+
+/* 4c. Attribute selector, for styling based on the value of an element's attribute */
+input[type="text"] { }
+
+/* 4d. Universal selector, for styling every element */
+* { }
+
+
+
