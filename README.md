@@ -25,6 +25,7 @@ Translations are maintained by their creators and may not always be up to date w
 - [Italian](http://alessandro1997.github.io/code-guide/) - Translated by [Alessandro Desantis](https://github.com/alessandro1997)
 - [Russian](http://instanceofpro.github.io/code-guide/) - Translated by [Eugene Abrosimov](https://github.com/instanceofpro)
 - [Czech](http://smedzlatko.github.io/) - Translated by [Martin Myslík](https://github.com/Smedzlatko)
+- [Traditional Chinese](http://juanitofatas.github.io/) - Translated by [Juanito Fatas](https://github.com/JuanitoFatas)
 
 Have a translation you'd like to link to? Open a pull request to add it.
 
