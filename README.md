@@ -26,6 +26,7 @@ Translations are maintained by their creators and may not always be up to date w
 - [Russian](http://instanceofpro.github.io/code-guide/) - Translated by [Eugene Abrosimov](https://github.com/instanceofpro)
 - [Czech](http://smedzlatko.github.io/) - Translated by [Martin Myslík](https://github.com/Smedzlatko)
 - [Traditional Chinese](http://juanitofatas.github.io/) - Translated by [Juanito Fatas](https://github.com/JuanitoFatas)
+- [中文 (Chinese)](http://codeguide.bootcss.com/) - Translated by [WangSai](http://www.bootcss.com/)
 
 Have a translation you'd like to link to? Open a pull request to add it.
 
