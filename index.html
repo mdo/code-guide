@@ -28,6 +28,7 @@ layout: default
     <ul>
       <li><a href="#css-syntax">CSS syntax</a></li>
       <li><a href="#css-declaration-order">Declaration order</a></li>
+      <li><a href="#css-import">Don't use @import</a></li>
       <li><a href="#css-media-queries">Media query placement</a></li>
       <li><a href="#css-prefixed-properties">Prefixed properties</a></li>
       <li><a href="#css-single-declarations">Rules with single declarations</a></li>
@@ -248,6 +249,22 @@ layout: default
   </div>
   <div class="col">
     {% highlight css %}{% include css/declaration-order.css %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="css-import">
+  <div class="col">
+    <h3>Don't use <code>@import</code></h3>
+    <p>Compared to <code>&lt;link&gt;</code>s, <code>@import</code> is slower, adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:</p>
+    <ul>
+      <li>Use multiple <code>&lt;link&gt;</code> elements</li>
+      <li>Compile your CSS with a preprocessor like Sass or Less into a single file</li>
+      <li>Concatenate your CSS files with features provided in Rails, Jekyll, and other environments</li>
+    </ul>
+    <p>For more information, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">read this article by Steve Souders</a>.</p>
+  </div>
+  <div class="col">
+    {% highlight html %}{% include css/import.html %}{% endhighlight %}
   </div>
 </div>
 
