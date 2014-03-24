@@ -43,7 +43,7 @@ layout: nil
 html {
   font-size: 16px;
 }
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   html {
     font-size: 20px;
   }
@@ -160,12 +160,12 @@ pre code {
   border-top: 1px solid #dfe1e8;
   background-color: #f7f7f9;
 }
-@media (min-width: 38rem) {
+@media (min-width: 38em) {
   .col {
     padding: 2rem;
   }
 }
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .section {
     display: table;
     width: 100%;
@@ -213,7 +213,7 @@ pre code {
   color: #fff;
 }
 
-@media (min-width: 38rem) {
+@media (min-width: 38em) {
   .masthead {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -230,7 +230,7 @@ pre code {
   background-color: #dfe1e8;
 }
 
-@media (min-width: 38rem) {
+@media (min-width: 38em) {
   .heading {
     padding: 3rem 3rem 2.5rem;
   }
