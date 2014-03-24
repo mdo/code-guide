@@ -18,8 +18,9 @@ Heavily inspired by [Idiomatic CSS](https://github.com/necolas/idiomatic-css) an
 
 Translations are maintained by their creators and may not always be up to date with the original here.
 
-- [Chinese](http://zoomzhao.github.io/code-guide/) - Translated by [Zoom Zhao](https://github.com/ZoomZhao)
-- [Chinese, Traditional](http://juanitofatas.github.io/) - Translated by [Juanito Fatas](https://github.com/JuanitoFatas)
+- [中文(Chinese)](http://zoomzhao.github.io/code-guide/) - Translated by [Zoom Zhao](https://github.com/ZoomZhao)
+- [中文(Chinese)](http://codeguide.bootcss.com/) - Translated by [WangSai](http://www.bootcss.com/)
+- [繁体中文(Chinese, Traditional)](http://juanitofatas.github.io/) - Translated by [Juanito Fatas](https://github.com/JuanitoFatas)
 - [Czech](http://smedzlatko.github.io/) - Translated by [Martin Myslík](https://github.com/Smedzlatko)
 - [Indonesian](http://diagramatics.github.io/code-guide-id) - Translated by [Steven Sinatra](http://diagramatics.me)
 - [Italian](http://alessandro1997.github.io/code-guide/) - Translated by [Alessandro Desantis](https://github.com/alessandro1997)
