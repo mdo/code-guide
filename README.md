@@ -20,13 +20,13 @@ Translations are maintained by their creators and may not always be up to date w
 
 - [中文(Chinese)](http://zoomzhao.github.io/code-guide/) - Translated by [Zoom Zhao](https://github.com/ZoomZhao)
 - [中文(Chinese)](http://codeguide.bootcss.com/) - Translated by [WangSai](http://www.bootcss.com/)
-- [繁体中文(Chinese, Traditional)](http://juanitofatas.github.io/) - Translated by [Juanito Fatas](https://github.com/JuanitoFatas)
 - [Czech](http://smedzlatko.github.io/) - Translated by [Martin Myslík](https://github.com/Smedzlatko)
 - [Indonesian](http://diagramatics.github.io/code-guide-id) - Translated by [Steven Sinatra](http://diagramatics.me)
 - [Italian](http://alessandro1997.github.io/code-guide/) - Translated by [Alessandro Desantis](https://github.com/alessandro1997)
 - [Portuguese](http://diegoeis.github.io/code-guide/) - Translated by [Diego Eis](http://tableless.com.br/)
 - [Russian](http://instanceofpro.github.io/code-guide/) - Translated by [Eugene Abrosimov](https://github.com/instanceofpro)
 - [Spanish](http://adrianayala.mx/code-guide/es/) - Translated by [Adrian Ayala](http://adrianayala.mx/)
+- [繁体中文(Traditional Chinese)](http://juanitofatas.github.io/code-guide) - Translated by [Juanito Fatas](https://github.com/JuanitoFatas)
 
 Have a translation you'd like to link to? Open a pull request to add it here. Be sure to keep it alphabetical.
 
