@@ -181,6 +181,11 @@ pre code {
   }
 }
 
+/* Make the ToC a whole section */
+.toc .col + .col {
+  background-color: #fff;
+}
+
 
 /*
  * Masthead
