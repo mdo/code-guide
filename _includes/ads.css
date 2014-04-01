@@ -1,0 +1,38 @@
+/* Ads
+-------------------------------------------------- */
+
+#fusionads {
+  display: block;
+  max-width: 18rem;
+  padding: 1rem;
+  margin: 0 auto;
+  overflow: hidden; /* clearfix */
+  font-size: .8rem;
+  line-height: 1.3;
+  text-align: left;
+  background-color: rgba(0,0,0,.2);
+}
+.fusion-text,
+.fusion-poweredby {
+  display: block;
+  color: #fff;
+}
+.fusion-text:hover,
+.fusion-poweredby:hover {
+  text-decoration: none;
+}
+.fusion-img {
+  float: left;
+  margin-right: 1rem;
+}
+.fusion-poweredby {
+  display: block !important;
+  margin-top: .5rem;
+}
+
+@media (min-width: 40em) {
+  #fusionads {
+    max-width: 16rem;
+    font-size: .7rem;
+  }
+}
