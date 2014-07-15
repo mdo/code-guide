@@ -1,7 +1,7 @@
-name:          Code Guide by @mdo
+name:          D•Labs Code Guide
 description:   Standards for developing flexible, durable, and sustainable HTML and CSS.
-url:           http://codeguide.co
+url:           http://dlabs.github.io/code-guide-html-css
 
 markdown:      rdiscount
 permalink:     pretty
-pygments:      true
+highlighter:   true
