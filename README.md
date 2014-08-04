@@ -23,6 +23,7 @@ Translations are maintained by their creators and may not always be up to date w
 - [Chinese, Traditional](http://juanitofatas.github.io/code-guide/) - Translated by [Juanito Fatas](https://github.com/JuanitoFatas)
 - [Czech](http://smedzlatko.github.io/) - Translated by [Martin Myslík](https://github.com/Smedzlatko)
 - [French](http://pixelastic.github.io/code-guide/) - Translated by [Tim Carry](https://github.com/pixelastic/)
+- [Japanese](http://kia-king.com/code-guide/) - Translated by [Kia King Ishii](https://github.com/kiaking)
 - [Indonesian](http://diagramatics.github.io/code-guide-id) - Translated by [Steven Sinatra](http://diagramatics.me)
 - [Italian](http://alessandro1997.github.io/code-guide/) - Translated by [Alessandro Desantis](https://github.com/alessandro1997)
 - [Portuguese](http://diegoeis.github.io/code-guide/) - Translated by [Diego Eis](http://tableless.com.br/)
