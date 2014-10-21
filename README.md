@@ -30,6 +30,7 @@ Translations are maintained by their creators and may not always be up to date w
 - [Portuguese](http://diegoeis.github.io/code-guide/) - Translated by [Diego Eis](http://tableless.com.br/)
 - [Russian](http://instanceofpro.github.io/code-guide/) - Translated by [Eugene Abrosimov](https://github.com/instanceofpro)
 - [Spanish](http://adrianayala.mx/code-guide/es/) - Translated by [Adrian Ayala](http://adrianayala.mx/)
+- [Turkish](http://mehmetdik.github.io/code-guide/) - Translated by [Mehmet Dik](https://github.com/mehmetdik)
 
 Have a translation you'd like to link to? Open a pull request to add it here. Be sure to keep it alphabetical.
 
