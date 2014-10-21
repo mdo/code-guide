@@ -1,19 +1,3 @@
-Skip to content
- This repository
-Explore
-Gist
-Blog
-Help
-Mehmet Dik mehmetdik
- 
-1  Unwatch 
-  Star 0
- Fork 483mehmetdik/code-guide
-forked from mdo/code-guide
- branch: gh-pages  code-guide / index.html
-Aaron Greenbergajgreenb 16 days ago Include `value`in the HTML Attribute Order
-13 contributors Mark OttoCiro NunesJunya OguraMathias BynensAaron GreenbergKeslerNelson PecoraJarwainjeromehubertHeinrich FenkartFaruk AteşZoomZhaoChris
-410 lines (375 sloc)  20.948 kb RawBlameHistory  
 ---
 layout: default
 ---
@@ -26,34 +10,34 @@ layout: default
   <div class="col">
     <h4><a href="#html">HTML</a></h4>
     <ul>
-      <li><a href="#html-syntax">Syntax</a></li>
-      <li><a href="#html-doctype">HTML5 doctype</a></li>
-      <li><a href="#html-lang">Language attribute</a></li>
-      <li><a href="#html-encoding">Character encoding</a></li>
+      <li><a href="#html-syntax">Sentaks</a></li>
+      <li><a href="#html-doctype">HTML5 döküman tipi</a></li>
+      <li><a href="#html-lang">Dilin niteliği</a></li>
+      <li><a href="#html-encoding">Karakter kodlaması</a></li>
       <li><a href="#html-ie-compatibility-mode">Internet Explorer compatibility mode</a></li>
-      <li><a href="#html-style-script">CSS and JavaScript includes</a></li>
-      <li><a href="#html-practicality">Practicality over purity</a></li>
-      <li><a href="#html-attribute-order">Attribute order</a></li>
-      <li><a href="#html-boolean-attributes">Boolean attributes</a></li>
-      <li><a href="#html-reducing-markup">Reducing markup</a></li>
-      <li><a href="#html-javascript">JavaScript generated markup</a></li>
+      <li><a href="#html-style-script">CSS ve JavaScript içerir</a></li>
+      <li><a href="#html-practicality">Saflık fazla uygulanabilirlik</a></li>
+      <li><a href="#html-attribute-order">Nitelik(kod) Düzeni</a></li>
+      <li><a href="#html-boolean-attributes">Boolean özelliği</a></li>
+      <li><a href="#html-reducing-markup">Biçimlendirmeyi Azaltın</a></li>
+      <li><a href="#html-javascript">JavaScript ile oluşturulan biçimlendirme</a></li>
     </ul>
   </div>
   <div class="col">
     <h4><a href="#css">CSS</a></h4>
     <ul>
-      <li><a href="#css-syntax">CSS syntax</a></li>
-      <li><a href="#css-declaration-order">Declaration order</a></li>
-      <li><a href="#css-import">Don't use @import</a></li>
-      <li><a href="#css-media-queries">Media query placement</a></li>
-      <li><a href="#css-prefixed-properties">Prefixed properties</a></li>
-      <li><a href="#css-single-declarations">Rules with single declarations</a></li>
-      <li><a href="#css-shorthand">Shorthand notation</a></li>
-      <li><a href="#css-nesting">Nesting in Less and Sass</a></li>
-      <li><a href="#css-comments">Comments</a></li>
-      <li><a href="#css-classes">Classes</a></li>
-      <li><a href="#css-selectors">Selectors</a></li>
-      <li><a href="#css-organization">Organization</a></li>
+      <li><a href="#css-syntax">CSS sentaks</a></li>
+      <li><a href="#css-declaration-order">Deklarasyon düzeni</a></li>
+      <li><a href="#css-import">@import kullanmayın</a></li>
+      <li><a href="#css-media-queries">Medya sorgu yeri</a></li>
+      <li><a href="#css-prefixed-properties">Başa koyma özelliği</a></li>
+      <li><a href="#css-single-declarations">Tek beyanname ile Kurallar</a></li>
+      <li><a href="#css-shorthand">Shorthand notasyonu</a></li>
+      <li><a href="#css-nesting">Az ve Sass ile yuvalama</a></li>
+      <li><a href="#css-comments">Yorumlar</a></li>
+      <li><a href="#css-classes">Sınıflar</a></li>
+      <li><a href="#css-selectors">Seçiciler</a></li>
+      <li><a href="#css-organization">Organizasyon</a></li>
     </ul>
   </div>
 </div>
@@ -61,12 +45,12 @@ layout: default
 
 <div class="section" id="golden-rule">
   <div class="col">
-    <h2>Golden rule</h2>
-    <p>Enforce these, or your own, agreed upon guidelines at all times. Small or large, call out what's incorrect. For additions or contributions to this Code Guide, please <a href="https://github.com/mdo/code-guide/issues/new">open an issue on GitHub</a>.</p>
+    <h2>Altın kural</h2>
+    <p>Kendi kurallarınızı ayarlayın veya takip edin.Küçük veya büyük yanlışlar düzeltilmelidir. Bu kod klavuzuna eklemeler yada düzeltmeler için, lütfen <a href="https://github.com/mdo/code-guide/issues/new">GitHubda bir issue açın</a>.</p>
   </div>
   <div class="col">
     <blockquote>
-      <p>Every line of code should appear to be written by a single person, no matter the number of contributors.</p>
+      <p>Tüm kod satırlarına bakılmaksızın katılımcılarının sayısının, aynı kişi tarafından yazıldığı bilinmesi gerekir..</p>
     </blockquote>
   </div>
 </div>
@@ -79,7 +63,7 @@ layout: default
 
 <div class="section" id="html-syntax">
   <div class="col">
-    <h3>Syntax</h3>
+    <h3>Sentaks</h3>
     <ul>
       <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
       <li>Nested elements should be indented once (two spaces).</li>
@@ -423,5 +407,3 @@ layout: default
     <p>Consider documenting and applying these preferences to your project's <code>.editorconfig</code> file. For an example, see <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">the one in Bootstrap</a>. Learn more <a href="http://editorconfig.org">about EditorConfig</a>.</p>
   </div>
 </div>
-Status API Training Shop Blog About
-© 2014 GitHub, Inc. Terms Privacy Security Contact
