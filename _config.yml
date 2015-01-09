@@ -1,6 +1,6 @@
-name:          Code Guide by @mdo2
-description:   Standards for developing flexible, durable, and sustainable HTML and CSS.
-url:           http://codeguide.co
+name:          AG2Nurun Code Guide
+description:   Diretrizes para os desenvolvedores frontend
+url:           http://mdanemberg.github.io/code-guide
 
 markdown:      rdiscount
 permalink:     pretty
