@@ -28,6 +28,7 @@ Translations are maintained by their creators and may not always be up to date w
 - [Italian](http://alessandro1997.github.io/code-guide/) - Translated by [Alessandro Desantis](https://github.com/alessandro1997)
 - [Japanese](http://kia-king.com/code-guide/) - Translated by [Kia King Ishii](https://github.com/kiaking)
 - [Korean](http://code-guide.aliencube.org/) - Translated by [Aliencube](https://github.com/aliencube)
+- [Polish](http://) - Translated by [Lukasz Bondarewicz](https://github.com/bondarewicz)
 - [Portuguese](http://diegoeis.github.io/code-guide/) - Translated by [Diego Eis](http://tableless.com.br/)
 - [Russian](http://instanceofpro.github.io/code-guide/) - Translated by [Eugene Abrosimov](https://github.com/instanceofpro)
 - [Spanish](http://adrianayala.mx/code-guide/es/) - Translated by [Adrian Ayala](http://adrianayala.mx/)
