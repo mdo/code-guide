@@ -1,0 +1,9 @@
+// Bad example
+.element {
+  margin: 10px 0 @variable*2 10px;
+}
+
+// Good example
+.element {
+  margin: 10px 0 (@variable * 2) 10px;
+}
