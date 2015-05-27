@@ -4,7 +4,7 @@ layout: default
 
 
 <div class="heading" id="toc">
-  <h2>Table of contents</h2>
+  <h2>ตารางสารบัญ</h2>
 </div>
 <div class="section toc">
   <div class="col">
@@ -81,7 +81,7 @@ layout: default
 <div class="section" id="html-doctype">
   <div class="col">
     <h3>HTML5 doctype</h3>
-    <p>Enforce standards mode and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+    <p>โหมดการบังคับใช้มาตรฐานและการแสดงผลที่สอดคล้องกันมากขึ้นในทุกเบราว์เซอร์ที่เป็นไปได้กับประเภทเอกสารนี้ง่ายที่จุดเริ่มต้นของทุกเพจ HTML</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/doctype.html %}{% endhighlight %}
@@ -91,9 +91,9 @@ layout: default
 <div class="section" id="html-lang">
   <div class="col">
     <h3>Language attribute</h3>
-    <p>From the HTML5 spec:</p>
+    <p>จากข้อมูลจำเพาะ HTML5:</p>
     <blockquote>
-      <p>Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.</p>
+      <p>ผู้เขียนได้รับการสนับสนุนในการระบุแอตทริบิวต์ lang ในองค์ประกอบ html ที่รากทำให้ภาษาของเอกสาร เครื่องมือนี้ช่วยสังเคราะห์เสียงเพื่อตรวจสอบสิ่งออกเสียงที่จะใช้เครื่องมือการแปลเพื่อตรวจสอบสิ่งที่จะใช้กฎระเบียบและอื่น ๆ</p>
     </blockquote>
     <p>Read more about the <code>lang</code> attribute <a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">in the spec</a>.</p>
     <p>Head to Sitepoint for a <a href="http://reference.sitepoint.com/html/lang-codes">list of language codes</a>.</p>
@@ -105,9 +105,9 @@ layout: default
 
 <div class="section" id="html-ie-compatibility-mode">
   <div class="col">
-    <h3>IE compatibility mode</h3>
-    <p>Internet Explorer supports the use of a document compatibility <code>&lt;meta&gt;</code> tag to specify what version of IE the page should be rendered as. Unless circumstances require otherwise, it's most useful to instruct IE to use the latest supported mode with <strong>edge mode</strong>.</p>
-    <p>For more information, <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">read this awesome Stack Overflow article</a>.</p>
+    <h3>IE โหมดที่เข้ากัน</h3>
+    <p>Internet Explorer สนับสนุนการใช้ความเข้ากันได้เอกสาร <code>&lt;meta&gt;</code> แท็กเพื่อระบุสิ่งที่รุ่นของ IE หน้าควรจะแสดงผลเป็น ยกเว้นในกรณีที่สถานการณ์ต้องมิฉะนั้นจะมีประโยชน์มากที่สุดที่จะสั่งให้ IE <strong>edge mode</strong>.</p>
+    <p>สำหรับข้อมูลเพิ่มเติมโปรด<a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">read this awesome Stack Overflow article</a>.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/ie-compatibility-mode.html %}{% endhighlight %}
@@ -117,7 +117,7 @@ layout: default
 <div class="section" id="html-encoding">
   <div class="col">
     <h3>Character encoding</h3>
-    <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding. When doing so, you may avoid using character entities in your HTML, provided their encoding matches that of the document (generally UTF-8).</p>
+    <p>ได้อย่างรวดเร็วและง่ายดายให้แน่ใจว่าการแสดงผลที่เหมาะสมของเนื้อหาของคุณด้วยการประกาศการเข้ารหัสอักขระชัดเจน เมื่อทำเช่นนั้นคุณอาจจะหลีกเลี่ยงการใช้หน่วยงานที่ตัวละครใน HTML ของคุณให้การเข้ารหัสของพวกเขาตรงกับที่ของเอกสาร (โดยทั่วไป UTF-8)</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/encoding.html %}{% endhighlight %}
@@ -127,8 +127,8 @@ layout: default
 <div class="section" id="html-style-script">
   <div class="col">
     <h3>CSS and JavaScript includes</h3>
-    <p>Per HTML5 spec, typically there is no need to specify a <code>type</code> when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code> are their respective defaults.</p>
-    <h4>HTML5 spec links</h4>
+    <p>ข้อมูลจำเพาะต่อ HTML5 ซึ่งโดยปกติจะมีความจำเป็นในการระบุ <code>type</code> มื่อรวมทั้ง CSS และ JavaScript เป็นไฟล์  <code>text/css</code> และ <code>text/javascript</code> เป็นค่าเริ่มต้นของตน </p>
+    <h4>HTML5 การเชื่อมโยงข้อมูลจำเพาะ</h4>
     <ul>
       <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Using link</a></li>
       <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element">Using style</a></li>
@@ -143,14 +143,14 @@ layout: default
 <div class="section" id="html-practicality">
   <div class="col">
     <h3>Practicality over purity</h3>
-    <p>Strive to maintain HTML standards and semantics, but not at the expense of practicality. Use the least amount of markup with the fewest intricacies whenever possible.</p>
+    <p>มุ่งมั่นที่จะรักษามาตรฐาน HTML และความหมาย แต่ไม่ได้อยู่ที่ค่าใช้จ่ายของการปฏิบัติจริง ใช้จำนวนน้อยที่สุดของมาร์กอัปที่มีความซับซ้อนน้อยที่สุดเมื่อใดก็ตามที่เป็นไปได้</p>
   </div>
 </div>
 
 <div class="section" id="html-attribute-order">
   <div class="col">
     <h3>Attribute order</h3>
-    <p>HTML attributes should come in this particular order for easier reading of code.</p>
+    <p>คุณลักษณะ HTML ควรมาเพื่อการนี​​้โดยเฉพาะสำหรับการอ่านรห​​ัสได้ง่ายขึ้น</p>
     <ul>
       <li><code>class</code></li>
       <li><code>id</code>, <code>name</code></li>
@@ -159,7 +159,7 @@ layout: default
       <li><code>title</code>, <code>alt</code></li>
       <li><code>aria-*</code>, <code>role</code></li>
     </ul>
-    <p>Classes make for great reusable components, so they come first. Ids are more specific and should be used sparingly (e.g., for in-page bookmarks), so they come second.</p>
+    <p>ทำให้การเรียนการสอนสำหรับส่วนประกอบที่ดีนำมาใช้ใหม่เพื่อให้พวกเขามาก่อน มีหมายเลขเฉพาะเจาะจงมากขึ้นและควรจะใช้เท่าที่จำเป็น (เช่นที่คั่นหน้าในหน้า) ดังนั้นพวกเขามาที่สอง</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/attribute-order.html %}{% endhighlight %}
@@ -169,8 +169,8 @@ layout: default
 <div class="section" id="html-boolean-attributes">
   <div class="col">
     <h3>Boolean attributes</h3>
-    <p>A boolean attribute is one that needs no declared value. XHTML required you to declare a value, but HTML5 has no such requirement.</p>
-    <p>For further reading, consult the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG section on boolean attributes</a>:</p>
+    <p>แอตทริบิวต์แบบบูลเป็นหนึ่งที่ไม่จำเป็นต้องประกาศค่า XHTML คุณจำเป็นที่จะประกาศค่า แต่ HTML5 ไม่มีความต้องการดังกล่าว</p>
+    <p>สำหรับการอ่านเพิ่มเติมได้ที่ปรึกษา <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG section on boolean attributes</a>:</p>
     <blockquote>
       <p>The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.</p>
     </blockquote>
@@ -188,7 +188,7 @@ layout: default
 <div class="section" id="html-reducing-markup">
   <div class="col">
     <h3>Reducing markup</h3>
-    <p>Whenever possible, avoid superfluous parent elements when writing HTML. Many times this requires iteration and refactoring, but produces less HTML. Take the following example:</p>
+    <p>เมื่อใดก็ตามที่เป็นไปได้ให้หลีกเลี่ยงองค์ประกอบปกครองฟุ่มเฟือยเมื่อเขียน HTML หลายครั้งนี้ต้องใช้ซ้ำและ refactoring แต่ผลิต HTML น้อย นำตัวอย่างต่อไปนี้:</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/reducing-markup.html %}{% endhighlight %}
@@ -198,7 +198,7 @@ layout: default
 <div class="section" id="html-javascript">
   <div class="col">
     <h3>JavaScript generated markup</h3>
-    <p>Writing markup in a JavaScript file makes the content harder to find, harder to edit, and less performant. Avoid it whenever possible.</p>
+    <p>มาร์กอัปเขียนไฟล์ JavaScript ทำให้เนื้อหาที่ยากจะหายากที่จะแก้ไขและ performant น้อย หลีกเลี่ยงเมื่อใดก็ตามที่เป็นไปได้</p>
   </div>
 </div>
 
@@ -272,7 +272,7 @@ layout: default
 <div class="section" id="css-media-queries">
   <div class="col">
     <h3>Media query placement</h3>
-    <p>Place media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. Doing so only makes it easier for folks to miss them in the future. Here's a typical setup.</p>
+    <p>คำสั่งสื่อสถานที่ใกล้เคียงกับกฎที่เกี่ยวข้องของชุดเมื่อใดก็ตามที่เป็นไปได้ อย่ากำพวกเขาทั้งหมดในสไตล์ที่แยกต่างหากหรือตอนท้ายของเอกสาร การทำเช่นนี้มี แต่จะทำให้มันง่ายขึ้นสำหรับคนที่จะคิดถึงพวกเขาในอนาคต นี่คือการตั้งค่าทั่วไป</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/media-queries.css %}{% endhighlight %}
@@ -294,7 +294,7 @@ layout: default
   <div class="col">
     <h3>Single declarations</h3>
     <p>In instances where a rule set includes <strong>only one declaration</strong>, consider removing line breaks for readability and faster editing. Any rule set with multiple declarations should be split to separate lines.</p>
-    <p>The key factor here is error detection—e.g., a CSS validator stating you have a syntax error on Line 183. With a single declaration, there's no missing it. With multiple declarations, separate lines is a must for your sanity.</p>
+    <p>ปัจจัยที่สำคัญนี่คือการตรวจหาข้อผิดพลาดเช่น, ตรวจสอบ CSS ระบุคุณมีไวยากรณ์ผิดพลาดในสาย 183 ด้วยการประกาศเดียวไม่มีมันหายไป ด้วยการประกาศหลายเส้นที่แยกจากกันเป็นสิ่งจำเป็นสำหรับสติของคุณ</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/single-declarations.css %}{% endhighlight %}
@@ -304,7 +304,7 @@ layout: default
 <div class="section" id="css-shorthand">
   <div class="col">
     <h3>Shorthand notation</h3>
-    <p>Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values. Common overused shorthand properties include:</p>
+    <p>มุ่งมั่นที่จะ จำกัด การใช้งานของการประกาศการจดชวเลขกรณีที่คุณต้องตั้งค่าทั้งหมดที่มีอยู่ คุณสมบัติทั่วไปตื้อชวเลขรวมถึง:</p>
     <ul>
       <li><code>padding</code></li>
       <li><code>margin</code></li>
@@ -313,7 +313,7 @@ layout: default
       <li><code>border</code></li>
       <li><code>border-radius</code></li>
     </ul>
-    <p>Often times we don't need to set all the values a shorthand property represents. For example, HTML headings only set top and bottom margin, so when necessary, only override those two values. Excessive use of shorthand properties often leads to sloppier code with unnecessary overrides and unintended side effects.</p>
+    <p>บ่อยครั้งที่เราไม่จำเป็นต้องตั้งค่าทั้งหมดแสดงให้เห็นถึงสถานที่ให้บริการจดชวเลข ตัวอย่างเช่นหัว HTML เพียงตั้งบนและด้านล่างขอบดังนั้นเมื่อมีความจำเป็นเพียงแทนที่ทั้งสองค่า การใช้งานที่มากเกินไปของคุณสมบัติชวเลขมักจะนำไปสู่​​การรหัส sloppier กับการแทนที่ที่ไม่จำเป็นและผลข้างเคียงที่ไม่ได้ตั้งใจ</p>
     <p>The Mozilla Developer Network has a great article on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">shorthand properties</a> for those unfamiliar with notation and behavior.</p>
   </div>
   <div class="col">
@@ -324,7 +324,7 @@ layout: default
 <div class="section" id="css-nesting">
   <div class="col">
     <h3>Nesting in Less and Sass</h3>
-    <p>Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested.</p>
+    <p>หลีกเลี่ยงการทำรังที่ไม่จำเป็น เพียงเพราะคุณสามารถรังไม่ได้หมายความว่าคุณควร รังพิจารณาเฉพาะในกรณีที่คุณต้องรูปแบบขอบเขตการปกครองและถ้ามีองค์ประกอบหลายที่จะซ้อนกัน</p>
   </div>
   <div class="col">
     {% highlight scss %}{% include css/nesting.scss %}{% endhighlight %}
@@ -334,7 +334,7 @@ layout: default
 <div class="section" id="css-operators">
   <div class="col">
     <h3>Operators in Less and Sass</h3>
-    <p>For improved readability, wrap all math operations in parentheses with a single space between values, variables, and operators.</p>
+    <p>สำหรับการอ่านที่ดีขึ้น, ห่อทั้งหมดดำเนินการทางคณิตศาสตร์ในวงเล็บที่มีพื้นที่เดียวระหว่างค่าตัวแปรและผู้ประกอบการ</p>
   </div>
   <div class="col">
     {% highlight scss %}{% include css/operators.scss %}{% endhighlight %}
@@ -374,12 +374,12 @@ layout: default
   <div class="col">
     <h3>Selectors</h3>
     <ul>
-      <li>Use classes over generic element tag for optimum rendering performance.</li>
-      <li>Avoid using several attribute selectors (e.g., <code>[class^="..."]</code>) on commonly occuring components. Browser performance is known to be impacted by these.</li>
-      <li>Keep selectors short and strive to limit the number of elements in each selector to three.</li>
+      <li>ใช้เรียนมากกว่าแท็กองค์ประกอบทั่วไปสำหรับประสิทธิภาพการแสดงผลที่ดีที่สุด</li>
+      <li>หลีกเลี่ยงการใช้แอตทริบิวต์หลายตัวเลือก (เช่น <code>[class^="..."]</code>) ในวันที่เกิดขึ้นโดยทั่วไปส่วนประกอบ ประสิทธิภาพการทำงานของเบราว์เซอร์ที่เป็นที่รู้จักได้รับผลกระทบเหล่านี้</li>
+      <li>ให้ตัวเลือกในระยะสั้นและมุ่งมั่นที่จะ จำกัด จำนวนขององค์ประกอบในแต่ละตัวเลือกถึงสาม</li>
       <li>Scope classes to the closest parent <strong>only</strong> when necessary (e.g., when not using prefixed classes).</li>
     </ul>
-    <p>Additional reading:</p>
+    <p>อ่านเพิ่มเติม:</p>
     <ul>
       <li><a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/">Scope CSS classes with prefixes</a></li>
       <li><a href="http://markdotto.com/2012/03/02/stop-the-cascade/">Stop the cascade</a></li>
@@ -394,10 +394,10 @@ layout: default
   <div class="col">
     <h3>Organization</h3>
     <ul>
-      <li>Organize sections of code by component.</li>
-      <li>Develop a consistent commenting hierarchy.</li>
-      <li>Use consistent white space to your advantage when separating sections of code for scanning larger documents.</li>
-      <li>When using multiple CSS files, break them down by component instead of page. Pages can be rearranged and components moved.</li>
+      <li>จัดระเบียบในส่วนของรหัสโดยองค์ประกอบ</li>
+      <li>พัฒนาลำดับชั้นการแสดงความคิดเห็นที่สอดคล้องกัน</li>
+      <li>ใช้พื้นที่สีขาวที่สอดคล้องกันเพื่อประโยชน์ของคุณเมื่อแยกส่วนสำหรับการสแกนเอกสารขนาดใหญ่</li>
+      <li>มื่อมีการใช้ไฟล์ CSS หลายทำลายพวกเขาลงโดยองค์ประกอบของหน้าแทน หน้าสามารถจัดใหม่ย้ายและส่วนประกอบ</li>
     </ul>
   </div>
   <div class="col">
@@ -408,13 +408,13 @@ layout: default
 <div class="section" id="css-editor-prefs">
   <div class="col">
     <h3>Editor preferences</h3>
-    <p>Set your editor to the following settings to avoid common code inconsistencies and dirty diffs:</p>
+    <p>ระบุการแก้ไขของคุณการตั้งค่าต่อไปนี้เพื่อหลีกเลี่ยงความไม่สอดคล้องกันรหัสร่วมกันและ diffs สกปรก:</p>
     <ul>
-      <li>Use soft-tabs set to two spaces.</li>
-      <li>Trim trailing white space on save.</li>
-      <li>Set encoding to UTF-8.</li>
-      <li>Add new line at end of files.</li>
+      <li>ใช้แท็บนุ่มตั้งค่าให้สองช่องว่าง</li>
+      <li>ตัดต่อท้ายพื้นที่สีขาวในบันทึก</li>
+      <li>การตั้งค่าการเข้ารหัส UTF-8</li>
+      <li>เพิ่มบรรทัดใหม่ในตอนท้ายของไฟล์</li>
     </ul>
-    <p>Consider documenting and applying these preferences to your project's <code>.editorconfig</code> file. For an example, see <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">the one in Bootstrap</a>. Learn more <a href="http://editorconfig.org">about EditorConfig</a>.</p>
+    <p>พิจารณาการจัดเก็บเอกสารและการประยุกต์ใช้การตั้งค่าเหล่านี้ให้กับโครงการของคุณ <code>.editorconfig</code>  ไฟล์ ยกตัวอย่างให้ดู <a href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">the one in Bootstrap</a>. เรียนรู้เพิ่มเติม <a href="http://editorconfig.org">about EditorConfig</a>.</p>
   </div>
 </div>
