@@ -1,5 +1,7 @@
 # Code Guide
 
+[![CodeHunt.io](https://img.shields.io/badge/vote-codehunt.io-02AFD1.svg)](http://codehunt.io/sub/code-guide-by-mdo/?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge) 
+
 Code Guide is a project for documenting standards for developing flexible, durable, and sustainable HTML and CSS. It comes from years of experience writing code on projects of all sizes. It's not the end-all be-all, but it's a start.
 
 **[Start reading ☞](http://mdo.github.io/code-guide)**
