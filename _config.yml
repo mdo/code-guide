@@ -1,5 +1,5 @@
-name:          कोड गाइड @mdo द्वारा
-description:   Standards for developing flexible, durable, and sustainable HTML and CSS.
+name:          @mdo द्वारा संहिता गाइड
+description:   लचीला, टिकाऊ, और टिकाऊ एचटीएमएल और सीएसएस के विकास के लिए मानक।
 url:           http://codeguide.co
 
 markdown:      rdiscount
