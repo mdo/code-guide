@@ -2,6 +2,6 @@ name:          Code Guide by @mdo
 description:   Standards for developing flexible, durable, and sustainable HTML and CSS.
 url:           http://codeguide.co
 
-markdown:      rdiscount
+markdown:      kramdown
 permalink:     pretty
 pygments:      true
