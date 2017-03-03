@@ -6,3 +6,4 @@ markdown:      rdiscount
 permalink:     pretty
 pygments:      true
 future:        true
+timezone:      TIMEZONE
