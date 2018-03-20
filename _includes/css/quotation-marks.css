@@ -1,0 +1,13 @@
+/* Bad example */
+@import url("https://www.example.com/css/maia.css");
+
+html {
+  font-family: "open sans", arial, sans-serif;
+}
+
+/* Good example */
+@import url(https://www.example.com/css/maia.css);
+
+html {
+  font-family: 'open sans', arial, sans-serif;
+}
