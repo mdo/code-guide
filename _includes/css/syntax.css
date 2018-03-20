@@ -9,7 +9,7 @@
 /* Good CSS */
 .selector,
 .selector-secondary,
-.selector[type="text"] {
+.selector[type='text'] {
   padding: 15px;
   margin-bottom: 15px;
   background-color: rgba(0,0,0,.5);
