@@ -27,6 +27,8 @@ layout: default
     <h4><a href="#css">CSS</a></h4>
     <ul>
       <li><a href="#css-syntax">CSS syntax</a></li>
+      <li><a href="#css-rule-separation">Rule Separation</a></li>
+      <li><a href="#css-quotation-marks">Quotation Marks</a></li>
       <li><a href="#css-declaration-order">Declaration order</a></li>
       <li><a href="#css-import">Don't use @import</a></li>
       <li><a href="#css-media-queries">Media query placement</a></li>
@@ -224,13 +226,33 @@ layout: default
       <li>Don't prefix property values or color parameters with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code> and <code>-.5px</code> instead of <code>-0.5px</code>).</li>
       <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li>
       <li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li>
-      <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li>
       <li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>.</li>
     </ul>
     <p>Questions on the terms used here? See the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/syntax.css %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="css-rule-separation">
+  <div class="col">
+    <h3>Rule Separation</h3>
+    <p>Always put a blank line (two line breaks) between rules.</p>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/rule-separation.css %}{% endhighlight %}
+  </div>
+</div>
+
+<div class="section" id="css-quotation-marks">
+  <div class="col">
+    <h3>Quotation Marks</h3>
+    <p>Use single <code>'</code> rather than double <code>"</code> quotation marks for attribute selectors and property values. Do not use quotation marks in URI values <code>url()</code>.</p>
+    <p>Quotes in attribute values in selectors, e.g., <code>input[type='text']</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</p>
+  </div>
+  <div class="col">
+    {% highlight css %}{% include css/quotation-marks.css %}{% endhighlight %}
   </div>
 </div>
 
