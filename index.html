@@ -51,7 +51,7 @@ layout: default
   </div>
   <div class="col">
     <blockquote>
-      <p>Cada línea de código debería parecer haber sido escrita por una única persona, independientemente del número de colaboradores.</p>
+      <p>Cada línea de código debería parecer escrita por una única persona, independientemente del número de colaboradores.</p>
     </blockquote>
   </div>
 </div>
@@ -105,9 +105,11 @@ layout: default
 
 <div class="section" id="html-ie-compatibility-mode">
   <div class="col">
-    <h3>IE compatibility mode</h3>
+    <h3>Modo de compatibilidad de IE</h3>
     <p>Internet Explorer supports the use of a document compatibility <code>&lt;meta&gt;</code> tag to specify what version of IE the page should be rendered as. Unless circumstances require otherwise, it's most useful to instruct IE to use the latest supported mode with <strong>edge mode</strong>.</p>
-    <p>For more information, <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">read this awesome Stack Overflow article</a>.</p>
+
+    <p>Internet Explorer admite el uso de una etiqueta de compatibilidad <code>&lt;meta&gt;</code> para especificar en base a qué versión de IE debería renderizarse la página. A menos que las circunstancias exijan lo contrario, es más útil indicar a IE que utilice la última versión compatible con el <strong>modo edge</strong>.</p>
+    <p>Para más información, <a href="http://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge-e">lea este genial artículo de Stack Overflow</a>.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/ie-compatibility-mode.html %}{% endhighlight %}
@@ -116,7 +118,8 @@ layout: default
 
 <div class="section" id="html-encoding">
   <div class="col">
-    <h3>Character encoding</h3>
+    <h3>Codificación de caracteres</h3>
+    <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding. When doing so, you may avoid using character entities in your HTML, provided their encoding matches that of the document (generally UTF-8).</p>
     <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding. When doing so, you may avoid using character entities in your HTML, provided their encoding matches that of the document (generally UTF-8).</p>
   </div>
   <div class="col">
