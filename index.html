@@ -170,17 +170,17 @@ layout: default
 
 <div class="section" id="html-boolean-attributes">
   <div class="col">
-    <h3>Boolean attributes</h3>
-    <p>A boolean attribute is one that needs no declared value. XHTML required you to declare a value, but HTML5 has no such requirement.</p>
-    <p>For further reading, consult the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG section on boolean attributes</a>:</p>
+    <h3>Atributos booleanos</h3>
+    <p>Un atributo booleano es aquel que no necesita ningún valor declarado. XHTML requería la declaración de un valor, pero HTML5 no incluye tal requerimiento.</p>
+    <p>Para más información, consulte en WhatWG <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">la sección sobre atributos booleanos</a>:</p>
     <blockquote>
-      <p>The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.</p>
+      <p>La presencia de un atributo booleano en un elemento representa el valor true, y la ausencia del atributo representa el valor false.</p>
     </blockquote>
-    <p>If you <em>must</em> include the attribute's value, and <strong>you don't need to</strong>, follow this WhatWG guideline:</p>
+    <p>Si <em>debe</em> incluir el valor del atributo, y <strong>y no lo necesita</strong>, siga esta directriz de WhatWG:</p>
     <blockquote>
-      <p>If the attribute is present, its value must either be the empty string or [...] the attribute's canonical name, with no leading or trailing whitespace.</p>
+      <p>Si el atributo está presente, su valor debe ser una cadena vacía o [...] el nombre canónico del atributo, sin espacio en blanco al principio ni al final.</p>
     </blockquote>
-    <p><strong>In short, don't add a value.</strong></p>
+    <p><strong>En resumen, no añada ningún valor.</strong></p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/boolean-attributes.html %}{% endhighlight %}
