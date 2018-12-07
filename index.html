@@ -367,9 +367,9 @@ layout: default
       <li>Evite la excesiva y arbitraria notación abreviada. <code>.btn</code> es útil for <em>button</em>, but <code>.s</code> no significa nada.</li>
       <li>Mantenga las clases lo más cortas y concisas posibles.</li>
       <li>Utilice nombres descriptivos; utilice nombres con un sentido más estructural o significativo que presentacional.</li>
-      <li>Utilice el prefijo<code>.js-*</code> en aquellas clases que denoten comportamiento (en lugar del estilo), pero mantenga estas clases fuera del CSS.</li>
+      <li>Utilice el prefijo<code>.js-*</code> en aquellas clases que denoten comportamiento (en lugar de estilo), pero mantenga estas clases fuera de su CSS.</li>
     </ul>
-    <p>Es también útil aplicar muchas de estoas mismas reglas en la creación de nombres de variables en Sass y Less.</p>
+    <p>Es también útil aplicar muchas de estas mismas reglas en la creación de nombres de variables en Sass y Less.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/class-names.css %}{% endhighlight %}
@@ -378,17 +378,18 @@ layout: default
 
 <div class="section" id="css-selectors">
   <div class="col">
-    <h3>Selectors</h3>
+    <h3>Selectores</h3>
     <ul>
-      <li>Use classes over generic element tag for optimum rendering performance.</li>
-      <li>Avoid using several attribute selectors (e.g., <code>[class^="..."]</code>) on commonly occuring components. Browser performance is known to be impacted by these.</li>
+      <li>Utilice clases en lugar de las etiquetas genéricas de los elementos para optimizar el rendimiento.</li>
+      <li>Evite utilizar atributos de selector múltiple (p.ej., <code>[class^="..."]</code>) en elementos que aparecen a menudo en la página. El rendimiento del navegador se ve afectado por estos selectores.</li>
       <li>Keep selectors short and strive to limit the number of elements in each selector to three.</li>
-      <li>Scope classes to the closest parent <strong>only</strong> when necessary (e.g., when not using prefixed classes).</li>
+      <li>Mantenga los selectores cortos y procure limitar el número de elementos dentro de cada selector a tres.</li>
+      <li>Enmarque las clases dentro del pariente más cercano <strong>solo</strong> cuando sea necesario (p.ej., cuando no utilice clases con prefijo).</li>
     </ul>
-    <p>Additional reading:</p>
+    <p>Lectura adicional:</p>
     <ul>
-      <li><a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/">Scope CSS classes with prefixes</a></li>
-      <li><a href="http://markdotto.com/2012/03/02/stop-the-cascade/">Stop the cascade</a></li>
+      <li><a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/">Ámbito de las clases CSS con prefijo</a></li>
+      <li><a href="http://markdotto.com/2012/03/02/stop-the-cascade/">Pare la cascada</a></li>
     </ul>
   </div>
   <div class="col">
