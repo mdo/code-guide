@@ -1,17 +1,17 @@
 /*
- * Component section heading
+ * Encabezado de la sección del componente
  */
 
 .element { ... }
 
 
 /*
- * Component section heading
+ * Encabezado de la sección del componente
  *
- * Sometimes you need to include optional context for the entire component. Do that up here if it's important enough.
+ * A veces es necesario incluir un contexto opcional para el componente entero. Añádalo aquí si es lo suficientemente importante.
  */
 
 .element { ... }
 
-/* Contextual sub-component or modifer */
+/* Sub-componente contextual, o modificador */
 .element-heading { ... }

@@ -1,5 +1,5 @@
 .declaration-order {
-  /* Positioning */
+  /* Posicionamiento */
   position: absolute;
   top: 0;
   right: 0;
@@ -7,13 +7,13 @@
   left: 0;
   z-index: 100;
 
-  /* Box-model */
+  /* Modelo de caja */
   display: block;
   float: right;
   width: 100px;
   height: 100px;
 
-  /* Typography */
+  /* Tipografía */
   font: normal 13px "Helvetica Neue", sans-serif;
   line-height: 1.5;
   color: #333;
@@ -24,6 +24,6 @@
   border: 1px solid #e5e5e5;
   border-radius: 3px;
 
-  /* Misc */
+  /* Miscelánea */
   opacity: 1;
 }

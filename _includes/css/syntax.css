@@ -1,4 +1,4 @@
-/* Bad CSS */
+/* Mal CSS */
 .selector, .selector-secondary, .selector[type=text] {
   padding:15px;
   margin:0px 0px 15px;
@@ -6,7 +6,7 @@
   box-shadow:0px 1px 2px #CCC,inset 0 1px 0 #FFFFFF
 }
 
-/* Good CSS */
+/* Buen CSS */
 .selector,
 .selector-secondary,
 .selector[type="text"] {
