@@ -361,16 +361,15 @@ layout: default
 
 <div class="section" id="css-classes">
   <div class="col">
-    <h3>Class names</h3>
+    <h3>Nombres de clases</h3>
     <ul>
-      <li>Keep classes lowercase and use dashes (not underscores or camelCase). Dashes serve as natural breaks in related class (e.g., <code>.btn</code> and <code>.btn-danger</code>).</li>
-      <li>Avoid excessive and arbitrary shorthand notation. <code>.btn</code> is useful for <em>button</em>, but <code>.s</code> doesn't mean anything.</li>
-      <li>Keep classes as short and succinct as possible.</li>
-      <li>Use meaningful names; use structural or purposeful names over presentational.</li>
-      <li>Prefix classes based on the closest parent or base class.</li>
-      <li>Use <code>.js-*</code> classes to denote behavior (as opposed to style), but keep these classes out of your CSS.</li>
+      <li>Mantenga las clases en minúsculas y utilice guiones (no subrayado o camelCase). Los guiones sirven como saltos naturales en la clase relacionada (p.ej., <code>.btn</code> and <code>.btn-danger</code>).</li>
+      <li>Evite la excesiva y arbitraria notación abreviada. <code>.btn</code> es útil for <em>button</em>, but <code>.s</code> no significa nada.</li>
+      <li>Mantenga las clases lo más cortas y concisas posibles.</li>
+      <li>Utilice nombres descriptivos; utilice nombres con un sentido más estructural o significativo que presentacional.</li>
+      <li>Utilice el prefijo<code>.js-*</code> en aquellas clases que denoten comportamiento (en lugar del estilo), pero mantenga estas clases fuera del CSS.</li>
     </ul>
-    <p>It's also useful to apply many of these same rules when creating Sass and Less variable names.</p>
+    <p>Es también útil aplicar muchas de estoas mismas reglas en la creación de nombres de variables en Sass y Less.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/class-names.css %}{% endhighlight %}
