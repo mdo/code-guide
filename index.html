@@ -212,24 +212,23 @@ layout: default
 
 <div class="section" id="css-syntax">
   <div class="col">
-    <h3>Syntax</h3>
+    <h3>Sintaxis CSS</h3>
     <ul>
-      <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
-      <li>When grouping selectors, keep individual selectors to a single line.</li>
-      <li>Include one space before the opening brace of declaration blocks for legibility.</li>
-      <li>Place closing braces of declaration blocks on a new line.</li>
-      <li>Include one space after <code>:</code> for each declaration.</li>
-      <li>Each declaration should appear on its own line for more accurate error reporting.</li>
-      <li>End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.</li>
-      <li>Comma-separated property values should include a space after each comma (e.g., <code>box-shadow</code>).</li>
-      <li>Don't include spaces after commas <em>within</em> <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, or <code>rect()</code> values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).</li>
-      <li>Don't prefix property values or color parameters with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code> and <code>-.5px</code> instead of <code>-0.5px</code>).</li>
-      <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li>
-      <li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li>
-      <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li>
-      <li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>.</li>
+      <li>Utilice indentaciones de dos espacios, ya que son el único modo de garantizar que el código se renderice igual en todos los entornos.</li>
+      <li>Al agrupar selectores, mantenga los distintos selectores en una única línea.</li>
+      <li>Incluya un espacio antes de la llave de apertura de los bloques de declaración para mejorar la legibilidad.</li>
+      <li>Coloque las llaves de cierre de los bloques de declaración en una nueva línea.</li>
+      <li>Incluya un espacio después de <code>:</code> de cada declaración.</li>
+      <li>Cada declaración debería aparecer en su propia línea para un reporte más preciso de errores.</li>
+      <li>Finalice todas las declaraciones con un punto y coma. En la última declaración es opcional, pero su código es más propenso a errores sin él.</li>
+      <li>Los valores de propiedad separados por comas, deberían incluir un espacio después de cada coma (e.g., <code>box-shadow</code>).</li>
+      <li>No incluya espacios después de las comas <em>dentro</em> de los valores <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, o <code>rect()</code>. Esto ayuda a diferenciar múltiples valores de color (coma, sin espacio) de múltiples valores de propiedad (coma con espacio).</li>
+      <li>No prefije valores de propiedad o parámetros de color con un cero a la izquierda (e.g., <code>.5</code> en vez de <code>0.5</code> y <code>-.5px</code> en vez de <code>-0.5px</code>).</li>
+      <li>Escriba en minúsculas todos los valores hexadecimales, p.ej., <code>#fff</code>. Las letras minúsculas son mucho más fáciles de percibir cuando ojeamos un documento, ya que suelen tener formas únicas.</li>
+      <li>Utilice valores hexadecimales abreviados, siempre que sea posible, p.ej., <code>#fff</code> instead of <code>#ffffff</code>.</li>
+      <li>Evite especificar unidades cuando el valor es cero, p.ej., <code>margin: 0;</code> en lugar de <code>margin: 0px;</code>.</li>
     </ul>
-    <p>Questions on the terms used here? See the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p>
+    <p>Preguntas sobre los términos utilizados aquí? Consulte la <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">sección sobre sintaxis en el artículo de Hojas de Estilo en Cascada de</a> la Wikipedia.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/syntax.css %}{% endhighlight %}
