@@ -257,14 +257,14 @@ layout: default
 
 <div class="section" id="css-import">
   <div class="col">
-    <h3>Don't use <code>@import</code></h3>
-    <p>Compared to <code>&lt;link&gt;</code>s, <code>@import</code> is slower, adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:</p>
+    <h3>No utilice <code>@import</code></h3>
+    <p>En comparación con <code>&lt;link&gt;</code>s, <code>@import</code> is más lento, añade peticiones de página adicionales, y puede causar otros problemas imprevistos. Evítelos y opte en su lugar por un enfoque alternativo:</p>
     <ul>
-      <li>Use multiple <code>&lt;link&gt;</code> elements</li>
-      <li>Compile your CSS with a preprocessor like Sass or Less into a single file</li>
-      <li>Concatenate your CSS files with features provided in Rails, Jekyll, and other environments</li>
+      <li>Utilice múltiples elementos <code>&lt;link&gt;</code></li>
+      <li>Compile su CSS con un preprocesador como Sass o Less en un único archivo</li>
+      <li>Concatene sus archivos CSS con funciones proporcionadas por Rails, Jekyll, y otros entornos</li>
     </ul>
-    <p>For more information, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">read this article by Steve Souders</a>.</p>
+    <p>Para más información, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">lea este artículo de Steve Souders</a>.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include css/import.html %}{% endhighlight %}
@@ -273,8 +273,9 @@ layout: default
 
 <div class="section" id="css-media-queries">
   <div class="col">
-    <h3>Media query placement</h3>
+    <h3>Ubicación de las Media queries</h3>
     <p>Place media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. Doing so only makes it easier for folks to miss them in the future. Here's a typical setup.</p>
+    <p>Coloque las media queries lo más cerca posible de sus respectivos conjuntos de reglas. No las agrupes todas en una hoja de estilos separada o al final del documento. Hacerlo así, sólo facilita que la gente las pierda en un futuro. Aquí una configuración típica.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/media-queries.css %}{% endhighlight %}
