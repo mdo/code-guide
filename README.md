@@ -1,8 +1,8 @@
 # Code Guide - Spanish translation
 
-Code Guide is a project for documenting standards for developing flexible, durable, and sustainable HTML and CSS. It comes from years of experience writing code on projects of all sizes. It's not the end-all be-all, but it's a start.
+[Code Guide] (http://codeguide.co/) is a project for documenting standards for developing flexible, durable, and sustainable HTML and CSS. It comes from years of experience writing code on projects of all sizes. It's not the end-all be-all, but it's a start.
 
-**[Go to Spanish version ☞](https://agdwm.github.io/code-guide/)**
+**[Go to the Spanish version ☞](https://agdwm.github.io/code-guide/)**
 
 ---
 
