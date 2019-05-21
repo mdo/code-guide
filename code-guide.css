@@ -251,6 +251,8 @@ pre code {
  */
 
 .footer {
+  background-color: #17202A;
+  color: #ECF0F1;
   padding: 3rem 1rem;
   font-size: 90%;
   text-align: center;
