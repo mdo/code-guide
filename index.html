@@ -47,11 +47,11 @@ layout: default
 <div class="section" id="golden-rule">
   <div class="col">
     <h2>Golden rule</h2>
-    <p>Enforce these, or your own, agreed upon guidelines at all times. Small or large, call out what's incorrect. For additions or contributions to this Code Guide, please <a href="https://github.com/mdo/code-guide/issues/new">open an issue on GitHub</a>.</p>
+    <p>Enforce these agreed upon guidelines all the time. Small or large, call out what's incorrect. For additions or contributions to this Code Guide, please <a href="https://github.com/mdo/code-guide/issues/new">open an issue on GitHub</a>.</p>
   </div>
   <div class="col">
     <blockquote>
-      <p>Every line of code should appear to be written by a single person, no matter the number of contributors.</p>
+      <p>Every line of code should appear to be written by a single person, no matter how big is the number of contributors.</p>
     </blockquote>
   </div>
 </div>
@@ -66,11 +66,11 @@ layout: default
   <div class="col">
     <h3>Syntax</h3>
     <ul>
-      <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
+      <li>Use soft tabs with two spaces—they're the only way to guarantee that the code renders the same output in any environment.</li>
       <li>Nested elements should be indented once (two spaces).</li>
-      <li>Always use double quotes, never single quotes, on attributes.</li>
+      <li>The HTML5 standard does not require quotes around attribute values. However it is recommended to always use double quotes,and never single quotes, on attributes as they are needed by stricter languages like XHTML.</li>
       <li>Don't include a trailing slash in self-closing elements—the <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 spec</a> says they're optional.</li>
-      <li>Don’t omit optional closing tags (e.g. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li>
+      <li>Optional closing tags can be omitted.(e.g. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li>
     </ul>
   </div>
   <div class="col">
@@ -81,7 +81,7 @@ layout: default
 <div class="section" id="html-doctype">
   <div class="col">
     <h3>HTML5 doctype</h3>
-    <p>Enforce standards mode and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+    <p>Enforces standard mode and more consistent rendering in every possible browser with this simple doctype at the beginning of every HTML page.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/doctype.html %}{% endhighlight %}
@@ -93,7 +93,7 @@ layout: default
     <h3>Language attribute</h3>
     <p>From the HTML5 spec:</p>
     <blockquote>
-      <p>Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.</p>
+      <p>Authors are encouraged to specify a lang attribute on the root html element, giving information about the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.</p>
     </blockquote>
     <p>Read more about the <code>lang</code> attribute <a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">in the spec</a>.</p>
     <p>Head to Sitepoint for a <a href="http://reference.sitepoint.com/html/lang-codes">list of language codes</a>.</p>
@@ -127,7 +127,7 @@ layout: default
 <div class="section" id="html-style-script">
   <div class="col">
     <h3>CSS and JavaScript includes</h3>
-    <p>Per HTML5 spec, typically there is no need to specify a <code>type</code> when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code> are their respective defaults.</p>
+    <p>As per HTML5 spec, typically there is no need to specify a <code>type</code> when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code> are their respective defaults.</p>
     <h4>HTML5 spec links</h4>
     <ul>
       <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Using link</a></li>
@@ -150,7 +150,7 @@ layout: default
 <div class="section" id="html-attribute-order">
   <div class="col">
     <h3>Attribute order</h3>
-    <p>HTML attributes should come in this particular order for easier reading of code.</p>
+    <p>HTML attributes should come in this particular order for ease of reading the code.</p>
     <ul>
       <li><code>class</code></li>
       <li><code>id</code>, <code>name</code></li>
@@ -169,10 +169,10 @@ layout: default
 <div class="section" id="html-boolean-attributes">
   <div class="col">
     <h3>Boolean attributes</h3>
-    <p>A boolean attribute is one that needs no declared value. XHTML required you to declare a value, but HTML5 has no such requirement.</p>
+    <p>A boolean attribute is one that needs no declared value. XHTML requires you to declare a value, but HTML5 has no such requirement.</p>
     <p>For further reading, consult the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG section on boolean attributes</a>:</p>
     <blockquote>
-      <p>The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.</p>
+      <p>The presence of a boolean attribute with an element represents the true value, and the absence of the attribute represents the false value.</p>
     </blockquote>
     <p>If you <em>must</em> include the attribute's value, and <strong>you don't need to</strong>, follow this WhatWG guideline:</p>
     <blockquote>
@@ -198,7 +198,7 @@ layout: default
 <div class="section" id="html-javascript">
   <div class="col">
     <h3>JavaScript generated markup</h3>
-    <p>Writing markup in a JavaScript file makes the content harder to find, harder to edit, and less performant. Avoid it whenever possible.</p>
+    <p>Writing markup in a JavaScript file makes the content harder to find, harder to edit, and less on performance. Avoid it whenever possible.</p>
   </div>
 </div>
 
@@ -212,18 +212,18 @@ layout: default
   <div class="col">
     <h3>Syntax</h3>
     <ul>
-      <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
+      <li>Use soft tabs with two spaces—they're the only way to guarantee that the code renders the same output in any environment.</li>
       <li>When grouping selectors, keep individual selectors to a single line.</li>
-      <li>Include one space before the opening brace of declaration blocks for legibility.</li>
-      <li>Place closing braces of declaration blocks on a new line.</li>
-      <li>Include one space after <code>:</code> for each declaration.</li>
+      <li>Include one space before the opening brace of a declaration block for legibility.</li>
+      <li>Place the closing brace of the declaration block on a new line.</li>
+      <li>Include one space after <code>:</code>, for each declaration.</li>
       <li>Each declaration should appear on its own line for more accurate error reporting.</li>
-      <li>End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.</li>
+      <li>End all declarations with a semi-colon. The last declaration's semi-colon is optional, but your code is more error prone without it.</li>
       <li>Comma-separated property values should include a space after each comma (e.g., <code>box-shadow</code>).</li>
       <li>Don't include spaces after commas <em>within</em> <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, or <code>rect()</code> values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).</li>
       <li>Don't prefix property values or color parameters with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code> and <code>-.5px</code> instead of <code>-0.5px</code>).</li>
       <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li>
-      <li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li>
+      <li>Use shorthand hex values whenever available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li>
       <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li>
       <li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>.</li>
     </ul>
@@ -244,7 +244,7 @@ layout: default
       <li>Typographic</li>
       <li>Visual</li>
     </ol>
-    <p>Positioning comes first because it can remove an element from the normal flow of the document and override box model related styles. The box model comes next as it dictates a component's dimensions and placement.</p>
+    <p>Positioning comes first because it can remove an element from the normal flow of the document and override box model related styling. The box model comes next as it dictates a component's dimensions and placement.</p>
     <p>Everything else takes place <em>inside</em> the component or without impacting the previous two sections, and thus they come last.</p>
     <p>For a complete list of properties and their order, please see <a href="http://twitter.github.com/recess">Recess</a>.</p>
   </div>
@@ -256,11 +256,11 @@ layout: default
 <div class="section" id="css-import">
   <div class="col">
     <h3>Don't use <code>@import</code></h3>
-    <p>Compared to <code>&lt;link&gt;</code>s, <code>@import</code> is slower, adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:</p>
+    <p>Compared to <code>&lt;link&gt;</code>, <code>@import</code> is slower,as it adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:</p>
     <ul>
       <li>Use multiple <code>&lt;link&gt;</code> elements</li>
       <li>Compile your CSS with a preprocessor like Sass or Less into a single file</li>
-      <li>Concatenate your CSS files with features provided in Rails, Jekyll, and other environments</li>
+      <li>Integrate your CSS files with features provided in Rails, Jekyll, and other environments</li>
     </ul>
     <p>For more information, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">read this article by Steve Souders</a>.</p>
   </div>
@@ -272,7 +272,7 @@ layout: default
 <div class="section" id="css-media-queries">
   <div class="col">
     <h3>Media query placement</h3>
-    <p>Place media queries as close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. Doing so only makes it easier for folks to miss them in the future. Here's a typical setup.</p>
+    <p>Place media queries close to their relevant rule sets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document. Doing so only makes the folks to miss out these in the future. Here's a typical setup.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/media-queries.css %}{% endhighlight %}
@@ -293,8 +293,8 @@ layout: default
 <div class="section" id="css-single-declarations">
   <div class="col">
     <h3>Single declarations</h3>
-    <p>In instances where a rule set includes <strong>only one declaration</strong>, consider removing line breaks for readability and faster editing. Any rule set with multiple declarations should be split to separate lines.</p>
-    <p>The key factor here is error detection—e.g., a CSS validator stating you have a syntax error on Line 183. With a single declaration, there's no missing it. With multiple declarations, separate lines is a must for your sanity.</p>
+    <p>In instances where a rule set includes <strong>only one declaration</strong>, consider removing line breaks for readability and faster editing. Any rule set with multiple declarations should be split into separate lines.</p>
+    <p>The key factor here is error detection—e.g., a CSS validator stating you have a syntax error on Line 183. With a single declaration, there's no missing it. With multiple declarations, separate lines are a must for your sanity.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/single-declarations.css %}{% endhighlight %}
@@ -304,7 +304,7 @@ layout: default
 <div class="section" id="css-shorthand">
   <div class="col">
     <h3>Shorthand notation</h3>
-    <p>Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values. Common overused shorthand properties include:</p>
+    <p>Strive to limit use of shorthand declarations upto the instances where you must explicitly set all the available values. Commonly overused shorthand properties include:</p>
     <ul>
       <li><code>padding</code></li>
       <li><code>margin</code></li>
@@ -313,7 +313,7 @@ layout: default
       <li><code>border</code></li>
       <li><code>border-radius</code></li>
     </ul>
-    <p>Often times we don't need to set all the values a shorthand property represents. For example, HTML headings only set top and bottom margin, so when necessary, only override those two values. Excessive use of shorthand properties often leads to sloppier code with unnecessary overrides and unintended side effects.</p>
+    <p>Often at times we don't need to set all the values to a shorthand property. For example, HTML headings only set top and bottom margin, so when necessary, only override those two values. Excessive use of shorthand properties often leads to sloppier code with unnecessary overrides and unintended side effects.</p>
     <p>The Mozilla Developer Network has a great article on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">shorthand properties</a> for those unfamiliar with notation and behavior.</p>
   </div>
   <div class="col">
@@ -338,7 +338,7 @@ layout: default
 <div class="section" id="css-operators">
   <div class="col">
     <h3>Operators in Less and Sass</h3>
-    <p>For improved readability, wrap all math operations in parentheses with a single space between values, variables, and operators.</p>
+    <p>For improved readability, wrap all math operations uner parentheses with a single space between values, variables, and operators.</p>
   </div>
   <div class="col">
     {% highlight scss %}{% include css/operators.scss %}{% endhighlight %}
@@ -348,7 +348,7 @@ layout: default
 <div class="section" id="css-comments">
   <div class="col">
     <h3>Comments</h3>
-    <p>Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others. Great code comments convey context or purpose. Do not simply reiterate a component or class name.</p>
+    <p>Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others. Great code comments convey context and purpose. Do not simply re-iterate a component or class name.</p>
     <p>Be sure to write in complete sentences for larger comments and succinct phrases for general notes.</p>
   </div>
   <div class="col">
@@ -361,7 +361,7 @@ layout: default
     <h3>Class names</h3>
     <ul>
       <li>Keep classes lowercase and use dashes (not underscores or camelCase). Dashes serve as natural breaks in related class (e.g., <code>.btn</code> and <code>.btn-danger</code>).</li>
-      <li>Avoid excessive and arbitrary shorthand notation. <code>.btn</code> is useful for <em>button</em>, but <code>.s</code> doesn't mean anything.</li>
+      <li>Avoid excessive and arbitrary use of shorthand notation. <code>.btn</code> is useful for <em>button</em>, but <code>.s</code> doesn't mean anything.</li>
       <li>Keep classes as short and succinct as possible.</li>
       <li>Use meaningful names; use structural or purposeful names over presentational.</li>
       <li>Prefix classes based on the closest parent or base class.</li>
@@ -400,8 +400,8 @@ layout: default
     <ul>
       <li>Organize sections of code by component.</li>
       <li>Develop a consistent commenting hierarchy.</li>
-      <li>Use consistent white space to your advantage when separating sections of code for scanning larger documents.</li>
-      <li>When using multiple CSS files, break them down by component instead of page. Pages can be rearranged and components moved.</li>
+      <li>Use consistent white spaces to your advantage when separating sections of code for scanning larger documents.</li>
+      <li>When using multiple CSS files, break them down by components instead of pages. Pages can be rearranged and components can be moved.</li>
     </ul>
   </div>
   <div class="col">
@@ -412,7 +412,7 @@ layout: default
 <div class="section" id="css-editor-prefs">
   <div class="col">
     <h3>Editor preferences</h3>
-    <p>Set your editor to the following settings to avoid common code inconsistencies and dirty diffs:</p>
+    <p>Set your editor to the following settings to avoid common coding inconsistencies and dirty diffs:</p>
     <ul>
       <li>Use soft-tabs set to two spaces.</li>
       <li>Trim trailing white space on save.</li>
