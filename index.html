@@ -47,11 +47,11 @@ layout: default
 <div class="section" id="golden-rule">
   <div class="col">
     <h2>Golden rule</h2>
-    <p>Enforce these, or your own, agreed upon guidelines at all times. Small or large, call out what's incorrect. For additions or contributions to this Code Guide, please <a href="https://github.com/mdo/code-guide/issues/new">open an issue on GitHub</a>.</p>
+    <p>Enforce these agreed upon guidelines all the time. Small or large, call out what's incorrect. For additions or contributions to this Code Guide, please <a href="https://github.com/mdo/code-guide/issues/new">open an issue on GitHub</a>.</p>
   </div>
   <div class="col">
     <blockquote>
-      <p>Every line of code should appear to be written by a single person, no matter the number of contributors.</p>
+      <p>Every line of code should appear to be written by a single person, no matter how big is the number of contributors.</p>
     </blockquote>
   </div>
 </div>
@@ -66,11 +66,11 @@ layout: default
   <div class="col">
     <h3>Syntax</h3>
     <ul>
-      <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
+      <li>Use soft tabs with two spaces—they're the only way to guarantee that the code renders the same output in any environment.</li>
       <li>Nested elements should be indented once (two spaces).</li>
-      <li>Always use double quotes, never single quotes, on attributes.</li>
+      <li>The HTML5 standard does not require quotes around attribute values. However it is recommended to always use double quotes,and never single quotes, on attributes as they are needed by stricter languages like XHTML.</li>
       <li>Don't include a trailing slash in self-closing elements—the <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 spec</a> says they're optional.</li>
-      <li>Don’t omit optional closing tags (e.g. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li>
+      <li>Optional closing tags can be omitted.(e.g. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li>
     </ul>
   </div>
   <div class="col">
@@ -81,7 +81,7 @@ layout: default
 <div class="section" id="html-doctype">
   <div class="col">
     <h3>HTML5 doctype</h3>
-    <p>Enforce standards mode and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+    <p>Enforces standard mode and more consistent rendering in every possible browser with this simple doctype at the beginning of every HTML page.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/doctype.html %}{% endhighlight %}
@@ -93,7 +93,7 @@ layout: default
     <h3>Language attribute</h3>
     <p>From the HTML5 spec:</p>
     <blockquote>
-      <p>Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.</p>
+      <p>Authors are encouraged to specify a lang attribute on the root html element, giving information about the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.</p>
     </blockquote>
     <p>Read more about the <code>lang</code> attribute <a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">in the spec</a>.</p>
     <p>Head to Sitepoint for a <a href="http://reference.sitepoint.com/html/lang-codes">list of language codes</a>.</p>
@@ -127,7 +127,7 @@ layout: default
 <div class="section" id="html-style-script">
   <div class="col">
     <h3>CSS and JavaScript includes</h3>
-    <p>Per HTML5 spec, typically there is no need to specify a <code>type</code> when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code> are their respective defaults.</p>
+    <p>As per HTML5 spec, typically there is no need to specify a <code>type</code> when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code> are their respective defaults.</p>
     <h4>HTML5 spec links</h4>
     <ul>
       <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Using link</a></li>
@@ -150,7 +150,7 @@ layout: default
 <div class="section" id="html-attribute-order">
   <div class="col">
     <h3>Attribute order</h3>
-    <p>HTML attributes should come in this particular order for easier reading of code.</p>
+    <p>HTML attributes should come in this particular order for ease of reading the code.</p>
     <ul>
       <li><code>class</code></li>
       <li><code>id</code>, <code>name</code></li>
@@ -169,10 +169,10 @@ layout: default
 <div class="section" id="html-boolean-attributes">
   <div class="col">
     <h3>Boolean attributes</h3>
-    <p>A boolean attribute is one that needs no declared value. XHTML required you to declare a value, but HTML5 has no such requirement.</p>
+    <p>A boolean attribute is one that needs no declared value. XHTML requires you to declare a value, but HTML5 has no such requirement.</p>
     <p>For further reading, consult the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG section on boolean attributes</a>:</p>
     <blockquote>
-      <p>The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.</p>
+      <p>The presence of a boolean attribute with an element represents the true value, and the absence of the attribute represents the false value.</p>
     </blockquote>
     <p>If you <em>must</em> include the attribute's value, and <strong>you don't need to</strong>, follow this WhatWG guideline:</p>
     <blockquote>
@@ -198,7 +198,7 @@ layout: default
 <div class="section" id="html-javascript">
   <div class="col">
     <h3>JavaScript generated markup</h3>
-    <p>Writing markup in a JavaScript file makes the content harder to find, harder to edit, and less performant. Avoid it whenever possible.</p>
+    <p>Writing markup in a JavaScript file makes the content harder to find, harder to edit, and less on performance. Avoid it whenever possible.</p>
   </div>
 </div>
 
@@ -212,18 +212,18 @@ layout: default
   <div class="col">
     <h3>Syntax</h3>
     <ul>
-      <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
+      <li>Use soft tabs with two spaces—they're the only way to guarantee that the code renders the same output in any environment.</li>
       <li>When grouping selectors, keep individual selectors to a single line.</li>
-      <li>Include one space before the opening brace of declaration blocks for legibility.</li>
-      <li>Place closing braces of declaration blocks on a new line.</li>
-      <li>Include one space after <code>:</code> for each declaration.</li>
+      <li>Include one space before the opening brace of a declaration block for legibility.</li>
+      <li>Place the closing brace of the declaration block on a new line.</li>
+      <li>Include one space after <code>:</code>, for each declaration.</li>
       <li>Each declaration should appear on its own line for more accurate error reporting.</li>
-      <li>End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.</li>
+      <li>End all declarations with a semi-colon. The last declaration's semi-colon is optional, but your code is more error prone without it.</li>
       <li>Comma-separated property values should include a space after each comma (e.g., <code>box-shadow</code>).</li>
       <li>Don't include spaces after commas <em>within</em> <code>rgb()</code>, <code>rgba()</code>, <code>hsl()</code>, <code>hsla()</code>, or <code>rect()</code> values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).</li>
       <li>Don't prefix property values or color parameters with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code> and <code>-.5px</code> instead of <code>-0.5px</code>).</li>
       <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li>
-      <li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li>
+      <li>Use shorthand hex values whenever available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li>
       <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li>
       <li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>.</li>
     </ul>
