@@ -1,8 +1,5 @@
----
-layout: nil
----
 
-@import url("https://rsms.me/inter/inter.css");
+/* @import url("https://rsms.me/inter/inter.css"); */
 
 html { font-family: 'Inter', sans-serif; }
 
@@ -201,13 +198,8 @@ pre code {
  */
 
 .masthead {
-  padding: 3rem 1rem;
-  color: rgba(255,255,255,.5);
-  text-align: center;
-  background-color: #2a3440;
 }
 .masthead h1 {
-  color: #fff;
   margin-bottom: .25rem;
 }
 .masthead .icon {
@@ -281,5 +273,5 @@ pre code {
  * Syntax highlighting
  */
 
-{% include syntax.css %}
-{% include ads.css %}
+// {% include syntax.css %}
+// {% include ads.css %}
