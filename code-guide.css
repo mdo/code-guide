@@ -52,12 +52,14 @@ html {
 }
 @media (min-width: 48em) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 body {
-  margin: 0;
+  max-width: 64em;
+  padding: 2em;
+  margin: 0 auto;
   font: 1rem/1.5 Inter, sans-serif;
   color: #5a5a5a;
 }
@@ -77,9 +79,9 @@ h1, h2, h3, h4 {
   color: #2a2a2a;
   letter-spacing: -.05em;
 }
-h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; }
-h3 { font-size: 1.75rem; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
 h4 { font-size: 1.25rem }
 
 p {
