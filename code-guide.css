@@ -2,6 +2,13 @@
 layout: nil
 ---
 
+@import url("https://rsms.me/inter/inter.css");
+
+html { font-family: 'Inter', sans-serif; }
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
 
 /*
  * Fonts
@@ -51,7 +58,7 @@ html {
 
 body {
   margin: 0;
-  font: 1rem/1.5 "PT Sans", sans-serif;
+  font: 1rem/1.5 Inter, sans-serif;
   color: #5a5a5a;
 }
 
