@@ -30,44 +30,61 @@
 .icon-github-circled:before { content: '\e800'; } /* '' */
 .icon-twitter:before { content: '\e801'; } /* '' */
 
+//
+// Global
+//
 
-/*
- * Scaffolding and type
- */
+:root {
+  --red: #f03e3e;
+  --pink: #d6336c;
+  --purple: #7048e8;
+  --blue: #1c7ed6;
+  --indigo: #4263eb;
+  --cyan: #1098ad;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 html {
+  border-top: 1rem solid currentColor;
+  padding: 2rem;
   font-size: 16px;
-}
-@media (min-width: 48em) {
-  html {
+
+  @media (min-width: 48em) {
+    padding: 3rem;
     font-size: 18px;
   }
 }
 
 body {
-  max-width: 64em;
-  padding: 2em;
-  margin: 0 auto;
+  max-width: 80em;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
-  color: #555;
+  color: #212529;
 }
 
 a {
   color: #08c;
   text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 h1, h2, h3, h4 {
   margin: 0 0 .5rem;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 1;
   color: #2a2a2a;
-  letter-spacing: -.05em;
 }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.75rem; }
@@ -75,10 +92,12 @@ h3 { font-size: 1.5rem; }
 h4 { font-size: 1.25rem }
 
 p {
-  margin: 0 0 1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
+
 .lead {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 
 blockquote {
@@ -86,19 +105,20 @@ blockquote {
   margin: 0 1rem 1rem;
   font-style: italic;
   color: #7a7a7a;
-}
-blockquote p {
-  margin-bottom: 0;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
-ul li {
+li {
   margin-bottom: .25rem;
 }
 
 /* Tighten up margin on last items */
 p:last-child,
 ul:last-child,
-blockquote:last-child{
+blockquote:last-child {
   margin-bottom: 0;
 }
 
@@ -110,7 +130,7 @@ blockquote:last-child{
 
 code,
 pre {
-  font-family: "PT Mono", Menlo, "Courier New", monospace;
+  font-family: "SFMono-Regular", Menlo, "Courier New", monospace;
   font-size: 95%;
 }
 code {
@@ -150,14 +170,14 @@ pre code {
  */
 
 .col {
-  padding: 2rem 1rem;
+  // padding: 2rem 1rem;
 }
 .col p {
   max-width: 40rem;
 }
 .col + .col {
-  border-top: 1px solid #dfe1e8;
-  background-color: #f7f7f9;
+  // border-top: 1px solid #dfe1e8;
+  background-color: #f8f9fa;
 }
 @media (min-width: 38em) {
   .col {
@@ -169,14 +189,16 @@ pre code {
     display: table;
     width: 100%;
     table-layout: fixed;
+    margin-bottom: 3rem;
   }
   .col {
     display: table-cell;
-    padding: 3rem;
+    padding: 3rem 3rem 3rem 0;
     vertical-align: top;
   }
   .col + .col {
     border-top: 0;
+    padding: 3rem;
   }
 }
 
@@ -190,33 +212,41 @@ pre code {
  * Masthead
  */
 
-.masthead {
+.cg-icon {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--red);
+  border: solid currentColor;
+  border-width: .25rem .25rem .25rem 1.5rem;
 }
-.masthead h1 {
-  margin-bottom: .25rem;
+
+.cg-masthead {
+  // max-width: 64em;
+  // padding: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: 48em) {
+    // padding: 4rem;
+  }
+
+  > * {
+    max-width: 48rem;
+  }
+
+  h1 {
+    // font-size: 4rem;
+    margin-bottom: .25rem;
+  }
 }
-.masthead .icon {
-  display: inline-block;
-  font-size: 3rem;
-  margin: 0 .5rem;
-}
+
 .masthead-links {
   font-size: 2rem;
 }
 .masthead-links a {
-  color: rgba(255,255,255,.5);
   text-decoration: none;
-  transition: all .15s linear;
-}
-.masthead-links a:hover {
-  color: #fff;
-}
-
-@media (min-width: 38em) {
-  .masthead {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
 }
 
 
@@ -225,18 +255,20 @@ pre code {
  */
 
 .heading {
-  padding: 2rem 1rem 1.5rem;
-  background-color: #dfe1e8;
+  padding-top: 1rem;
+  // padding: 2rem 1rem 1.5rem;
+  // background-color: #dfe1e8;
+  border-top: .25rem solid;
 }
 
 @media (min-width: 38em) {
   .heading {
-    padding: 3rem 3rem 2.5rem;
+    // padding: 3rem 3rem 2.5rem;
   }
 }
 
 .section {
-  border-bottom: 1px solid #dfe1e8;
+  // border-bottom: 1px solid #dfe1e8;
 }
 
 
