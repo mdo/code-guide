@@ -60,6 +60,7 @@ layout: default
   <div class="col">
     <h3>Syntax</h3>
     <ul>
+      <li>Don't capitalize tags, including the doctype.</li>
       <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
       <li>Nested elements should be indented once (two spaces).</li>
       <li>Always use double quotes, never single quotes, on attributes.</li>
@@ -75,7 +76,7 @@ layout: default
 <div class="section" id="html-doctype">
   <div class="col">
     <h3>HTML5 doctype</h3>
-    <p>Enforce standards mode and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p>
+    <p>Enforce <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode">standards mode</a> and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p>
   </div>
   <div class="col">
     {% highlight html %}{% include html/doctype.html %}{% endhighlight %}
