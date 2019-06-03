@@ -236,7 +236,7 @@ layout: default
     </ol>
     <p>Positioning comes first because it can remove an element from the normal flow of the document and override box model related styles. The box model comes next as it dictates a component's dimensions and placement.</p>
     <p>Everything else takes place <em>inside</em> the component or without impacting the previous two sections, and thus they come last.</p>
-    <p>For a complete list of properties and their order, please see <a href="http://twitter.github.com/recess">Recess</a>.</p>
+    <p>For a complete list of properties and their order, please see the <a href="https://github.com/twbs/stylelint-config-twbs-bootstrap/blob/master/css/index.js">Bootstrap property order for Stylelint</a>.</p>
   </div>
   <div class="col">
     {% highlight css %}{% include css/declaration-order.css %}{% endhighlight %}
@@ -294,7 +294,7 @@ layout: default
 <div class="section" id="css-shorthand">
   <div class="col">
     <h3>Shorthand notation</h3>
-    <p>Strive to limit use of shorthand declarations to instances where you must explicitly set all the available values. Common overused shorthand properties include:</p>
+    <p>Limit shorthand declaration usage to instances where you must explicitly set all available values. Frequently overused shorthand properties include:</p>
     <ul>
       <li><code>padding</code></li>
       <li><code>margin</code></li>
@@ -303,7 +303,8 @@ layout: default
       <li><code>border</code></li>
       <li><code>border-radius</code></li>
     </ul>
-    <p>Often times we don't need to set all the values a shorthand property represents. For example, HTML headings only set top and bottom margin, so when necessary, only override those two values. Excessive use of shorthand properties often leads to sloppier code with unnecessary overrides and unintended side effects.</p>
+    <p>Usually we don't need to set all the values a shorthand property represents. For example, HTML headings only set top and bottom margin, so when necessary, only override those two values. A `0` value implies an override of either a browser default or previously specified value.</p>
+    <p>Excessive use of shorthand properties leads to sloppier code with unnecessary overrides and unintended side effects.</p>
     <p>The Mozilla Developer Network has a great article on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties">shorthand properties</a> for those unfamiliar with notation and behavior.</p>
   </div>
   <div class="col">
