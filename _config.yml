@@ -4,3 +4,5 @@ url: https://codeguide.co
 permalink: pretty
 sass:
   style: compressed
+
+theme: jekyll-theme-cayman
