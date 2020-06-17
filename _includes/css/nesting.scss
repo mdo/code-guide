@@ -1,9 +1,9 @@
 // Without nesting
-.table > thead > tr > th { … }
-.table > thead > tr > td { … }
+.tabella > thead > tr > th { … }
+.tabella > thead > tr > td { … }
 
 // With nesting
-.table > thead > tr {
+.tabella > thead > tr {
   > th { … }
   > td { … }
 }

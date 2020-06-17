@@ -1,9 +1,9 @@
-stylesheets/
+fogli-di-stile/
 ├── normalize.css
-├── buttons.css
-├── forms.css
-├── grid.css
-├── header.css
-├── footer.css
-├── pagination.css
-└── input-group.css
+├── bottoni.css
+├── form.css
+├── griglia.css
+├── intestazione.css
+├── pie-pagina.css
+├── paginazione.css
+└── gruppo-di-input.css

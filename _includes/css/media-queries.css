@@ -1,9 +1,9 @@
-.element { ... }
-.element-avatar { ... }
-.element-selected { ... }
+.elemento { ... }
+.elemento-avatar { ... }
+.elemento-selezionato { ... }
 
 @media (min-width: 480px) {
-  .element { ...}
-  .element-avatar { ... }
-  .element-selected { ... }
+  .elemento { ...}
+  .elemento-avatar { ... }
+  .elemento-selezionato { ... }
 }
