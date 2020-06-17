@@ -8,7 +8,9 @@
 /*
  * Intestazione della sezione del componente
  *
- * A volte hai bisogno di dare un contesto maggiore all'intero componente. Fallo qui se è sufficientemente importante.
+ * A volte hai bisogno di dare un contesto maggiore
+ * all'intero componente. Fallo qui se è
+ * abbastanza importante.
  */
 
 .elemento { ... }

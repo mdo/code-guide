@@ -1,8 +1,8 @@
-// Without nesting
+// Senza annidamento
 .tabella > thead > tr > th { … }
 .tabella > thead > tr > td { … }
 
-// With nesting
+// Con annidamento
 .tabella > thead > tr {
   > th { … }
   > td { … }
