@@ -1,9 +1,9 @@
-// Bad example
-.element {
-  margin: 10px 0 @variable*2 10px;
+// Non fare questo
+.elemento {
+  margin: 10px 0 @variabile*2 10px;
 }
 
-// Good example
-.element {
-  margin: 10px 0 (@variable * 2) 10px;
+// Fai questo
+.elemento {
+  margin: 10px 0 (@variabile * 2) 10px;
 }

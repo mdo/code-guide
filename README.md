@@ -14,6 +14,7 @@ Released under MIT by, and copyright, @mdo.
 
 Translations are maintained by their creators and may not always be up to date with the original here.
 
+- [Italian](http://alaindet.github.io/code-guide/) - Translated by [Alain D'Ettorre](https://github.com/alaindet)
 - [Chinese](http://zoomzhao.github.io/code-guide/) - Translated by [Zoom Zhao](https://github.com/ZoomZhao)
 - [Chinese](http://codeguide.bootcss.com/) - Translated by [Wang Sai](https://github.com/wangsai)
 - [Dutch](http://chunfeilung.github.io/code-guide/) - Translated by [Chun Fei Lung](https://github.com/chunfeilung)

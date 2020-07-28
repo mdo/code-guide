@@ -1,11 +1,11 @@
-/* Bad example */
-/* Modal header */
-.modal-header {
+/* Non fare questo */
+/* Intestazione finestra */
+.finestra-intestazione {
   ...
 }
 
-/* Good example */
-/* Wrapping element for .modal-title and .modal-close */
-.modal-header {
+/* Fai questo */
+/* Elemento the incapsula .finestra-titolo e .finestra-chiudi */
+.finestra-intestazione {
   ...
 }

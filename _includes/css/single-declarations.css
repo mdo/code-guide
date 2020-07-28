@@ -1,15 +1,15 @@
-/* Single declarations on one line */
+/* Dichiarazioni singole nella stessa riga del selettore */
 .span1 { width: 60px; }
 .span2 { width: 140px; }
 .span3 { width: 220px; }
 
-/* Multiple declarations, one per line */
-.sprite {
+/* Dichiarazioni multiple, una per riga */
+.icone {
   display: inline-block;
   width: 16px;
   height: 15px;
-  background-image: url("../img/sprite.png");
+  background-image: url("../immagini/icone.png");
 }
-.icon           { background-position: 0 0; }
-.icon-home      { background-position: 0 -20px; }
-.icon-account   { background-position: 0 -40px; }
+.icona           { background-position: 0 0; }
+.icona-casa      { background-position: 0 -20px; }
+.icona-profilo   { background-position: 0 -40px; }
