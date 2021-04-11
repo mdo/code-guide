@@ -21,7 +21,7 @@
 html {
   font-size: 16px;
 
-  @media (min-width: 48em) {
+  @media (min-width: 768px) {
     font-size: 18px;
   }
 }
@@ -91,7 +91,7 @@ pre {
   font-size: 95%;
 }
 code {
-  padding: 2px 4px;
+  padding: .125em .25em;
   font-size: 85%;
   color: #d44950;
   background-color: #f7f7f9;
@@ -150,7 +150,7 @@ pre {
   color: #fff;
   background-color: var(--blue);
 
-  @media (min-width: 60em) {
+  @media (min-width: 960px) {
     padding-top: 6rem;
     padding-bottom: 6rem;
     margin-bottom: 6rem;
@@ -164,11 +164,11 @@ pre {
   line-height: .9;
   color: inherit;
 
-  @media (min-width: 48em) {
+  @media (min-width: 768px) {
     font-size: 6rem;
   }
 
-  @media (min-width: 60em) {
+  @media (min-width: 960px) {
     font-size: 7rem;
   }
 }
@@ -179,7 +179,7 @@ pre {
   font-size: 1.5rem;
   line-height: 1.25;
 
-  @media (min-width: 48em) {
+  @media (min-width: 768px) {
     font-size: 2rem;
   }
 }
@@ -212,7 +212,7 @@ pre {
   margin-right: auto;
   margin-left: auto;
 
-  @media (min-width: 48em) {
+  @media (min-width: 768px) {
     padding-right: 3rem;
     padding-left: 3rem;
   }
@@ -237,7 +237,7 @@ pre {
   padding: 2rem;
   background-color: #f8f9fa;
 }
-@media (min-width: 48em) {
+@media (min-width: 768px) {
   .section {
     display: table;
     width: 100%;
