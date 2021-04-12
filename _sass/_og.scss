@@ -10,6 +10,10 @@
   --indigo: #4263eb;
   --cyan: #1098ad;
   --gray: #212529;
+
+  --body-bg: #fff;
+  --body-color: #212529;
+  --accent-bg: #f8f9fa;
 }
 
 *,
@@ -31,7 +35,8 @@ body {
   font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
-  color: #212529;
+  color: var(--body-color);
+  background-color: var(--body-bg);
 }
 
 a {
@@ -44,10 +49,10 @@ a {
 }
 
 h1, h2, h3, h4 {
-  margin: 0 0 .5rem;
+  margin-top: 0;
+  margin-bottom: .5rem;
   font-weight: 600;
   line-height: 1;
-  color: #2a2a2a;
 }
 h1 { font-size: 2.5rem; }
 h2 { font-size: 2rem; }
@@ -94,7 +99,7 @@ code {
   padding: .125em .25em;
   font-size: 85%;
   color: #d44950;
-  background-color: #f7f7f9;
+  background-color: var(--accent-bg);
   border-radius: .2rem;
 }
 
@@ -174,8 +179,8 @@ pre {
 }
 
 .cg-masthead-subtitle {
-  margin-bottom: 1.5rem;
   max-width: 40rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   line-height: 1.25;
 
@@ -230,13 +235,12 @@ pre {
 .col {
   margin-bottom: 1.5rem;
 }
-.col p {
-  max-width: 40rem;
-}
-.col + .col {
+
+.col-code {
   padding: 2rem;
-  background-color: #f8f9fa;
+  background-color: var(--accent-bg);
 }
+
 @media (min-width: 768px) {
   .section {
     display: table;
@@ -245,19 +249,12 @@ pre {
   }
   .col {
     display: table-cell;
-    padding: 3rem 3rem 3rem 0;
+    padding: 3rem;
     vertical-align: top;
   }
-  .col + .col {
-    border-top: 0;
-    padding: 3rem;
+  .col:first-child {
+    padding-left: 0;
   }
-}
-
-// Make the ToC a whole section
-.toc .col + .col {
-  padding: 0;
-  background-color: #fff;
 }
 
 
