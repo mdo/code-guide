@@ -67,7 +67,7 @@ layout: default
       <li>Don’t omit optional closing tags (e.g. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li>
     </ul>
   </div>
-  <div class="col">
+  <div class="col col-code">
     {% highlight html %}{% include html/syntax.html %}{% endhighlight %}
   </div>
 </div>
@@ -77,7 +77,7 @@ layout: default
     <h3>HTML5 doctype</h3>
     <p>Enforce <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode">standards mode</a> and more consistent rendering in every browser possible with this simple doctype at the beginning of every HTML page.</p>
   </div>
-  <div class="col">
+  <div class="col col-code">
     {% highlight html %}{% include html/doctype.html %}{% endhighlight %}
   </div>
 </div>
@@ -91,7 +91,7 @@ layout: default
     </blockquote>
     <p>Read more about the <code>lang</code> attribute <a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">in the spec</a>. Head to Sitepoint for a <a href="https://www.sitepoint.com/iso-2-letter-language-codes/">list of language codes</a>.</p>
   </div>
-  <div class="col">
+  <div class="col col-code">
     {% highlight html %}{% include html/lang.html %}{% endhighlight %}
   </div>
 </div>
@@ -102,7 +102,7 @@ layout: default
     <p>Internet Explorer supports the use of a document compatibility <code>&lt;meta&gt;</code> tag to specify what version of IE the page should be rendered as. Unless circumstances require otherwise, it's most useful to instruct IE to use the latest supported mode with <strong>edge mode</strong>.</p>
     <p>For more information, <a href="https://stackoverflow.com/questions/6771258/what-does-meta-http-equiv-x-ua-compatible-content-ie-edge-do">read this awesome Stack Overflow article</a>.</p>
   </div>
-  <div class="col">
+  <div class="col col-code">
     {% highlight html %}{% include html/ie-compatibility-mode.html %}{% endhighlight %}
   </div>
 </div>
@@ -112,7 +112,7 @@ layout: default
     <h3>Character encoding</h3>
     <p>Quickly and easily ensure proper rendering of your content by declaring an explicit character encoding. When doing so, you may avoid using character entities in your HTML, provided their encoding matches that of the document (generally UTF-8).</p>
   </div>
-  <div class="col">
+  <div class="col col-code">
     {% highlight html %}{% include html/encoding.html %}{% endhighlight %}
   </div>
 </div>
@@ -128,7 +128,7 @@ layout: default
       <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element">Using script</a></li>
     </ul>
   </div>
-  <div class="col">
+  <div class="col col-code">
     {% highlight html %}{% include html/style-script.html %}{% endhighlight %}
   </div>
 </div>
@@ -154,7 +154,7 @@ layout: default
     </ul>
     <p>Classes make for great reusable components, so they come first. Ids are more specific and should be used sparingly (e.g., for in-page bookmarks), so they come second.</p>
   </div>
-  <div class="col">
+  <div class="col col-code">
     {% highlight html %}{% include html/attribute-order.html %}{% endhighlight %}
   </div>
 </div>
@@ -173,7 +173,7 @@ layout: default
     </blockquote>
     <p><strong>In short, don't add a value.</strong></p>
   </div>
-  <div class="col">
+  <div class="col col-code">
     {% highlight html %}{% include html/boolean-attributes.html %}{% endhighlight %}
   </div>
 </div>
@@ -183,7 +183,7 @@ layout: default
     <h3>Reducing markup</h3>
     <p>Whenever possible, avoid superfluous parent elements when writing HTML. Many times this requires iteration and refactoring, but produces less HTML. Take the following example:</p>
   </div>
-  <div class="col">
+  <div class="col col-code">
     {% highlight html %}{% include html/reducing-markup.html %}{% endhighlight %}
   </div>
 </div>
@@ -254,7 +254,7 @@ layout: default
     </ul>
     <p>For more information, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">read this article by Steve Souders</a>.</p>
   </div>
-  <div class="col">
+  <div class="col col-code">
     {% highlight html %}{% include css/import.html %}{% endhighlight %}
   </div>
 </div>
