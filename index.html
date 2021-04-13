@@ -63,7 +63,7 @@ layout: default
       <li>Use soft tabs with two spaces—they're the only way to guarantee code renders the same in any environment.</li>
       <li>Nested elements should be indented once (two spaces).</li>
       <li>Always use double quotes, never single quotes, on attributes.</li>
-      <li>Don't include a trailing slash in self-closing elements—the <a href="http://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 spec</a> says they're optional.</li>
+      <li>Don't include a trailing slash in self-closing elements—the <a href="https://dev.w3.org/html5/spec-author-view/syntax.html#syntax-start-tag">HTML5 spec</a> says they're optional.</li>
       <li>Don’t omit optional closing tags (e.g. <code>&lt;/li&gt;</code> or <code>&lt;/body&gt;</code>).</li>
     </ul>
   </div>
@@ -89,7 +89,7 @@ layout: default
     <blockquote>
       <p>Authors are encouraged to specify a lang attribute on the root html element, giving the document's language. This aids speech synthesis tools to determine what pronunciations to use, translation tools to determine what rules to use, and so forth.</p>
     </blockquote>
-    <p>Read more about the <code>lang</code> attribute <a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">in the spec</a>. Head to Sitepoint for a <a href="https://www.sitepoint.com/iso-2-letter-language-codes/">list of language codes</a>.</p>
+    <p>Read more about the <code>lang</code> attribute <a href="https://www.w3.org/html/wg/drafts/html/master/semantics.html#the-html-element">in the spec</a>. Head to Sitepoint for a <a href="https://www.sitepoint.com/iso-2-letter-language-codes/">list of language codes</a>.</p>
   </div>
   <div class="col col-code">
     {% highlight html %}{% include html/lang.html %}{% endhighlight %}
@@ -123,9 +123,9 @@ layout: default
     <p>Per HTML5 spec, typically there is no need to specify a <code>type</code> when including CSS and JavaScript files as <code>text/css</code> and <code>text/javascript</code> are their respective defaults.</p>
     <h4>HTML5 spec links</h4>
     <ul>
-      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Using link</a></li>
-      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element">Using style</a></li>
-      <li><a href="http://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element">Using script</a></li>
+      <li><a href="https://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-link-element">Using link</a></li>
+      <li><a href="https://www.w3.org/TR/2011/WD-html5-20110525/semantics.html#the-style-element">Using style</a></li>
+      <li><a href="https://www.w3.org/TR/2011/WD-html5-20110525/scripting-1.html#the-script-element">Using script</a></li>
     </ul>
   </div>
   <div class="col col-code">
@@ -163,7 +163,7 @@ layout: default
   <div class="col">
     <h3>Boolean attributes</h3>
     <p>A boolean attribute is one that needs no declared value. XHTML required you to declare a value, but HTML5 has no such requirement.</p>
-    <p>For further reading, consult the <a href="http://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG section on boolean attributes</a>:</p>
+    <p>For further reading, consult the <a href="https://www.whatwg.org/specs/web-apps/current-work/multipage/common-microsyntaxes.html#boolean-attributes">WhatWG section on boolean attributes</a>:</p>
     <blockquote>
       <p>The presence of a boolean attribute on an element represents the true value, and the absence of the attribute represents the false value.</p>
     </blockquote>
@@ -213,10 +213,10 @@ layout: default
       <li>Don't prefix property values or color parameters with a leading zero (e.g., <code>.5</code> instead of <code>0.5</code> and <code>-.5px</code> instead of <code>-0.5px</code>).</li>
       <li>Lowercase all hex values, e.g., <code>#fff</code>. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.</li>
       <li>Use shorthand hex values where available, e.g., <code>#fff</code> instead of <code>#ffffff</code>.</li>
-      <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. <a href="http://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li>
+      <li>Quote attribute values in selectors, e.g., <code>input[type="text"]</code>. <a href="https://mathiasbynens.be/notes/unquoted-attribute-values#css">They’re only optional in some cases</a>, and it’s a good practice for consistency.</li>
       <li>Avoid specifying units for zero values, e.g., <code>margin: 0;</code> instead of <code>margin: 0px;</code>.</li>
     </ul>
-    <p>Questions on the terms used here? See the <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p>
+    <p>Questions on the terms used here? See the <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax">syntax section of the Cascading Style Sheets article</a> on Wikipedia.</p>
   </div>
   <div class="col col-code">
     {% highlight css %}{% include css/syntax.css %}{% endhighlight %}
@@ -249,10 +249,10 @@ layout: default
     <p>Compared to <code>&lt;link&gt;</code>s, <code>@import</code> is slower, adds extra page requests, and can cause other unforeseen problems. Avoid them and instead opt for an alternate approach:</p>
     <ul>
       <li>Use multiple <code>&lt;link&gt;</code> elements</li>
-      <li>Compile your CSS with a preprocessor like <a href="https://sass-lang.com/">Sass</a> or <a href="http://lesscss.org/">Less</a> into a single file</li>
+      <li>Compile your CSS with a preprocessor like <a href="https://sass-lang.com/">Sass</a> or <a href="https://lesscss.org/">Less</a> into a single file</li>
       <li>Concatenate your CSS files with features provided in Rails, Jekyll, and other environments</li>
     </ul>
-    <p>For more information, <a href="http://www.stevesouders.com/blog/2009/04/09/dont-use-import/">read this article by Steve Souders</a>.</p>
+    <p>For more information, <a href="https://www.stevesouders.com/blog/2009/04/09/dont-use-import/">read this article by Steve Souders</a>.</p>
   </div>
   <div class="col col-code">
     {% highlight html %}{% include css/import.html %}{% endhighlight %}
@@ -318,7 +318,7 @@ layout: default
     <p>Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested.</p>
     <p>Additional reading:</p>
     <ul>
-      <li><a href="http://markdotto.com/2015/07/20/css-nesting/">Nesting in Sass and Less</a></li>
+      <li><a href="https://markdotto.com/2015/07/20/css-nesting/">Nesting in Sass and Less</a></li>
     </ul>
   </div>
   <div class="col col-code">
@@ -376,8 +376,8 @@ layout: default
     </ul>
     <p>Additional reading:</p>
     <ul>
-      <li><a href="http://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/">Scope CSS classes with prefixes</a></li>
-      <li><a href="http://markdotto.com/2012/03/02/stop-the-cascade/">Stop the cascade</a></li>
+      <li><a href="https://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/">Scope CSS classes with prefixes</a></li>
+      <li><a href="https://markdotto.com/2012/03/02/stop-the-cascade/">Stop the cascade</a></li>
     </ul>
   </div>
   <div class="col col-code">
