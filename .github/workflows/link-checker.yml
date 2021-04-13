@@ -4,13 +4,19 @@ on: push
 jobs:
   linkChecker:
     runs-on: ubuntu-latest
-
+    name: Check for broken links
+    
     steps:
-      - uses: actions/checkout@v2
+      - name: Check for broken links
+        id: link-report
+        uses: celinekurpershoek/link-checker@v1.0.1
+        with:
+          # Required:
+          url: 'https://...'
+          # optional:
+          honorRobotExclusions: false
+          ignorePatterns: 'github,google'
+          recursiveLinks: false # Check all URLs on all reachable pages (could take a while)
 
-      - name: lychee Link Checker
-        id: lychee
-        uses: lycheeverse/lychee-action@v1.0.6
-
-      - name: Fail if there were link errors
-        run: exit ${{ steps.lychee.outputs.exit_code }}
+      - name: Get the result
+        run: echo "${{ steps.link-report.outputs.result }}"
