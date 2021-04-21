@@ -1,38 +1,34 @@
-/* Ads
--------------------------------------------------- */
+// stylelint-disable declaration-no-important, selector-max-id
 
-#fusionads {
+//
+// Carbon ads
+//
+
+#carbonads {
+  position: static;
   display: block;
-  max-width: 18rem;
-  padding: 1rem;
-  margin: 0 auto;
-  overflow: hidden; /* clearfix */
-  font-size: .8rem;
-  line-height: 1.3;
+  max-width: 400px;
+  padding: 15px 15px 15px 160px;
+  margin: 2rem 0;
+  overflow: hidden;
+  font-size: .8125rem;
+  line-height: 1.4;
   text-align: left;
-  background-color: rgba(0,0,0,.2);
-}
-.fusion-text,
-.fusion-poweredby {
-  display: block;
-  color: #fff;
-}
-.fusion-text:hover,
-.fusion-poweredby:hover {
-  text-decoration: none;
-}
-.fusion-img {
-  float: left;
-  margin-right: 1rem;
-}
-.fusion-poweredby {
-  display: block !important;
-  margin-top: .5rem;
+  background-color: rgba(0, 0, 0, .05);
+
+  a {
+    color: rgba(255,255,255,.75);
+    text-decoration: none;
+  }
 }
 
-@media (min-width: 40em) {
-  #fusionads {
-    max-width: 16rem;
-    font-size: .7rem;
-  }
+.carbon-img {
+  float: left;
+  margin-left: -145px;
+}
+
+.carbon-poweredby {
+  display: block;
+  margin-top: .75rem;
+  color: rgba(255,255,255,.5) !important;
 }
