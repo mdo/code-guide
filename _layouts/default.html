@@ -6,13 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link href="/favicon.ico" rel="icon" type="image/x-icon">
 
+    <link rel="preload" as="font" href="https://rsms.me/inter/font-files/Inter-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="https://rsms.me/inter/font-files/Inter-Italic.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="https://rsms.me/inter/font-files/Inter-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter-display.css">
+
     <title>
       {{ site.name }}
     </title>
 
     <meta name="description" content="Standards for developing consistent, flexible, and sustainable HTML and CSS">
     <link rel="canonical" href="https://codeguide.co">
-    
+
     <link rel="stylesheet" href="cg.css">
 
     <script>
@@ -27,13 +34,12 @@
 
     {% include header.html %}
 
-    <main class="container" role="main">
+    <main class="container content" role="main">
       {{ content }}
+
+      {% include footer.html %}
     </main>
 
-    {% include footer.html %}
-
     {% include js.html %}
-
   </body>
 </html>

@@ -20,11 +20,17 @@
   --blue-300: #6ea8fe;
   --blue-700: #084298;
 
+  --font: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-heading: InterDisplay;
+
   --body-bg: #fff;
   --body-color: #212529;
+  --secondary-color: #6c757d;
+  --border-color: rgba(0, 0, 0, .1);
   --accent-bg: #f8f9fa;
   --link-color: var(--blue);
-  --masthead-bg: var(--blue);
+  --masthead-bg: var(--accent-bg);
+  --gap: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,7 +39,7 @@
     --body-color: #dee2e6;
     --accent-bg: #2a2f34;
     --link-color: var(--blue-300);
-    --masthead-bg: var(--blue-700);
+    --border-color: rgba(255, 255, 255, .1);
   }
 }
 
@@ -45,17 +51,13 @@
 
 html {
   font-size: 16px;
-
-  @media (min-width: 768px) {
-    font-size: 18px;
-  }
+  font-family: var(--font);
+  line-height: 1.5;
 }
 
 body {
   margin: 0;
-  font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  line-height: 1.5;
+  // font-size: 1rem;
   color: var(--body-color);
   background-color: var(--body-bg);
 }
@@ -72,6 +74,7 @@ a {
 h1, h2, h3, h4 {
   margin-top: 0;
   margin-bottom: .5rem;
+  font-family: var(--font-heading), var(--font);
   font-weight: 600;
   line-height: 1;
 }
@@ -96,8 +99,16 @@ blockquote {
   }
 }
 
+ul {
+  padding-left: 1.5em;
+}
+
 li {
+  padding-inline-start: 1.5ch;
   margin-bottom: .25rem;
+  list-style-type: "—";
+
+  &::marker { color: var(--secondary-color); }
 }
 
 p:last-child,
@@ -141,9 +152,11 @@ pre {
 
 .highlight {
   margin: 0;
+  background-color: var(--accent-bg);
 
   pre {
     margin-bottom: 0;
+    padding: var(--gap);
   }
 
   & + .highlight {
@@ -158,33 +171,36 @@ pre {
 
 .cg-icon {
   display: block;
-  width: 20vw;
-  height: 20vw;
+  width: 128px;
+  height: 128px;
+  margin-left: -.75rem;
   margin-bottom: 1.5rem;
-  border: solid currentColor;
-  border-width: 1vw 1vw 1vw 10vw;
 
-  @media (min-width: 64em) {
-    float: right;
+  @media (min-width: 768px) {
+    width: 192px;
+    height: 192px;
+    margin-left: -1.25rem;
   }
 }
 
 .cg-masthead {
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-bottom: 3rem;
-  margin-bottom: 3rem;
-  color: #fff;
+  margin-bottom: 1.5rem;
   background-color: var(--masthead-bg);
 
+  p {
+    margin-bottom: 1rem;
+  }
+
   @media (min-width: 960px) {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    margin-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
   }
 }
 
 .cg-masthead-title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 700;
   line-height: .9;
@@ -193,36 +209,16 @@ pre {
   @media (min-width: 768px) {
     font-size: 6rem;
   }
-
-  @media (min-width: 960px) {
-    font-size: 7rem;
-  }
 }
 
 .cg-masthead-subtitle {
-  max-width: 40rem;
+  max-width: 46rem;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
   line-height: 1.25;
 
   @media (min-width: 768px) {
     font-size: 2rem;
-  }
-}
-
-.masthead-links {
-  font-size: 2rem;
-
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  svg {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    margin-right: .5rem;
   }
 }
 
@@ -244,37 +240,36 @@ pre {
   }
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: calc(var(--gap) * 2) var(--gap);
+    align-items: stretch;
+
+    h2 {
+      grid-column: auto / span 2;
+    }
+
+    .highlight {
+      height: 100%;
+    }
+  }
+}
+
 
 //
 // The Grid
 //
 
-.section {
-  margin-bottom: 3rem;
-}
-
-.col {
-  margin-bottom: 1.5rem;
-}
-
-.col-code {
-  padding: 2rem;
-  background-color: var(--accent-bg);
-}
-
 @media (min-width: 768px) {
-  .section {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-  }
-  .col {
-    display: table-cell;
-    padding: 3rem;
-    vertical-align: top;
-  }
-  .col:first-child {
-    padding-left: 0;
+  .col,
+  blockquote {
+    grid-column: auto / span 1;
   }
 }
 
@@ -285,7 +280,8 @@ pre {
 
 h2 {
   padding-top: 1rem;
-  margin-bottom: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
   border-top: .25rem solid;
 }
 
@@ -295,10 +291,13 @@ h2 {
 //
 
 .footer {
-  padding: 3rem 1rem;
-  font-size: 90%;
-  text-align: center;
+  grid-column: auto / span 2;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-top: 5rem;
+  border-top: .25rem solid;
 }
+
 .footer p {
   margin-bottom: .5rem;
 }
@@ -306,6 +305,7 @@ h2 {
 .quick-links {
   list-style: none;
   margin-left: 0;
+  padding-left: 0;
 }
 .quick-links li {
   display: inline;

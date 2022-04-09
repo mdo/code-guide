@@ -9,15 +9,17 @@
   display: block;
   max-width: 400px;
   padding: 15px 15px 15px 160px;
-  margin: 2rem 0;
+  margin: 2rem 0 0;
   overflow: hidden;
   font-size: .8125rem;
   line-height: 1.4;
   text-align: left;
-  background-color: rgba(0, 0, 0, .05);
+  background-color: var(--body-bg);
+  border: 1px solid var(--border-color);
+  border-radius: .5rem;
 
   a {
-    color: rgba(255,255,255,.75);
+    color: var(--body-color);
     text-decoration: none;
   }
 }
@@ -30,5 +32,5 @@
 .carbon-poweredby {
   display: block;
   margin-top: .75rem;
-  color: rgba(255,255,255,.5) !important;
+  color: var(--accent-color) !important;
 }
