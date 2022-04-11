@@ -25,6 +25,7 @@ layout: default
 
 - [CSS syntax](#css-syntax)
 - [Declaration order](#declaration-order)
+- [Colors](#colors)
 - [Avoid @import`s](#import-imports)
 - [Media query placement](#media-queries)
 - [Single declarations](#single-declarations)
@@ -271,7 +272,7 @@ Consider documenting and applying these preferences to your project's `.editorco
 - Each declaration should appear on its own line for more accurate error reporting.
 - End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.
 - Comma-separated property values should include a space after each comma (e.g., `box-shadow`).
-- Don't include spaces after commas _within_ `rgb()`, `rgba()`, `hsl()`, `hsla()`, or `rect()` values. This helps differentiate multiple color values (comma, no space) from multiple property values (comma with space).
+- Use space-separated values for color properties (e.g., `color: rgb(0 0 0 / .5)`).
 - Don't prefix property values or color parameters with a leading zero (e.g., `.5` instead of `0.5` and `-.5px` instead of `-0.5px`).
 - Lowercase all hex values, e.g., `#fff`. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.
 - Use shorthand hex values where available, e.g., `#fff` instead of `#ffffff`.
@@ -296,7 +297,7 @@ Questions on the terms used here? See the [syntax section of the Cascading Style
 .selector[type="text"] {
   padding: 15px;
   margin-bottom: 15px;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgb(0 0 0 / .5);
   box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
 }
 ```
@@ -353,6 +354,26 @@ For a complete list of properties and their order, please see the [property orde
 
   /* Misc */
   opacity: 1;
+}
+```
+
+<div markdown="1">
+### Colors
+
+With the support of [CSS Color Levels 4](https://www.w3.org/TR/css-color-4/) [in all major browsers](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb#space-separated_values), `rgba()` and `hsla()` are now aliases for `rgb()` and `hsl()`, meaning you can modify alpha values in `rgb()` and `hsl()`. Along with this comes support for new space-separated syntax for color values. For compability with future CSS color functions, use this new syntax.
+
+Regardless of your color values and syntax, always ensure your color choices meet [WCAG minimum contrast ratios](https://webaim.org/articles/contrast/) (4.5:1 for 16px and smaller, 3:1 for larger).
+
+Additional reading:
+
+- [CSS Color Levels 4](https://www.w3.org/TR/css-color-4/)
+- [Smashing Magazine - A Guide To Modern CSS Colors](https://www.smashingmagazine.com/2021/11/guide-modern-css-colors/)
+</div>
+
+```css
+.element {
+  color: rgb(255 255 255 / .65);
+  background-color: rgb(0 0 0 / .95);
 }
 ```
 
