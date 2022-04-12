@@ -366,7 +366,6 @@ Regardless of your color values and syntax, always ensure your color choices mee
 
 Additional reading:
 
-- [CSS Color Levels 4](https://www.w3.org/TR/css-color-4/)
 - [Smashing Magazine - A Guide To Modern CSS Colors](https://www.smashingmagazine.com/2021/11/guide-modern-css-colors/)
 </div>
 
