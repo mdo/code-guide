@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      {{ site.name }}
+    </title>
 
     <link rel="preload" as="font" href="https://rsms.me/inter/font-files/Inter-Regular.woff2" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" as="font" href="https://rsms.me/inter/font-files/Inter-Italic.woff2" type="font/woff2" crossorigin="anonymous">
@@ -13,14 +15,25 @@
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link rel="stylesheet" href="https://rsms.me/inter/inter-display.css">
 
-    <title>
-      {{ site.name }}
-    </title>
-
     <meta name="description" content="Standards for developing consistent, flexible, and sustainable HTML and CSS">
     <link rel="canonical" href="https://codeguide.co">
 
     <link rel="stylesheet" href="cg.css">
+
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="/code-guide.svg" rel="icon" type="image/svg+xml">
+
+    <meta property="og:image" content="{{ site.og_image }}">
+    <meta property="og:title" content="Code Guide">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image:width" content="2000">
+    <meta property="og:image:height" content="1000">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@mdo">
+    <meta name="twitter:title" content="Code Guide">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:image" content="{{ site.og_image }}">
 
     <script>
       window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

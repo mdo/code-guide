@@ -5,3 +5,4 @@ permalink: pretty
 sass:
   style: compressed
 version: 4.0.0
+og_image: https://github.com/mdo/code-guide/blob/gh-pages/code-guide-social.png
