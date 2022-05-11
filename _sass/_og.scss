@@ -304,10 +304,13 @@ h2 {
 }
 
 .quick-links {
+  display: flex;
+  gap: 1.25rem;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
 .quick-links li {
   display: inline;
+  padding-inline-start: 0;
 }
