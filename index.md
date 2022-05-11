@@ -26,12 +26,13 @@ layout: default
 - [CSS syntax](#css-syntax)
 - [Declaration order](#declaration-order)
 - [Colors](#colors)
+- [Logical propertoes](#logical-properties)
 - [Avoid @import`s](#import-imports)
 - [Media query placement](#media-queries)
 - [Single declarations](#single-declarations)
 - [Shorthand notation](#shorthand-notation)
-- [Nesting in Less and Sass](#nesting-in-less-and-sass)
-- [Operators in Less and Sass](#operators-in-less-and-sass)
+- [Nesting in preprocessors](#nesting-in-preprocessors)
+- [Operators in preprocessors](#operators-in-preprocessors)
 - [Comments](#comments)
 - [Class names](#class-names)
 - [Selectors](#selectors)
@@ -272,7 +273,7 @@ Consider documenting and applying these preferences to your project's `.editorco
 - Each declaration should appear on its own line for more accurate error reporting.
 - End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.
 - Comma-separated property values should include a space after each comma (e.g., `box-shadow`).
-- Use space-separated values for color properties (e.g., `color: rgb(0 0 0 / .5)`).
+- Use space-separated values for color properties (e.g., `color: rgb(0 0 0 / .5)`). [See the Colors section for more information.](#colors)
 - Don't prefix property values or color parameters with a leading zero (e.g., `.5` instead of `0.5` and `-.5px` instead of `-0.5px`).
 - Lowercase all hex values, e.g., `#fff`. Lowercase letters are much easier to discern when scanning a document as they tend to have more unique shapes.
 - Use shorthand hex values where available, e.g., `#fff` instead of `#ffffff`.
@@ -282,8 +283,8 @@ Consider documenting and applying these preferences to your project's `.editorco
 Questions on the terms used here? See the [syntax section of the Cascading Style Sheets article](https://en.wikipedia.org/wiki/Cascading_Style_Sheets#Syntax) on Wikipedia.
 </div>
 
-```css
-/* Bad CSS */
+```scss
+// Bad CSS
 .selector, .selector-secondary, .selector[type=text] {
   padding:15px;
   margin:0px 0px 15px;
@@ -291,7 +292,7 @@ Questions on the terms used here? See the [syntax section of the Cascading Style
   box-shadow:0px 1px 2px #CCC,inset 0 1px 0 #FFFFFF
 }
 
-/* Good CSS */
+// Good CSS
 .selector,
 .selector-secondary,
 .selector[type="text"] {
@@ -322,9 +323,9 @@ Preprocessor mixins and functions should appear wherever most appropriate. For e
 For a complete list of properties and their order, please see the [property order for Stylelint](https://github.com/stormwarning/stylelint-config-recess-order) used by [Bootstrap](https://getbootstrap.com).
 </div>
 
-```css
+```scss
 .declaration-order {
-  /* Positioning */
+  // Positioning
   position: absolute;
   top: 0;
   right: 0;
@@ -332,7 +333,7 @@ For a complete list of properties and their order, please see the [property orde
   left: 0;
   z-index: 100;
 
-  /* Box model */
+  // Box model
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -340,20 +341,50 @@ For a complete list of properties and their order, please see the [property orde
   width: 100px;
   height: 100px;
 
-  /* Typography */
-  font: normal 13px "Helvetica Neue", sans-serif;
+  // Typography
+  font: normal 14px "Helvetica Neue", sans-serif;
   line-height: 1.5;
   color: #333;
   text-align: center;
   text-decoration: underline;
 
-  /* Visual */
+  // Visual
   background-color: #f5f5f5;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
 
-  /* Misc */
+  // Misc
   opacity: 1;
+}
+```
+
+<div markdown="1">
+### Logical properties
+
+Logical properties are alternatives to directional and dimensonal properties based on abstract terms like *block* and *inline*. By default, block refers to the vertical direction (top and bottom) while inline refers to the horizontal direction (right and left). You can begin to use these values in your CSS in all modern, evergreen browsers.
+
+**Why use logical properties?** Not every language flows left-ro-right like English, so the [writing mode](https://developer.mozilla.org/en-US/docs/Web/CSS/writing-mode) needs to be flexible. With logical properties, you can easily support languages that can be written horizontally or vertically (like Chinese, Japanese, and Korean). Plus, they're usually shorter and simpler to write.
+
+**Additional reading:**
+
+- [CSS Logical Properties and Values – MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties)
+- [CSS Logical Properties and Values — CSS Tricks](https://css-tricks.com/css-logical-properties-and-values/)
+- [CSS Writing Modes – MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Writing_Modes)
+</div>
+
+```scss
+// Without logical properties
+.element {
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+// With logical properties
+.element {
+  margin-inline: auto;
+  border-block: 1px solid #eee;
 }
 ```
 
@@ -364,9 +395,10 @@ With the support of [CSS Color Levels 4](https://www.w3.org/TR/css-color-4/) [in
 
 Regardless of your color values and syntax, always ensure your color choices meet [WCAG minimum contrast ratios](https://webaim.org/articles/contrast/) (4.5:1 for 16px and smaller, 3:1 for larger).
 
-Additional reading:
+**Additional reading:**
 
 - [Smashing Magazine - A Guide To Modern CSS Colors](https://www.smashingmagazine.com/2021/11/guide-modern-css-colors/)
+- [`rgb()` - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb)
 </div>
 
 ```css
@@ -416,7 +448,6 @@ Place media queries as close to their relevant rule sets whenever possible. Don'
 }
 ```
 
-
 <div markdown="1">
 ### Single declarations
 
@@ -425,13 +456,13 @@ In instances where a rule set includes **only one declaration**, consider removi
 The key factor here is error detection—e.g., a CSS validator stating you have a syntax error on Line 183. With a single declaration, there's no missing it. With multiple declarations, separate lines is a must for your sanity.
 </div>
 
-```css
-/* Single declarations on one line */
+```scss
+// Single declarations on one line
 .span1 { width: 60px; }
 .span2 { width: 140px; }
 .span3 { width: 220px; }
 
-/* Multiple declarations, one per line */
+// Multiple declarations, one per line
 .sprite {
   display: inline-block;
   width: 16px;
@@ -462,8 +493,8 @@ Excessive use of shorthand properties leads to sloppier code with unnecessary ov
 The Mozilla Developer Network has a great article on [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties) for those unfamiliar with notation and behavior.
 </div>
 
-```css
-/* Bad example */
+```scss
+// Bad example
 .element {
   margin: 0 0 10px;
   background: red;
@@ -471,7 +502,7 @@ The Mozilla Developer Network has a great article on [shorthand properties](http
   border-radius: 3px 3px 0 0;
 }
 
-/* Good example */
+// Good example
 .element {
   margin-bottom: 10px;
   background-color: red;
@@ -482,11 +513,11 @@ The Mozilla Developer Network has a great article on [shorthand properties](http
 ```
 
 <div markdown="1">
-### Nesting in Less and Sass
+### Nesting in preprocessors
 
-Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested.
+Avoid unnecessary nesting in preprocessors whenever possible—keep it simple and avoid reverse nesting. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested.
 
-Additional reading:
+**Additional reading:**
 
 - <a href="https://markdotto.com/2015/07/20/css-nesting/">Nesting in Sass and Less</a>
 </div>
@@ -504,7 +535,7 @@ Additional reading:
 ```
 
 <div markdown="1">
-### Operators in Less and Sass
+### Operators in preprocessors
 
 For improved readability, wrap all math operations in parentheses with a single space between values, variables, and operators.
 </div>
@@ -524,20 +555,20 @@ For improved readability, wrap all math operations in parentheses with a single 
 <div markdown="1">
 ### Comments
 
-Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others. Great code comments convey context or purpose. Do not simply reiterate a component or class name.
+Code is written and maintained by people. Ensure your code is descriptive, well commented, and approachable by others. Great code comments convey context or purpose. Do not simply reiterate a component or class name. Use the `//` syntax when writing CSS with preprocessors. When shipping CSS to production, remove all comments.
 
 Be sure to write in complete sentences for larger comments and succinct phrases for general notes.
 </div>
 
-```css
-/* Bad example */
-/* Modal header */
+```scss
+// Bad example
+// Modal header
 .modal-header {
   ...
 }
 
-/* Good example */
-/* Wrapping element for .modal-title and .modal-close */
+// Good example
+// Wrapping element for .modal-title and .modal-close
 .modal-header {
   ...
 }
@@ -553,16 +584,16 @@ Be sure to write in complete sentences for larger comments and succinct phrases 
 - Prefix classes based on the closest parent or base class.
 - Use `.js-*` classes to denote behavior (as opposed to style), but keep these classes out of your CSS.
 
-It's also useful to apply many of these same rules when creating Sass and Less variable names.
+It's also useful to apply many of these same rules when creating custom properties and preprocessor variable names.
 </div>
 
-```css
-/* Bad example */
+```scss
+// Bad example
 .t { ... }
 .red { ... }
 .header { ... }
 
-/* Good example */
+// Good example
 .tweet { ... }
 .important { ... }
 .tweet-header { ... }
@@ -576,19 +607,19 @@ It's also useful to apply many of these same rules when creating Sass and Less v
 - Keep selectors short and strive to limit the number of elements in each selector to three.
 - Scope classes to the closest parent `only` when necessary (e.g., when not using prefixed classes).
 
-Additional reading:
+**Additional reading:**
 
 - [Scope CSS classes with prefixes](https://markdotto.com/2012/02/16/scope-css-classes-with-prefixes/)
 - [Stop the cascade](https://markdotto.com/2012/03/02/stop-the-cascade/)
 </div>
 
-```css
-/* Bad example */
+```scss
+// Bad example
 span { ... }
 .page-container #stream .stream-item .tweet .tweet-header .username { ... }
 .avatar { ... }
 
-/* Good example */
+// Good example
 .avatar { ... }
 .tweet-header .username { ... }
 .tweet .avatar { ... }
@@ -616,22 +647,22 @@ When necessary, it may be helpful to use [the child combinator (`>`)](https://de
 - When using multiple CSS files, break them down by component instead of page. Pages can be rearranged and components moved.
 </div>
 
-```css
-/*
- * Component section heading
- */
+```scss
+//
+// Component section heading
+//
 
 .element { ... }
 
 
-/*
- * Component section heading
- *
- * Sometimes you need to include optional context for the entire component. Do that up here if it's important enough.
- */
+//
+// Component section heading
+//
+// Sometimes you need to include optional context for the entire component. Do that up here if it's important enough.
+//
 
 .element { ... }
 
-/* Contextual sub-component or modifer */
+// Contextual sub-component or modifer
 .element-heading { ... }
 ```

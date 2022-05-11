@@ -57,7 +57,6 @@ html {
 
 body {
   margin: 0;
-  // font-size: 1rem;
   color: var(--body-color);
   background-color: var(--body-bg);
 }
@@ -68,6 +67,10 @@ a {
 
   &:hover {
     text-decoration: underline;
+  }
+
+  code {
+    color: inherit;
   }
 }
 
@@ -128,10 +131,8 @@ pre {
   font-size: 95%;
 }
 code {
-  padding: .125em .25em;
   font-size: 85%;
-  color: #d44950;
-  background-color: var(--accent-bg);
+  color: var(--pink);
   border-radius: .2rem;
 }
 
