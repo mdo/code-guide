@@ -4,3 +4,5 @@ url: https://codeguide.co
 permalink: pretty
 sass:
   style: compressed
+version: 4.0.0
+og_image: https://raw.githubusercontent.com/mdo/code-guide/gh-pages/code-guide-social.png

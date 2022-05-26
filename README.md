@@ -1,16 +1,40 @@
-# Code Guide
+<h3 align="center">
+  <a href="https://codeguide.co/">
+    <img src="code-guide-logo.png" alt="Code Guide logo" width="192" height="192">
+  </a>
+  <br>
+  Code Guide
+</h3>
 
-Code Guide is a set of standards for developing consistent, flexible, and sustainable HTML and CSS. It comes from years of experience writing code on projects of all sizes. It's not the end-all be-all, but it's a start.
-
-**[Start reading ☞](https://codeguide.co)**
+<p align="center" markdown="1">
+  Standards for developing consistent, flexible, and sustainable HTML and CSS.
+  <br>
+  <a href="https://codeguide.co"><strong>Start reading ☞</strong></a>
+</p>
 
 ---
 
-### License
+## Setup
+
+Code Guide is built on Jekyll and hosted on GitHub Pages. To install Jekyll:
+
+```sh
+gem install jekyll
+```
+
+To start the local server:
+
+```sh
+jekyll serve
+```
+
+Open `localhost:4000` in your browser.
+
+## License
 
 Released under MIT by, and copyright, @mdo.
 
-### Translations
+## Translations
 
 Translations are maintained by their creators and may not always be up to date with the original here.
 
