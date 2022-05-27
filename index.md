@@ -26,7 +26,7 @@ layout: default
 - [CSS syntax](#css-syntax)
 - [Declaration order](#declaration-order)
 - [Colors](#colors)
-- [Logical propertoes](#logical-properties)
+- [Logical properties](#logical-properties)
 - [Avoid @import`s](#avoid-imports)
 - [Media query placement](#media-query-placement)
 - [Single declarations](#single-declarations)
