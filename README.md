@@ -47,6 +47,7 @@ Translations are maintained by their creators and may not always be up to date w
 - [Indonesian](http://diagramatics.github.io/code-guide-id) - Translated by [Steven Sinatra](http://diagramatics.me)
 - [Japanese](http://kia-king.com/code-guide/) - Translated by [Kia King Ishii](https://github.com/kiaking)
 - [Korean](http://code-guide.aliencube.org/) - Translated by [Aliencube](https://github.com/aliencube)
+- [Persian](https://cg.arash-hatami.ir/) - Translated by [Arash Hatami](https://github.com/hatamiarash7)
 - [Polish](http://bondarewicz.github.io/code-guide/) - Translated by [Łukasz Bondarewicz](https://github.com/bondarewicz)
 - [Portuguese](http://diegoeis.github.io/code-guide/) - Translated by [Diego Eis](http://tableless.com.br/)
 - [Romanian](http://vmazare.github.io/code-guide-romanian/) - Translated by [Valeriu Mazare](https://github.com/vmazare)
