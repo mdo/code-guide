@@ -271,7 +271,7 @@ Consider documenting and applying these preferences to your project's `.editorco
 - Place closing braces of declaration blocks on a new line.
 - Include one space after `:` for each declaration.
 - Each declaration should appear on its own line for more accurate error reporting.
-- End all declarations with a semi-colon. The last declaration's is optional, but your code is more error prone without it.
+- End all declarations with a semi-colon. The last declaration is optional, but your code is more error prone without it.
 - Comma-separated property values should include a space after each comma (e.g., `box-shadow`).
 - Use space-separated values for color properties (e.g., `color: rgb(0 0 0 / .5)`). [See the Colors section for more information.](#colors)
 - Don't prefix property values or color parameters with a leading zero (e.g., `.5` instead of `0.5` and `-.5px` instead of `-0.5px`).
