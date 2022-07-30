@@ -442,7 +442,7 @@ Place media queries as close to their relevant rule sets whenever possible. Don'
 .element-selected { ... }
 
 @media (min-width: 480px) {
-  .element { ...}
+  .element { ... }
   .element-avatar { ... }
   .element-selected { ... }
 }
