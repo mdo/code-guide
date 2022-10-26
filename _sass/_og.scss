@@ -261,6 +261,10 @@ pre {
   flex-direction: column;
   gap: var(--gap);
 
+  h3 {
+    scroll-margin-top: 24px;
+  }
+
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
