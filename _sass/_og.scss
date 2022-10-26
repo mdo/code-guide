@@ -20,13 +20,13 @@
   --blue-300: #6ea8fe;
   --blue-700: #084298;
 
-  --font: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
   --font-heading: InterDisplay;
 
   --body-bg: #fff;
   --body-color: #212529;
   --secondary-color: #6c757d;
-  --border-color: rgba(0, 0, 0, .1);
+  --border-color: rgba(0, 0, 0, 0.1);
   --accent-bg: #f8f9fa;
   --link-color: var(--blue);
   --masthead-bg: var(--accent-bg);
@@ -39,7 +39,7 @@
     --body-color: #dee2e6;
     --accent-bg: #2a2f34;
     --link-color: var(--blue-300);
-    --border-color: rgba(255, 255, 255, .1);
+    --border-color: rgba(255, 255, 255, 0.1);
   }
 }
 
@@ -53,6 +53,11 @@ html {
   font-size: 16px;
   font-family: var(--font);
   line-height: 1.5;
+  scroll-behavior: smooth;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -74,17 +79,28 @@ a {
   }
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-family: var(--font-heading), var(--font);
   font-weight: 600;
   line-height: 1;
 }
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem }
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
 
 p {
   margin-top: 0;
@@ -108,10 +124,12 @@ ul {
 
 li {
   padding-inline-start: 1.5ch;
-  margin-bottom: .25rem;
-  list-style-type: "—";
+  margin-bottom: 0.25rem;
+  list-style-type: '—';
 
-  &::marker { color: var(--secondary-color); }
+  &::marker {
+    color: var(--secondary-color);
+  }
 }
 
 p:last-child,
@@ -120,20 +138,19 @@ blockquote:last-child {
   margin-bottom: 0;
 }
 
-
 //
 // Code
 //
 
 code,
 pre {
-  font-family: "SFMono-Regular", Menlo, "Courier New", monospace;
+  font-family: 'SFMono-Regular', Menlo, 'Courier New', monospace;
   font-size: 95%;
 }
 code {
   font-size: 85%;
   color: var(--pink);
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 
 pre {
@@ -165,7 +182,6 @@ pre {
   }
 }
 
-
 //
 // Masthead
 //
@@ -174,7 +190,7 @@ pre {
   display: block;
   width: 128px;
   height: 128px;
-  margin-left: -.75rem;
+  margin-left: -0.75rem;
   margin-bottom: 1.5rem;
 
   @media (min-width: 768px) {
@@ -204,7 +220,7 @@ pre {
   margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 700;
-  line-height: .9;
+  line-height: 0.9;
   color: inherit;
 
   @media (min-width: 768px) {
@@ -222,7 +238,6 @@ pre {
     font-size: 2rem;
   }
 }
-
 
 //
 // Content
@@ -262,7 +277,6 @@ pre {
   }
 }
 
-
 //
 // The Grid
 //
@@ -274,7 +288,6 @@ pre {
   }
 }
 
-
 //
 // Sections
 //
@@ -283,9 +296,8 @@ h2 {
   padding-top: 1rem;
   margin-top: 3rem;
   margin-bottom: 0;
-  border-top: .25rem solid;
+  border-top: 0.25rem solid;
 }
-
 
 //
 // Footer
@@ -296,11 +308,11 @@ h2 {
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-top: 5rem;
-  border-top: .25rem solid;
+  border-top: 0.25rem solid;
 }
 
 .footer p {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .quick-links {
