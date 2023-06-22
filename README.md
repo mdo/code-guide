@@ -53,8 +53,8 @@ Translations are maintained by their creators and may not always be up to date w
 - [Portuguese](http://diegoeis.github.io/code-guide/) - Translated by [Diego Eis](http://tableless.com.br/)
 - [Romanian](http://vmazare.github.io/code-guide-romanian/) - Translated by [Valeriu Mazare](https://github.com/vmazare)
 - [Russian](http://sadcitizen.github.io/code-guide/) - Translated by [Eugene Abrosimov](https://github.com/sadcitizen)
-- [Traditional Chinese](https://codeguide.intersection.tw) - Translated by [Yuming Cheung](https://github.com/ymcheung)
 - [Spanish](https://hansfelix.github.io/code-guide) - Translated by [Hans Felix](https://github.com/hansfelix)
+- [Traditional Chinese](https://codeguide.intersection.tw) - Translated by [Yuming Cheung](https://github.com/ymcheung)
 
 Have a translation you'd like to link to? Open a pull request to add it here. Be sure to keep it alphabetical.
 
