@@ -39,7 +39,7 @@ Released under MIT by, and copyright, @mdo.
 Translations are maintained by their creators and may not always be up to date with the original here.
 
 - [Chinese](http://zoomzhao.github.io/code-guide/) - Translated by [Zoom Zhao](https://github.com/ZoomZhao)
-- [Chinese](http://codeguide.bootcss.com/) - Translated by [Wang Sai](https://github.com/wangsai)
+- [Chinese](https://www.codeguide.cn/) - Translated by [Wang Sai](https://github.com/wangsai)
 - [Dutch](http://chunfeilung.github.io/code-guide/) - Translated by [Chun Fei Lung](https://github.com/chunfeilung)
 - [French](http://pixelastic.github.io/code-guide/) - Translated by [Tim Carry](https://github.com/pixelastic/)
 - [German](http://BackendButters.github.io/code-guide/) - Translated by [BackendButters](https://github.com/BackendButters)
